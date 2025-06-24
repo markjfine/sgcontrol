@@ -1,0 +1,64 @@
+1. About Smart Gnome Control
+
+Smart Gnome Control is a graphical user interface to multiple communications
+receivers via the Hamlib library. The specific purpose is to let you control
+your communications receiver from a personal computer, and to simplify the 
+hobby of shortwave radio listening. The Smart Gnome Control interface is 
+designed to automatically reconfigure according to the known capabilities of
+your receiver. It is also designed to provide database-driven tuning, memory
+and logging capabilities, based on FineWare's (discontinued) Smart Control
+series of receiver control packages for Windows. The Smart Gnome Control
+interface is written for Linux and Cygwin in GNU C/C++, using Glade, Gdk/Gtk+
+and curl. It also requires version 4.6 or later of Hamlib.
+
+
+2. Compiling Smart Gnome Control
+
+To compile Smart Gnome Control you will need:
+
+* Hamlib 4.6
+* curl 8.11
+* Gtk+ 3.24
+* Gdk 3.24
+* GLib 2.84 
+
+These packages (except Hamlib) are included in every modern non-specialized
+linux distribution. You will also need the so-called development files of each
+package which include the header files and static libraries.
+
+To compile Smart Gnome Control you should first run 'sh ./autogen.sh'. This will
+create a 'configure' script for later re-configuration. However, 'autogen' will
+usually run 'configure' automatically.
+
+If you don't get any errors, type 'make'. The program should now compile without
+warnings and you should end up with an executable binary, 'sgcontrol', in the
+'src' subdirectory.
+
+To install the program into your system, type 'sudo make install' (only done as 
+root). To install a slimmer version of sgcontrol, type 'sudo make install-strip'.
+
+
+3. Using Smart Gnome Control
+
+The first time you run Smart Gnome Control it will display a default display that
+is not configured for any particular receiver. In order to set the application for
+a particular receiver, select the Tools -> Options menu. This will display all of
+the available recievers that Hamlib controls. Select your particular receiver from
+the list, choose a communications port from the selection box below it, and click
+the Ok button. The application will automatically reconfigure the display for that
+particular receiver.
+
+It also comes with a default Eibi database, dated 02 Jun 2025. This should be
+updated automatically if an internet connection is available. The application will
+automatically check for an updated database, then attempt to download and install
+it if one is available. You can turn this option off in the Application tab in
+the Options dialog.
+
+I hope you'll have fun using Smart Gnome Control. If you find any bugs or have any
+comments feel free to contact me. Bugs and feature requests should be submitted using
+the bug tracker on the project page: https://github.com/markjfine/sgcontrol. Hamlib
+related bugs should be entered as Issues on the Hamlib project page at
+https://github.com/Hamlib/Hamlib.
+
+
+Mark J. Fine

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Smart Gnome Control
+Exec=sgcontrol 
+Icon=/usr/local/share/sgcontrol/sgcontrol.png
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Radio;Application;X-Red-Hat-Base;

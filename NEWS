@@ -1,0 +1,25 @@
+Smart Gnome Control 0.5 (25 Jun 2025) :
+- Completely updated and rewritten for Gtk3+.
+- Completely revised iconology to conform to Adwaita.
+- Completely revised database section to work solely with Eibi.
+- Revised database with condensed look and feel to operate like Frequency Browser on the Mac.
+- Revised the logging to use an integrated data entry section.
+
+Smart Gnome Control 0.3 (01 Jan 2005) :
+- Added traps for unacceleratable GDK keys (Backspace, arrows, etc.) using in tuning.
+- Moved all file operations to local user directory, ~/.sgcontrol
+- Added logging capability
+- Added stepsize popups to tuning bar buttons
+
+Smart Gnome Control 0.2a (18 Dec 2004) :
+- Added memory up/down tuning to memory list
+- Made Band Plan tunable
+- Added parallel searches to main display list (click on time part)
+- Added station and frequency query dialog
+- Added user data to title bar
+- Added extra checks for receivers with no get/set functions
+- Added Update Display function
+- Made data list views colorized for easier reading
+
+Smart Gnome Control 0.1a (25 Sep 2004) :
+- Initial release.

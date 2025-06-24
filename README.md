@@ -111,3 +111,4 @@ Smart Gnome Control integrates a full-fledged logging facility. Like the memorie
 ## Version History
 0.3 Initial Release in 2004 (yeah, I know)
 0.5 Updated to Gtk3 and completely modernized the application 
+

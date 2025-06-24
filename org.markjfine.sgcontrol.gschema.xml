@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<schemalist>
+
+  <schema path="/org/markjfine/sgcontrol/" id="org.markjfine.sgcontrol">
+
+    <key name='rig-model' type='i'>
+      <default>0</default>
+      <summary>hamlib rig model number</summary>
+      <description>
+        Saves The hamlib model number of the radio being used.
+      </description>
+    </key>
+
+    <key name='rig-make' type='s'>
+      <default>""</default>
+      <summary>Hamlib rig make name</summary>
+      <description>
+        Saves the make name of the radio being used via hamlib.
+      </description>
+    </key>
+
+    <key name='rig-name' type='s'>
+      <default>""</default>
+      <summary>Hamlib rig name</summary>
+      <description>
+        Saves the full name of the radio being used via hamlib.
+      </description>
+    </key>
+
+    <key name='rig-port' type='s'>
+      <default>""</default>
+      <summary>Hamlib communications port</summary>
+      <description>
+        Saves the port being used to communicate to the hamlib rig.
+      </description>
+    </key>
+
+    <key name='port-text' type='s'>
+      <default>""</default>
+      <summary>Hamlib communications port</summary>
+      <description>
+        Saves the port being used to communicate to the hamlib rig.
+      </description>
+    </key>
+
+    <key name='keypad' type='b'>
+      <default>false</default>
+      <summary>Start with numpad</summary>
+      <description>
+        Saves whether or not to show the numeric keypad at startup.
+      </description>
+    </key>
+
+    <key name='controlpanel' type='b'>
+      <default>false</default>
+      <summary>Start with control panel showing</summary>
+      <description>
+        Saves whether or not to show the rig's alternate control side panel at startup.
+      </description>
+    </key>
+    
+    <key name='history' type='b'>
+      <default>false</default>
+      <summary>Start with history panel showing</summary>
+      <description>
+        Saves whether or not to show the tuning history side panel at startup.
+      </description>
+    </key>
+
+    <key name='bandplan' type='b'>
+      <default>false</default>
+      <summary>Start with band plan panel showing</summary>
+      <description>
+        Saves whether or not to show the tunable band plan side panel at startup.
+      </description>
+    </key>
+
+    <key name='last-db' type='s'>
+      <default>""</default>
+      <summary>The last frequency database used</summary>
+      <description>
+        Saves the last frequency database used so it can be loaded the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='last-db-date' type='i'>
+      <default>0</default>
+      <summary>Date of the last frequency database used</summary>
+      <description>
+        Saves the date of the last frequency database used so it can be checked against any new ones to be loaded.
+      </description>
+    </key>
+
+    <key name='last-filter' type='i'>
+      <default>0</default>
+      <summary>The last database filter used</summary>
+      <description>
+        Saves the last database filter used so it can be loaded the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='last-language-filter' type='s'>
+      <default>""</default>
+      <summary>The last database filter language keyword used</summary>
+      <description>
+        Saves the last database filter used so it can be loaded the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='last-country-filter' type='s'>
+      <default>""</default>
+      <summary>The last database filter country keyword used</summary>
+      <description>
+        Saves the last database filter used so it can be loaded the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='last-region-filter' type='s'>
+      <default>""</default>
+      <summary>The last database filter region keyword used</summary>
+      <description>
+        Saves the last database filter used so it can be loaded the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='last-target-filter' type='s'>
+      <default>""</default>
+      <summary>The last database filter target keyword used</summary>
+      <description>
+        Saves the last database filter used so it can be loaded the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='lock-freq' type='b'>
+      <default>false</default>
+      <summary>The lock frequency was engaged</summary>
+      <description>
+        Saves whether the last lock frequency was engaged so it can be set the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='last-log' type='s'>
+      <default>""</default>
+      <summary>The last logging file used</summary>
+      <description>
+        Saves the last logging file used so it can be loaded the next time the sgcontrol is started.
+      </description>
+    </key>
+
+    <key name='autoupdate' type='b'>
+      <default>true</default>
+      <summary>Automatically update the frequency database at startup.</summary>
+      <description>
+        Checks for an updated frequency database. If so, it and automatically downloads and installs it at startup.
+      </description>
+    </key>
+
+    <key name='include-bcb' type='b'>
+      <default>true</default>
+      <summary>Include AM broadcast band in sidebar listings.</summary>
+      <description>
+        Gives the option to abbreviates the sidebar listing by potentially filtering out stations that only contain AM broadcasst band frequencies.
+      </description>
+    </key>
+
+  </schema>
+
+</schemalist>

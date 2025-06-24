@@ -1,0 +1,104 @@
+
+Release v0.5 - 25 Jun 2025 - Follow-up Release (yeah, long time coming)
+
+2025/06/xx 00:00:00 Completely updated and rewritten for Gtk3+.
+2025/06/xx 00:00:00 Completely revised iconology to conform to Adwaita.
+2025/06/xx 00:00:00 Completely revised database section to work solely with Eibi.
+                    Revised with condensed look and feel to operate like Frequency Browser on the Mac.
+2025/06/xx 00:00:00 Completely revised logging section to use an integrated datas entry section.
+=============================================================================
+
+Release v0.3 - 01 Jan 2005 - First Beta Release
+
+2005/01/01 02:13:28 Made meter and freq display graphics a bit more gc memory friendly.
+2005/01/01 00:33:17 Fixed some of the sluggishness in the database display
+2004/12/31 06:55:34 Changed location of meter timer kickoff
+2004/12/31 04:19:20 Added a real timer for meter updates
+2004/12/30 23:38:54 Includes better installation instructions (i.e., autogen).
+2004/12/30 06:40:45 Ok, this time just for the ones I want to divert.
+2004/12/30 06:35:59 Trick Gtk to stop processing left/right keypress events after tuning done.
+2004/12/30 00:30:52 Added traps for unacceleratable GDK keys (BS, Left, Right, etc.) using in tuning.
+2004/12/29 21:03:11 Added yes/no message dialog
+2004/12/29 21:05:48 Added checks for log file overwriting
+                    Added log filename entry on New function
+2004/12/29 21:04:33 Made last-used log file the user default
+                    Auto opens last-used log file on startup
+2004/12/29 21:01:41 Added checks for log file overwriting
+2004/12/28 05:56:28 Moved all file operations to local user directory, ~/.sgcontrol
+                    Added basic logging capability
+2004/12/20 01:55:55 Added capture function to memory dialog menu item
+2004/12/20 01:34:00 Added stepsize popups to tuning bar buttons
+=============================================================================
+
+Release v0.2a - 18 Dec 2004 - Second Alpha Release
+
+2004/12/18 22:32:33 Added memory up/down tuning to memory list
+2004/12/18 19:21:10 Made Band Plan tunable
+                    Added parallel searches to main display list (click on time part)
+2004/12/18 17:48:10 Hid the unimplemented controls for later
+2004/12/18 04:48:06 Put a 200 freq cyclical limit on the history list.
+2004/12/18 04:27:43 Added station and frequency dialog
+2004/12/18 02:03:51 Small interface changes
+2004/12/17 21:24:04 Added version to title bar
+2004/12/17 21:01:37 Added get_enabled()
+2004/12/17 20:54:56 Fixed language filter issue when switching in and out of language-capable databases
+2004/11/23 01:12:00 Added checks for receivers with no set/get for various functions, primarily vfo and bw/mode.
+2004/11/21 00:16:03 Added checks for receivers with no get_freq() function.
+2004/11/14 21:05:53 Added check for rigs that have no get_powerstat - in that case, assumes rig is already on.
+2004/11/07 18:10:10 Added loaded database tri-graph to application title bar.
+2004/11/03 21:22:45 Creates Gnome desktop applications directory if none exists on install
+2004/10/30 03:05:03 Fixed synch of Band Plan toggling from the faceplate inidicator
+                    Added Update Display function
+2004/10/30 02:49:40 Added ability to toggle the Band Plan from the faceplate inidicator
+                    Added status messages for some faceplate mouse-overs
+                    Corrected condition where the station list still displayed when the radio was off
+2004/10/11 20:45:24 Completed colorization of database views
+2004/10/11 15:40:19 Eliminated threading of database operations (didn't work)
+                    Made screen and status updates faster
+                    Made initial screen display start faster
+2004/10/11 03:21:52 Added support for tuning buttons on database dialog
+                    Added save of default language for filter
+                    Began threading of database operations
+                    Fixed minor bugs
+2004/10/07 22:04:07 Added support for expanded (v3) data sets that include links to country and language
+                    Fixed minor bugs
+=============================================================================
+
+Release 0.1a - 25 Sep 2004 - Initial Alpha Release
+
+2004/09/16 01:55:52 Added time/target string conversions
+                    Fixed test for BCB/CB channels
+2004/09/14 22:36:42 Added provisions for a variable bandwidth and tone controls
+                    Cleaned up memory display interface
+2004/09/14 00:39:52 Corrects problem with null set memory retrieval
+2004/09/12 21:43:50 Added appropriate typecasting for station, country and language lookups
+2004/09/12 03:11:47 Saves/restores state of synchronized tuned frequency search to help speed up start-up
+2004/09/12 02:46:09 Corrected problem when database not found
+2004/09/12 00:32:56 Corrected problem with small step up tuning amount
+2004/09/11 16:34:56 Corrected problem with database dialog
+2004/09/11 16:07:25 Added most of database functionality
+2004/09/10 05:15:52 Added initial database functionality
+2004/09/10 04:59:03 Added database data to install
+2004/09/06 18:00:24 Added ability to click on memory indicator to display memory list
+                    Accounted for multiple attenuators and preamps
+2004/09/05 21:39:07 Fixed memory list update for rigs that start with memory 1
+2004/09/05 21:09:19 Fixed auto memory item selection in memory list
+2004/09/05 20:55:33 Auto-stores memories after a capture
+                    Auto-loads memories after starting
+2004/09/05 19:18:58 Added functionality to capture memories from radio (slow)
+                    Added Memory List display
+2004/09/04 02:51:45 Added default window pixmap
+2004/09/03 23:33:30 Fixed checking for non-existing GConf setting on non-Gnome2 machines that crashed app on startup
+2004/09/01 01:22:48 Correctly detect memory mode on some radios
+                    Set memory button to accurately show mem mode
+2004/08/31 01:13:59 Removed reference to glade item
+2004/08/31 01:12:18 Began adding memory functionality
+                    Made toolbars follow Gnome icon/text preferences
+                    Hid some unnecessary toolbuttons/menu items
+2004/08/29 01:51:42 Adds install to Gnome2 menu
+2004/08/29 00:32:57 Prevent adding same freq to history on retune or power toggle
+2004/08/28 03:06:37 Completed History Tuning function
+                    Fixed paging on control panel sliders
+                    Fixed scrolling list displays where selection was off-screen
+                    Fixed problem where closing main window would not fully exit app
+=============================================================================
