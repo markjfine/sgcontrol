@@ -1,6 +1,6 @@
 Smart Gnome Control, The Return...
 
-Smart Gnome Control is a graphical user interface to multiple communications receivers via the [Hamlib library](https://github.com/Hamlib/Hamlib), using the [Eibi](http://eibispace.de/) shorwave database. The specific purpose is to let you control your communications receiver from a personal computer, and to simplify the hobby of shortwave radio listening.
+Smart Gnome Control is a graphical user interface to multiple communications receivers via the [Hamlib library](https://github.com/Hamlib/Hamlib), using the [Eibi](http://eibispace.de/) shortwave database. The specific purpose is to let you control your communications receiver from a personal computer, and to simplify the hobby of shortwave radio listening.
 
 The Smart Gnome Control interface is designed to automatically reconfigure according to the known capabilities of your receiver. It is also designed to provide database-driven tuning, memory and logging capabilities, based on FineWare's (discontinued) Smart Control series of receiver control packages for Windows, and as updated with the database capabilities of Frequency Browser. The Smart Gnome Control interface is written for Linux in GNU C, using Glade, Gdk/Gtk+ and curl. It also requires version 4.6 or later of Hamlib. With a little help from [Homebrew](https://brew.sh/) libraries, Smart Gnome Control should also be able to be built on macOS. 
 
