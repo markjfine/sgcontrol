@@ -1,0 +1,1195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 
+
+Copyright (C) Copyright (c) 2004, 2005, 2025  Mark J. Fine
+
+This file is part of Smart Gnome Control.
+
+Smart Gnome Control is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+Smart Gnome Control is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Smart Gnome Control.  If not, see <http://www.gnu.org/licenses/>.
+
+Author: Mark J. Fine
+
+-->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkImage" id="LogAddImg">
+    <property name="name">LogAddImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/add.svg</property>
+  </object>
+  <object class="GtkImage" id="LogClearImg">
+    <property name="name">LogDeleteBtn</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/new.svg</property>
+  </object>
+  <object class="GtkImage" id="LogCloseImg">
+    <property name="name">LogCloseImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/close.svg</property>
+  </object>
+  <object class="GtkImage" id="LogDeleteImg">
+    <property name="name">LogDeleteImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/delete.svg</property>
+  </object>
+  <object class="GtkImage" id="LogDownImg">
+    <property name="name">LogDownImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/backarw.svg</property>
+  </object>
+  <object class="GtkImage" id="LogExportImg">
+    <property name="name">LogExportImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/export.xpm</property>
+  </object>
+  <object class="GtkImage" id="LogNewImg">
+    <property name="name">LogNewImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/new.svg</property>
+  </object>
+  <object class="GtkImage" id="LogOpenImg">
+    <property name="name">LogOpenImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/open.svg</property>
+  </object>
+  <object class="GtkImage" id="LogPrintImg">
+    <property name="name">LogPrintImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/print.svg</property>
+  </object>
+  <object class="GtkImage" id="LogSaveImg">
+    <property name="name">LogSaveImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/saveas.svg</property>
+  </object>
+  <object class="GtkImage" id="LogUpImg">
+    <property name="name">LogUpImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/forwarw.svg</property>
+  </object>
+  <object class="GtkImage" id="LogUpdateImg">
+    <property name="name">LogUpdateImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/modify.svg</property>
+  </object>
+  <object class="GtkListStore" id="liststore1">
+    <columns>
+      <!-- column-name Date -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Time -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Frequency -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Call -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Station -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Country -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Mode -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name SINPO -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Notes -->
+      <column type="GtkCellRendererMode"/>
+    </columns>
+  </object>
+  <object class="GtkAccelGroup" id="log_accel_group"/>
+  <object class="GtkRadioMenuItem" id="radiomenuitem1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="draw-as-radio">True</property>
+  </object>
+  <object class="GtkTextBuffer" id="textbuffer1"/>
+  <object class="GtkDialog" id="LogWindow">
+    <property name="name">LogWindow</property>
+    <property name="width-request">800</property>
+    <property name="height-request">650</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Log Display</property>
+    <property name="window-position">center-on-parent</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="type-hint">dialog</property>
+    <property name="deletable">False</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog_vbox5">
+        <property name="name">dialog_vbox5</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog_action_area5">
+            <property name="name">dialog_action_area5</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <object class="GtkButton" id="LogCloseBtn">
+                <property name="label" translatable="yes">Close</property>
+                <property name="name">LogCloseBtn</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">LogCloseImg</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="vbox11">
+            <property name="name">vbox11</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkMenuBar" id="menubar4">
+                <property name="name">menubar4</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkMenuItem" id="log_file">
+                    <property name="name">log_file</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">_File</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="log_file_menu">
+                        <property name="name">log_file_menu</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="log_new">
+                            <property name="name">log_new</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_New...</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_open">
+                            <property name="name">log_open</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Open...</property>
+                            <property name="use-underline">True</property>
+                            <accelerator key="F4" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_save">
+                            <property name="name">log_save</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Save _as...</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkSeparatorMenuItem" id="separator24">
+                            <property name="name">separator24</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_export_all">
+                            <property name="name">log_export_all</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Export all</property>
+                            <property name="use-underline">True</property>
+                            <accelerator key="F4" signal="activate" modifiers="GDK_SHIFT_MASK | GDK_MOD1_MASK"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_export_selected">
+                            <property name="name">log_export_selected</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Export _selected</property>
+                            <property name="use-underline">True</property>
+                            <accelerator key="F4" signal="activate" modifiers="GDK_SHIFT_MASK | GDK_CONTROL_MASK"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkSeparatorMenuItem" id="separator25">
+                            <property name="name">separator25</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_print">
+                            <property name="name">log_print</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Print</property>
+                            <property name="use-underline">True</property>
+                            <accelerator key="F4" signal="activate" modifiers="GDK_SHIFT_MASK"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_print_report">
+                            <property name="name">log_print_report</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Print _report</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="log_edit">
+                    <property name="name">log_edit</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">_Edit</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="log_edit_menu">
+                        <property name="name">log_edit_menu</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="log_add_entry">
+                            <property name="name">log_add_entry</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Add new entry</property>
+                            <property name="use-underline">True</property>
+                            <accelerator key="l" signal="activate" modifiers="GDK_CONTROL_MASK"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_modify">
+                            <property name="name">log_modify</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Modify selected</property>
+                            <property name="use-underline">True</property>
+                            <accelerator key="KP_Insert" signal="activate"/>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_delete">
+                            <property name="name">log_delete</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">D_elete selected</property>
+                            <property name="use-underline">True</property>
+                            <accelerator key="KP_Delete" signal="activate"/>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="log_sort">
+                    <property name="name">log_sort</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">_Sort</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="log_sort_menu">
+                        <property name="name">log_sort_menu</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_date">
+                            <property name="name">log_date</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Date</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_time">
+                            <property name="name">log_time</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Time</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_frequency">
+                            <property name="name">log_frequency</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Frequency</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_call">
+                            <property name="name">log_call</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Call</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_station">
+                            <property name="name">log_station</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Station</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_country">
+                            <property name="name">log_country</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Co_untry</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_mode">
+                            <property name="name">log_mode</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Mode</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_sinpo">
+                            <property name="name">log_sinpo</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">S_INPO</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="log_original_order">
+                            <property name="name">log_original_order</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Original order</property>
+                            <property name="use-underline">True</property>
+                            <property name="active">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">radiomenuitem1</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="log_format">
+                    <property name="name">log_format</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">F_ormat</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu" id="log_format_menu">
+                        <property name="name">log_format_menu</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="log_export_format">
+                            <property name="name">log_export_format</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Export...</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="log_report_format">
+                            <property name="name">log_report_format</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Report...</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolbar" id="toolbar12">
+                <property name="name">toolbar12</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="toolbar-style">icons</property>
+                <property name="icon_size">2</property>
+                <child>
+                  <object class="GtkToolButton" id="LogNewBtn">
+                    <property name="name">LogNewBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">New log file</property>
+                    <property name="label" translatable="yes">New</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">LogNewImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolButton" id="LogOpenBtn">
+                    <property name="name">LogOpenBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Open log file</property>
+                    <property name="label" translatable="yes">Open</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">LogOpenImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolButton" id="LogSaveBtn">
+                    <property name="name">LogSaveBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Save log file</property>
+                    <property name="label" translatable="yes">Save</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">LogSaveImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolButton" id="LogExportBtn">
+                    <property name="name">LogExportBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Export selected entries</property>
+                    <property name="label" translatable="yes">Export</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">LogExportImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolButton" id="LogPrintBtn">
+                    <property name="name">LogPrintBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Print log entries</property>
+                    <property name="label" translatable="yes">Print</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">LogPrintImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkSeparatorToolItem" id="vseparator20">
+                    <property name="name">vseparator20</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolButton" id="LogDownBtn">
+                    <property name="name">LogDownBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Tune previous entry</property>
+                    <property name="label" translatable="yes">Prev</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">LogDownImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolButton" id="LogUpBtn">
+                    <property name="name">LogUpBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Tune next entry</property>
+                    <property name="label" translatable="yes">Next</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">LogUpImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparator" id="hseparator6">
+                <property name="name">hseparator6</property>
+                <property name="height-request">5</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkPaned" id="vpaned1">
+                <property name="name">vpaned1</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="orientation">vertical</property>
+                <property name="position">198</property>
+                <property name="position-set">True</property>
+                <property name="wide-handle">True</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="scrolledwindow20">
+                    <property name="name">scrolledwindow20</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="shadow-type">in</property>
+                    <child>
+                      <object class="GtkTreeView" id="LogList">
+                        <property name="name">LogList</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="model">liststore1</property>
+                        <child internal-child="selection">
+                          <object class="GtkTreeSelection" id="LogListSelection"/>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logdate_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">80</property>
+                            <property name="title" translatable="yes">Date</property>
+                            <property name="clickable">True</property>
+                            <property name="alignment">0.5</property>
+                            <property name="sort-column-id">0</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logdateRenderer"/>
+                              <attributes>
+                                <attribute name="text">0</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logtime_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">60</property>
+                            <property name="title" translatable="yes">Time</property>
+                            <property name="clickable">True</property>
+                            <property name="alignment">0.5</property>
+                            <property name="sort-column-id">1</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logtimeRenderer"/>
+                              <attributes>
+                                <attribute name="text">1</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logfreq_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">100</property>
+                            <property name="title" translatable="yes">Freq.</property>
+                            <property name="clickable">True</property>
+                            <property name="alignment">1</property>
+                            <property name="sort-column-id">2</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logfrequencyRenderer"/>
+                              <attributes>
+                                <attribute name="text">2</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logcall_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">60</property>
+                            <property name="title" translatable="yes">Call</property>
+                            <property name="clickable">True</property>
+                            <property name="sort-column-id">3</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logcallRenderer"/>
+                              <attributes>
+                                <attribute name="text">3</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logstation_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">160</property>
+                            <property name="title" translatable="yes">Station name</property>
+                            <property name="clickable">True</property>
+                            <property name="sort-column-id">4</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logstationRenderer"/>
+                              <attributes>
+                                <attribute name="text">4</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logcountry_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">95</property>
+                            <property name="title" translatable="yes">Country</property>
+                            <property name="clickable">True</property>
+                            <property name="sort-column-id">5</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logcountryRenderer"/>
+                              <attributes>
+                                <attribute name="text">5</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logmode_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">60</property>
+                            <property name="title" translatable="yes">Mode</property>
+                            <property name="clickable">True</property>
+                            <property name="alignment">0.5</property>
+                            <property name="sort-column-id">6</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logmodeRenderer"/>
+                              <attributes>
+                                <attribute name="text">6</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="logsinpo_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">60</property>
+                            <property name="title" translatable="yes">SINPO</property>
+                            <property name="clickable">True</property>
+                            <property name="alignment">0.5</property>
+                            <property name="sort-column-id">7</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="logsinpoRenderer"/>
+                              <attributes>
+                                <attribute name="text">7</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="lognotes_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">100</property>
+                            <property name="title" translatable="yes">Notes</property>
+                            <property name="clickable">True</property>
+                            <property name="sort-column-id">8</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="lognotesRenderer"/>
+                              <attributes>
+                                <attribute name="text">8</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="resize">True</property>
+                    <property name="shrink">False</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="vbox12">
+                    <property name="name">vbox12</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkFixed" id="LogEntryArea">
+                        <property name="name">LogEntryArea</property>
+                        <property name="height-request">150</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkLabel" id="LogDateLbl">
+                            <property name="name">LogDateLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="halign">start</property>
+                            <property name="valign">start</property>
+                            <property name="label" translatable="yes">Date:</property>
+                          </object>
+                          <packing>
+                            <property name="x">15</property>
+                            <property name="y">11</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogDateEntry">
+                            <property name="name">LogDateEntry</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="halign">start</property>
+                            <property name="valign">start</property>
+                            <property name="width-chars">10</property>
+                            <property name="xalign">0.5</property>
+                          </object>
+                          <packing>
+                            <property name="x">60</property>
+                            <property name="y">5</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogTimeLbl">
+                            <property name="name">LogTimeLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Time:</property>
+                          </object>
+                          <packing>
+                            <property name="x">178</property>
+                            <property name="y">11</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogTimeEntry">
+                            <property name="name">LogTimeEntry</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="width-chars">5</property>
+                            <property name="xalign">0.5</property>
+                          </object>
+                          <packing>
+                            <property name="x">225</property>
+                            <property name="y">5</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogFreqLbl">
+                            <property name="name">LogFreqLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Frequency:</property>
+                          </object>
+                          <packing>
+                            <property name="x">303</property>
+                            <property name="y">11</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogFreqEntry">
+                            <property name="name">LogFreqEntry</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="width-chars">19</property>
+                            <property name="xalign">1</property>
+                            <property name="input-purpose">number</property>
+                          </object>
+                          <packing>
+                            <property name="x">383</property>
+                            <property name="y">5</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkRadioButton" id="LogkHzBtn">
+                            <property name="label" translatable="yes">kHz</property>
+                            <property name="name">LogkHzBtn</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">False</property>
+                            <property name="active">True</property>
+                            <property name="draw-indicator">True</property>
+                          </object>
+                          <packing>
+                            <property name="x">556</property>
+                            <property name="y">11</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkRadioButton" id="LogMHzBtn">
+                            <property name="label" translatable="yes">MHz</property>
+                            <property name="name">LogMHzBtn</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">False</property>
+                            <property name="draw-indicator">True</property>
+                            <property name="group">LogkHzBtn</property>
+                          </object>
+                          <packing>
+                            <property name="x">612</property>
+                            <property name="y">11</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogCallLbl">
+                            <property name="name">LogCallLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Call:</property>
+                          </object>
+                          <packing>
+                            <property name="x">15</property>
+                            <property name="y">50</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogCallEntry">
+                            <property name="name">LogCallEntry</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="width-chars">10</property>
+                          </object>
+                          <packing>
+                            <property name="x">54</property>
+                            <property name="y">45</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogStatLbl">
+                            <property name="name">LogStatLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Station:</property>
+                          </object>
+                          <packing>
+                            <property name="x">172</property>
+                            <property name="y">50</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogStatEntry">
+                            <property name="name">LogStatEntry</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="width-chars">20</property>
+                          </object>
+                          <packing>
+                            <property name="x">231</property>
+                            <property name="y">45</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogCountLbl">
+                            <property name="name">LogCountLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Country:</property>
+                          </object>
+                          <packing>
+                            <property name="x">429</property>
+                            <property name="y">50</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogCounEntry">
+                            <property name="name">LogCountLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="width-chars">20</property>
+                          </object>
+                          <packing>
+                            <property name="x">493</property>
+                            <property name="y">45</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogModeLbl">
+                            <property name="name">LogModeLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Mode:</property>
+                          </object>
+                          <packing>
+                            <property name="x">15</property>
+                            <property name="y">90</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogModeEntry">
+                            <property name="name">LogModeEntry</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="width-chars">8</property>
+                          </object>
+                          <packing>
+                            <property name="x">65</property>
+                            <property name="y">85</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogSINPOLbl">
+                            <property name="name">LogSINPOLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">SINPO:</property>
+                          </object>
+                          <packing>
+                            <property name="x">167</property>
+                            <property name="y">90</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="LogSINPOEntry">
+                            <property name="name">LogSINPOEntry</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="width-chars">5</property>
+                          </object>
+                          <packing>
+                            <property name="x">221</property>
+                            <property name="y">85</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="LogNotesLbl">
+                            <property name="name">LogNotesLbl</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Notes:</property>
+                          </object>
+                          <packing>
+                            <property name="x">15</property>
+                            <property name="y">130</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="LogClearBtn">
+                            <property name="label" translatable="yes">Clear</property>
+                            <property name="name">LogClearBtn</property>
+                            <property name="width-request">-1</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="image">LogClearImg</property>
+                          </object>
+                          <packing>
+                            <property name="x">334</property>
+                            <property name="y">85</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="LogAddBtn">
+                            <property name="label" translatable="yes">Add</property>
+                            <property name="name">LogAddBtn</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="image">LogAddImg</property>
+                          </object>
+                          <packing>
+                            <property name="x">417</property>
+                            <property name="y">85</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="LogUpdateBtn">
+                            <property name="label" translatable="yes">Modify</property>
+                            <property name="name">LogUpdateBtn</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="image">LogUpdateImg</property>
+                          </object>
+                          <packing>
+                            <property name="x">491</property>
+                            <property name="y">85</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="LogDeleteBtn">
+                            <property name="label" translatable="yes">Delete</property>
+                            <property name="name">LogDeleteBtn</property>
+                            <property name="height-request">21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">True</property>
+                            <property name="image">LogDeleteImg</property>
+                          </object>
+                          <packing>
+                            <property name="x">584</property>
+                            <property name="y">85</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkScrolledWindow" id="scrolledwindow21">
+                        <property name="name">scrolledwindow21</property>
+                        <property name="height-request">90</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="shadow-type">in</property>
+                        <child>
+                          <object class="GtkTextView" id="LogText">
+                            <property name="name">LogText</property>
+                            <property name="height-request">50</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="can-default">True</property>
+                            <property name="wrap-mode">word</property>
+                            <property name="buffer">textbuffer1</property>
+                            <property name="monospace">True</property>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="resize">True</property>
+                    <property name="shrink">True</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

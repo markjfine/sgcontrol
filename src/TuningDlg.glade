@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 
+
+Copyright (C) Copyright (c) 2004, 2005, 2025  Mark J. Fine
+
+This file is part of Smart Gnome Control.
+
+Smart Gnome Control is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+Smart Gnome Control is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Smart Gnome Control.  If not, see <http://www.gnu.org/licenses/>.
+
+Author: Mark J. Fine
+
+-->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkImage" id="BlueImg">
+    <property name="name">BlueImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/blue.svg</property>
+  </object>
+  <object class="GtkImage" id="DBCloseImg">
+    <property name="name">DBCloseImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/close.svg</property>
+  </object>
+  <object class="GtkImage" id="FreqTimeFilterImg">
+    <property name="name">FreqTimeFilterImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/timefilt.svg</property>
+  </object>
+  <object class="GtkImage" id="GrayImg">
+    <property name="name">GrayImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/gray.svg</property>
+  </object>
+  <object class="GtkImage" id="GreenImg">
+    <property name="name">GreenImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/green.svg</property>
+  </object>
+  <object class="GtkImage" id="OpenDBImg">
+    <property name="name">OpenDBImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/open.svg</property>
+  </object>
+  <object class="GtkImage" id="OrangeImg">
+    <property name="name">OrangeImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/orange.svg</property>
+  </object>
+  <object class="GtkImage" id="PurpleImg">
+    <property name="name">PurpleImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/purple.svg</property>
+  </object>
+  <object class="GtkImage" id="RedImg">
+    <property name="name">RedImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/red.svg</property>
+  </object>
+  <object class="GtkImage" id="RefreshImg">
+    <property name="name">RefreshImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/refresh.svg</property>
+  </object>
+  <object class="GtkImage" id="StatTimeFilterImg">
+    <property name="name">StatTimeFilterImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/timefilt.svg</property>
+  </object>
+  <object class="GtkImage" id="UpdateDBImg">
+    <property name="name">UpdateDBImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/web.svg</property>
+  </object>
+  <object class="GtkImage" id="YellowImg">
+    <property name="name">YellowImg</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/yellow.svg</property>
+  </object>
+  <object class="GtkEntryBuffer" id="entrybuffer1"/>
+  <object class="GtkRadioMenuItem" id="filteritems1">
+    <property name="name">filteritems1</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="draw-as-radio">True</property>
+  </object>
+  <object class="GtkListStore" id="liststore10">
+    <columns>
+      <!-- column-name Frequency -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name From -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name To -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Days -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Language -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Target -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Country -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Station -->
+      <column type="GtkCellRendererMode"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="liststore7">
+    <columns>
+      <!-- column-name FilterDataList -->
+      <column type="GtkCellRendererMode"/>
+    </columns>
+  </object>
+  <object class="GtkEntryCompletion" id="entrycompletion1">
+    <property name="model">liststore7</property>
+    <property name="minimum-key-length">3</property>
+    <property name="text-column">0</property>
+    <property name="inline-completion">True</property>
+    <property name="popup-completion">False</property>
+    <property name="popup-set-width">False</property>
+    <property name="popup-single-match">False</property>
+    <property name="inline-selection">True</property>
+  </object>
+  <object class="GtkListStore" id="liststore9">
+    <columns>
+      <!-- column-name Frequency -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name From -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name To -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Days -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Language -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Target -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Country -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Station -->
+      <column type="GtkCellRendererMode"/>
+    </columns>
+  </object>
+  <object class="GtkTreeStore" id="treestore8">
+    <columns>
+      <!-- column-name Types -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Stations -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Weight -->
+      <column type="GtkCellRendererMode"/>
+    </columns>
+  </object>
+  <object class="GtkDialog" id="TuningDlg">
+    <property name="name">TuningDlg</property>
+    <property name="width-request">1100</property>
+    <property name="height-request">718</property>
+    <property name="can-focus">True</property>
+    <property name="title" translatable="yes">Tuning Database</property>
+    <property name="window-position">center-on-parent</property>
+    <property name="destroy-with-parent">True</property>
+    <property name="type-hint">dialog</property>
+    <property name="deletable">False</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog_vbox3">
+        <property name="name">dialog_vbox3</property>
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox" id="dialog_action_area3">
+            <property name="name">dialog_action_area3</property>
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+            <child>
+              <object class="GtkButton" id="DBCloseBtn">
+                <property name="label" translatable="yes">Close</property>
+                <property name="name">DBCloseBtn</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="can-default">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">DBCloseImg</property>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="vbox4">
+            <property name="name">vbox4</property>
+            <property name="width-request">1096</property>
+            <property name="height-request">678</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkMenuBar" id="menubar2">
+                <property name="name">menubar2</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkMenuItem" id="file2">
+                    <property name="name">file2</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">_File</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="open_database2">
+                            <property name="name">open_database2</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Open database...</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="save_database2">
+                            <property name="name">save_database2</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Save database</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="save_database_as2">
+                            <property name="name">save_database_as2</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Save database _as...</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="update_database2">
+                            <property name="name">update_database2</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Database _updates...</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="edit2">
+                    <property name="name">edit2</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">_Edit</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="mark3">
+                            <property name="name">mark3</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Mark</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkMenuItem" id="delete2">
+                            <property name="name">delete2</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Delete</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="view2">
+                    <property name="name">view2</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">_View</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkMenuItem" id="refresh1">
+                            <property name="name">refresh1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Refresh</property>
+                            <property name="use-underline">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkMenuItem" id="filter1">
+                    <property name="name">filter1</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">F_ilter</property>
+                    <property name="use-underline">True</property>
+                    <child type="submenu">
+                      <object class="GtkMenu">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="unfiltered1">
+                            <property name="name">unfiltered1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Unfiltered</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">filteritems1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="languagefilt1">
+                            <property name="name">languagefilt1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Language</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">filteritems1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="countryfilt1">
+                            <property name="name">countryfilt1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Country</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">filteritems1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="regionfilt1">
+                            <property name="name">regionfilt1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Region</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">filteritems1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkRadioMenuItem" id="targetfilt1">
+                            <property name="name">targetfilt1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Target</property>
+                            <property name="use-underline">True</property>
+                            <property name="draw-as-radio">True</property>
+                            <property name="group">filteritems1</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkSeparatorMenuItem" id="separator21">
+                            <property name="name">separator21</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkCheckMenuItem" id="freqtimefilt1">
+                            <property name="name">freqtimefilt1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Frequency time</property>
+                            <property name="use-underline">True</property>
+                            <property name="active">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkCheckMenuItem" id="stattimefilt1">
+                            <property name="name">stattimefilt1</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">_Station time</property>
+                            <property name="use-underline">True</property>
+                            <property name="active">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkToolbar" id="toolbar4">
+                <property name="name">toolbar4</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="toolbar-style">icons</property>
+                <property name="icon_size">2</property>
+                <child>
+                  <object class="GtkToolButton" id="OpenDBBtn">
+                    <property name="name">OpenDBBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Open database</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">OpenDBImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkToolButton" id="UpdateDBBtn">
+                    <property name="name">UpdateDBBtn</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="tooltip-text" translatable="yes">Check for database updates</property>
+                    <property name="use-underline">True</property>
+                    <property name="icon-widget">UpdateDBImg</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="homogeneous">True</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparator" id="hseparator4">
+                <property name="name">hseparator4</property>
+                <property name="height-request">5</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="hbox5">
+                <property name="name">hbox5</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkBox" id="StationsBox">
+                    <property name="name">StationsBox</property>
+                    <property name="width-request">164</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="orientation">vertical</property>
+                    <child>
+                      <object class="GtkBox" id="StationsFilterBox">
+                        <property name="name">StationsFilterBox</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <child>
+                          <object class="GtkComboBoxText" id="FilterData">
+                            <property name="name">FilterData</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="active">0</property>
+                            <items>
+                              <item id="0" translatable="yes">Unfiltered</item>
+                              <item id="1" translatable="yes">Language</item>
+                              <item id="2" translatable="yes">Country</item>
+                              <item id="3" translatable="yes">Region</item>
+                              <item id="4" translatable="yes">Target</item>
+                            </items>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkComboBox" id="FilterDataBox">
+                            <property name="name">FilterDataBox</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="tooltip-text" translatable="yes">Select to change filter based on Language, Country, Region, or Target</property>
+                            <property name="model">liststore7</property>
+                            <property name="row-span-column">0</property>
+                            <property name="column-span-column">0</property>
+                            <property name="has-entry">True</property>
+                            <property name="entry-text-column">0</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="filtertypeRenderer"/>
+                            </child>
+                            <child internal-child="entry">
+                              <object class="GtkEntry" id="FilterDataEntry">
+                                <property name="name">FilterDataEntry</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="placeholder-text" translatable="yes">Set filter</property>
+                                <property name="completion">entrycompletion1</property>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkScrolledWindow" id="scrolledwindow17">
+                        <property name="name">scrolledwindow17</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="shadow-type">in</property>
+                        <child>
+                          <object class="GtkTreeView" id="StationsList">
+                            <property name="name">StationsList</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="tooltip-text" translatable="yes">Click to display current broadcasts in the Station View</property>
+                            <property name="model">treestore8</property>
+                            <property name="headers-visible">False</property>
+                            <property name="headers-clickable">False</property>
+                            <property name="enable-search">False</property>
+                            <property name="search-column">0</property>
+                            <child internal-child="selection">
+                              <object class="GtkTreeSelection" id="StationsListSelection"/>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="icon_col">
+                                <property name="sizing">fixed</property>
+                                <property name="title" translatable="yes">StationType</property>
+                                <property name="sort-column-id">0</property>
+                                <child>
+                                  <object class="GtkCellRendererPixbuf" id="iconRenderer"/>
+                                  <attributes>
+                                    <attribute name="pixbuf">0</attribute>
+                                  </attributes>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkTreeViewColumn" id="stationslist_col">
+                                <property name="sizing">fixed</property>
+                                <property name="title" translatable="yes">Available Stations</property>
+                                <property name="sort-column-id">1</property>
+                                <child>
+                                  <object class="GtkCellRendererText" id="stationslistRenderer"/>
+                                  <attributes>
+                                    <attribute name="text">1</attribute>
+                                    <attribute name="weight">2</attribute>
+                                  </attributes>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkBox" id="FrequenciesBox">
+                    <property name="name">FrequenciesBox</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkSeparator" id="TuneSeparator">
+                        <property name="name">TuneSeparator</property>
+                        <property name="width-request">5</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="fill">True</property>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkBox" id="FrequenciesDataBox">
+                        <property name="name">FrequenciesDataBox</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkBox" id="SearchBox">
+                            <property name="name">SearchBox</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <child>
+                              <object class="GtkEntry" id="SearchEntry">
+                                <property name="name">SearchEntry</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="tooltip-text" translatable="yes">Enter a station/frequency to display parallel frequencies/co-channel stations below</property>
+                                <property name="primary-icon-name">edit-find-symbolic</property>
+                                <property name="primary-icon-activatable">False</property>
+                                <property name="primary-icon-sensitive">False</property>
+                                <property name="placeholder-text" translatable="yes">Search Frequency or Station</property>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="RefreshBtn">
+                                <property name="name">RefreshBtn</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="receives-default">True</property>
+                                <property name="tooltip-text" translatable="yes">Click to refresh all active queries</property>
+                                <property name="image">RefreshImg</property>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">True</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox" id="FreqViewBox">
+                            <property name="name">FreqViewBox</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <object class="GtkBox" id="FreqHeaderBox">
+                                <property name="name">FreqHeaderBox</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <child>
+                                  <object class="GtkLabel" id="FreqViewLbl">
+                                    <property name="name">FreqViewLbl</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="label" translatable="yes">Frequency View</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">True</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkToggleButton" id="FreqTimeFilterBtn">
+                                    <property name="name">FreqTimeFilterBtn</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">True</property>
+                                    <property name="tooltip-text" translatable="yes">Click to filter/unfilter according to current time</property>
+                                    <property name="image">FreqTimeFilterImg</property>
+                                    <property name="active">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkScrolledWindow" id="scrolledwindow9">
+                                <property name="name">scrolledwindow9</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="shadow-type">in</property>
+                                <child>
+                                  <object class="GtkTreeView" id="FreqList">
+                                    <property name="name">FreqList</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="tooltip-text" translatable="yes">Click to show parallel frequencies below</property>
+                                    <property name="model">liststore9</property>
+                                    <property name="fixed-height-mode">True</property>
+                                    <child internal-child="selection">
+                                      <object class="GtkTreeSelection" id="FreqListSelection"/>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="freq_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">100</property>
+                                        <property name="title" translatable="yes">Frequency</property>
+                                        <property name="clickable">True</property>
+                                        <property name="alignment">1</property>
+                                        <property name="sort-column-id">0</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="freqRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">0</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="from_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">40</property>
+                                        <property name="title" translatable="yes">From</property>
+                                        <property name="clickable">True</property>
+                                        <property name="alignment">0.5</property>
+                                        <property name="sort-column-id">1</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="fromRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">1</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="to_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">40</property>
+                                        <property name="title" translatable="yes">To</property>
+                                        <property name="clickable">True</property>
+                                        <property name="alignment">0.5</property>
+                                        <property name="sort-column-id">2</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="toRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">2</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="days_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">50</property>
+                                        <property name="title" translatable="yes">Days</property>
+                                        <property name="clickable">True</property>
+                                        <property name="alignment">0.5</property>
+                                        <property name="sort-column-id">3</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="daysRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">3</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="language_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">100</property>
+                                        <property name="title" translatable="yes">Language</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">4</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="languageRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">4</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="tgt_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">100</property>
+                                        <property name="title" translatable="yes">Target</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">5</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="tgtRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">5</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="country_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">164</property>
+                                        <property name="title" translatable="yes">Country</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">6</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="countryRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">6</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="station_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">164</property>
+                                        <property name="title" translatable="yes">Station</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">7</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="stationRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">7</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkBox" id="StatViewBox">
+                            <property name="name">StatViewBox</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="orientation">vertical</property>
+                            <child>
+                              <object class="GtkBox" id="StatHeaderBox">
+                                <property name="name">StatHeaderBox</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">False</property>
+                                <child>
+                                  <object class="GtkLabel" id="StatViewLbl">
+                                    <property name="name">StatViewLbl</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">False</property>
+                                    <property name="label" translatable="yes">Station View</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">True</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkToggleButton" id="StatTimeFilterBtn">
+                                    <property name="name">StatTimeFilterBtn</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="receives-default">True</property>
+                                    <property name="tooltip-text" translatable="yes">Click to filter/unfilter according to current time</property>
+                                    <property name="image">StatTimeFilterImg</property>
+                                    <property name="active">True</property>
+                                  </object>
+                                  <packing>
+                                    <property name="expand">False</property>
+                                    <property name="fill">True</property>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">True</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkScrolledWindow" id="scrolledwindow10">
+                                <property name="name">scrolledwindow10</property>
+                                <property name="visible">True</property>
+                                <property name="can-focus">True</property>
+                                <property name="shadow-type">in</property>
+                                <child>
+                                  <object class="GtkTreeView" id="StatList">
+                                    <property name="name">StatList</property>
+                                    <property name="visible">True</property>
+                                    <property name="can-focus">True</property>
+                                    <property name="tooltip-text" translatable="yes">Click to show co-channel broadcasts above</property>
+                                    <property name="model">liststore10</property>
+                                    <property name="fixed-height-mode">True</property>
+                                    <child internal-child="selection">
+                                      <object class="GtkTreeSelection" id="StatListSelection"/>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="freq_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">100</property>
+                                        <property name="title" translatable="yes">Frequency</property>
+                                        <property name="clickable">True</property>
+                                        <property name="alignment">1</property>
+                                        <property name="sort-column-id">0</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="freqRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">0</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="from_col2">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">40</property>
+                                        <property name="title" translatable="yes">From</property>
+                                        <property name="clickable">True</property>
+                                        <property name="alignment">0.5</property>
+                                        <property name="sort-column-id">1</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="fromRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">1</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="to_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">40</property>
+                                        <property name="title" translatable="yes">To</property>
+                                        <property name="clickable">True</property>
+                                        <property name="alignment">0.5</property>
+                                        <property name="sort-column-id">2</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="toRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">2</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="days_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">50</property>
+                                        <property name="title" translatable="yes">Days</property>
+                                        <property name="alignment">0.5</property>
+                                        <property name="sort-column-id">3</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="daysRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">3</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="language_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">100</property>
+                                        <property name="title" translatable="yes">Language</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">4</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="languageRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">4</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="tgt_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">100</property>
+                                        <property name="title" translatable="yes">Target</property>
+                                        <property name="sort-column-id">5</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="tgtRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">5</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="country_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">164</property>
+                                        <property name="title" translatable="yes">Country</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">6</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="countryRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">6</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="station_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">164</property>
+                                        <property name="title" translatable="yes">Station</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">7</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="stationRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">7</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                  </object>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="expand">True</property>
+                                <property name="fill">True</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="expand">True</property>
+                            <property name="fill">True</property>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="expand">True</property>
+                        <property name="fill">True</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">True</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">True</property>
+                <property name="fill">True</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
