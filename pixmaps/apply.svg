@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="16px"
+   viewBox="0 0 16 16"
+   width="16px"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="apply.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="80.5625"
+     inkscape:cx="8"
+     inkscape:cy="8"
+     inkscape:window-width="2560"
+     inkscape:window-height="1534"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     d="m 11.780284,4.6849815 c 0.175782,-0.199218 0.261719,-0.460937 0.246094,-0.726562 -0.01953,-0.265625 -0.140625,-0.511719 -0.339844,-0.6875 -0.199218,-0.1757821 -0.460937,-0.2617191 -0.726562,-0.2460941 -0.265625,0.019531 -0.511719,0.1406251 -0.6875,0.3398441 L 3.9755961,10.559981 1.7334081,8.3177945 c -0.390625,-0.390625 -1.02343706,-0.390625 -1.41406207,0 -0.1875,0.1875 -0.292969,0.441406 -0.292969,0.707031 0,0.265625 0.105469,0.519531 0.292969,0.707031 L 3.3193461,12.731856 c 0.195312,0.195313 0.464843,0.304688 0.738281,0.292969 0.277344,-0.0078 0.539062,-0.132812 0.722656,-0.339844 z m 0,0"
+     fill="currentColor"
+     id="path1" />
+  <path
+     d="m 15.7221,4.3555252 c 0.175782,-0.199218 0.261719,-0.460937 0.246094,-0.726562 -0.01953,-0.265625 -0.140625,-0.511719 -0.339844,-0.6875 -0.199218,-0.175782 -0.460937,-0.261719 -0.726562,-0.246094 -0.265625,0.019531 -0.511719,0.140625 -0.6875,0.339844 L 7.9174114,10.230525 5.6752234,7.9883382 c -0.390625,-0.390625 -1.023437,-0.390625 -1.414062,0 -0.1875,0.1875 -0.292969,0.441406 -0.292969,0.707031 0,0.265625 0.105469,0.519531 0.292969,0.707031 l 3,2.9999998 c 0.195312,0.195313 0.464843,0.304688 0.738281,0.292969 0.277344,-0.0078 0.539062,-0.132812 0.722656,-0.339844 z m 0,0"
+     fill="currentColor"
+     id="path1-5" />
+</svg>
