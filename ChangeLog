@@ -1,11 +1,11 @@
 
-Release v0.5 - 25 Jun 2025 - Follow-up Release (yeah, long time coming)
+Release v0.5 - 24 Jun 2025 - Follow-up Release (yeah, long time coming)
 
-2025/06/xx 00:00:00 Completely updated and rewritten for Gtk3+.
-2025/06/xx 00:00:00 Completely revised iconology to conform to Adwaita.
-2025/06/xx 00:00:00 Completely revised database section to work solely with Eibi.
+2025/06/24 00:00:00 Completely updated and rewritten for Gtk3+.
+2025/06/24 00:00:00 Completely revised iconology to conform to Adwaita.
+2025/06/24 00:00:00 Completely revised database section to work solely with Eibi.
                     Revised with condensed look and feel to operate like Frequency Browser on the Mac.
-2025/06/xx 00:00:00 Completely revised logging section to use an integrated datas entry section.
+2025/06/24 00:00:00 Completely revised logging section to use an integrated datas entry section.
 =============================================================================
 
 Release v0.3 - 01 Jan 2005 - First Beta Release
