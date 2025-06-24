@@ -1,0 +1,1888 @@
+"T" Channel Marker;Utility Fixed/Land
+1 Radio 21;Broadcast
+1AFMSOG Chief AF MARS;Utility Fixed/Land
+3AC Radio Monaco;Utility Marine
+3BB Mauritius Radio;Utility Marine
+3DP Suva Radio;Utility Marine
+3SD Beijing Meteo Fax;Utility Digital
+3VT Tunis Radio;Utility Fixed/Land
+3VW La Goulette Radio;Utility Fixed/Land
+4KZ Innisfail;Utility Fixed/Land
+4OB Bar Radio;Utility Fixed/Land
+4XZ Israeli Navy Haifa;Utility Marine
+5YE Nairobi Meteo Fax;Utility Digital
+6WW Dakar STANAG;Utility Digital
+6WW French Navy STANAG;Utility Digital
+6WW STANAG;Utility Digital
+7TA Alger Radio;Utility Fixed/Land
+7TB Annaba Radio;Utility Fixed/Land
+7TO Oran Radio;Utility Fixed/Land
+9KK Kuwait Radio;Utility Fixed/Land
+9MB Malaysia Navy Lumut;Utility Marine
+9VF Kyodo News Agcy Fax;Utility Digital
+9YL North Post Radio;Utility Fixed/Land
+A3A Nukualofa Radio;Utility Marine
+ABC Wantok;Broadcast
+AD149 AM (Pirate);Broadcast
+AF Transport Davlenie;Utility Aircraft
+AF Transport Kasta;Utility Aircraft
+AF Transport Klarnetist;Utility Aircraft
+AF Transport Korsar;Utility Aircraft
+AF Transport Magnetron;Utility Aircraft
+AF Transport Polis;Utility Aircraft
+AF Transport Proselok;Utility Aircraft
+AIR Ahmedabad;Broadcast
+AIR Aizawl;Broadcast
+AIR Akashvani Ext.Sce;Broadcast
+AIR Bhopal;Broadcast
+AIR Chennai;Broadcast
+AIR DIGITAL;Broadcast Digital
+AIR Delhi;Broadcast
+AIR Delhi FM Gold;Broadcast
+AIR Delhi Uttarakhand;Broadcast
+AIR Gangtok;Broadcast
+AIR Hyderabad;Broadcast
+AIR Jaipur;Broadcast
+AIR Jeypore;Broadcast
+AIR Kurseong;Broadcast
+AIR Leh;Broadcast
+AIR National Channel;Broadcast
+AIR North-East;Broadcast
+AIR Port Blair;Broadcast
+AIR Shillong;Broadcast
+AIR Srinagar;Broadcast
+AIR Suratgarh;Broadcast
+AIR Thiruvananthapuram;Broadcast
+AIR Vividh Bharati;Broadcast
+ALS162 Time Signals;Utility Fixed/Land
+AQP Navy Karachi;Utility Marine
+AQP Pakistan Navy;Utility Marine
+Aberdeen Coastguard;Utility Marine
+Aberdeen Coastguard Wx;Utility Fixed/Land
+Abidjan Radio;Utility Fixed/Land
+Adelaide Radio;Utility Fixed/Land
+Adventist World Radio;Broadcast
+Adygeyskoye Radio;Broadcast
+Afghanistan Int. TV;Broadcast
+Afia Darfur Radio;Broadcast
+Agadir Radio;Utility Fixed/Land
+Agana Guam HFDL (ID16);Utility Digital
+Air Force Bear Net;Utility Aircraft
+Air Horn Channel Marker;Utility Digital
+AktyubinskAero Ambarcik;Utility Aircraft
+Al Muharraq HFDL (ID15);Utility Digital
+Al-Arabiya FM;Broadcast
+Alameda Bible Fellowsh.;Broadcast
+Alarm Channel Marker;Utility Digital
+Albanian Government ALE;Utility Digital
+Albrook HFDL (ID11);Utility Digital
+Alcaravan Radio;Broadcast
+Alcarav·n Radio;Broadcast
+Alcaraván Radio;Broadcast
+Algeria Gendarmerie ALE;Utility Digital
+Algerian Military ALE;Utility Digital
+Algiers Radio;Utility Aircraft
+All India Radio;Broadcast
+All India Radio DIGITAL;Broadcast Digital
+All India Radio Ext.Sce;Broadcast
+All India Radio GOS;Broadcast
+Almaty Aero;Utility Aircraft
+Amateur Radio Today;Broadcast
+Amazon Military ALE;Utility Digital
+Amderma Aero;Utility Aircraft
+American Red Cross ALE;Utility Digital
+Amhara State Radio;Broadcast
+Ancona Radio IPA;Utility Marine
+Angolan Police ALE;Utility Digital
+Annaba Radio;Utility Fixed/Land
+Antanan.Volmet x25,x50;Utility Aircraft
+Antena DX;Broadcast
+Anti-Kurdish Tape;Broadcast
+Apsua Radio;Broadcast
+Apsua Radio Abkhazia;Broadcast
+Apsua Radio Avtoradio;Broadcast
+Arkhangelsk Aero;Utility Aircraft
+Armenian Military Net;Utility Fixed/Land
+Armenian National Radio;Broadcast
+Armor French Ny USB/FSK;Utility Digital
+ArmyAviation SCPTOC ALE;Utility Digital
+Arrecife Radio;Utility Marine
+Ashgabat Aero;Utility Aircraft
+Astana Aero;Utility Aircraft
+AstrakhanAero Serioshka;Utility Aircraft
+Athmeeyayathra (GFA);Broadcast
+Auckland HFDL (ID5);Utility Digital
+Auckland Radio;Utility Aircraft
+Auckland Volmet x20,x50;Utility Aircraft
+Augusta Radio IQA;Utility Marine
+Australia Volmet x00,30;Utility Aircraft
+Australian AirForce ALE;Utility Digital
+Australian Broadc.Co.;Broadcast
+Australian MHFCS ALE;Utility Digital
+Australian Police ALE;Utility Digital
+Austrian Military ALE;Utility Digital
+Azad Kashmir Radio;Broadcast
+Azeri Emergency ALE;Utility Digital
+BAF Beijing Meteo Fax;Utility Digital
+BBC;Broadcast
+BBC DIGITAL;Broadcast Digital
+BBC No Program Loop;Broadcast
+BDF2 Shanghai Fax;Utility Digital
+BMF Taipei Meteo Fax;Utility Digital
+BNR Horizont;Broadcast
+BPC Time Signal;Utility Fixed/Land
+BPL Time Signal;Utility Fixed/Land
+BPM Xian;Utility Fixed/Land
+BSKSA 1;Broadcast
+BSKSA Al-Azm Radio;Broadcast
+BSKSA Holy Quran;Broadcast
+BSKSA Riad;Broadcast
+Bahia Fildes Radio;Utility Fixed/Land
+Baku Aero Sardina;Utility Aircraft
+Ballsmacker Radio;Broadcast
+Bangkok Meterolog.Radio;Utility Marine
+Bangkok Volmet x10,x40;Utility Aircraft
+Bangladesh Betar;Broadcast
+Bangladesh Betar 1kHz;Broadcast
+Bari Radio IPB;Utility Marine
+Baron Channel Marker;Utility Digital
+Barrow HFDL (ID9);Utility Digital
+Basuo Radio;Utility Marine
+Bay Islands Radio;Broadcast
+Beibu Bay Radio;Broadcast
+Beijing Volmet x15,x45;Utility Aircraft
+Belfast Coast Guard;Utility Fixed/Land
+Belfast Coastguard;Utility Marine
+Belgian Navy STANAG;Utility Digital
+Ben Thuy Radio;Utility Fixed/Land
+Best Radio Kahuzi;Broadcast
+Bhutan BS;Broadcast
+Bible Voice;Broadcast
+Bible Voice Dardasha-7;Broadcast
+Bilbao Radio;Utility Fixed/Land
+Birinchi Radio;Broadcast
+Bisan Martis x00,x30;Utility Marine
+Bisan Martis x15,x45;Utility Marine
+Bjřrnřya Radio;Utility Fixed/Land
+Blues Radio Int.;Broadcast
+Bodo Radio;Utility Aircraft
+Boeing Seattle;Utility Aircraft
+Bonneville PowerAdm.ALE;Utility Digital
+Bosnian Emergency ALE;Utility Digital
+Brazilian Army ALE;Utility Digital
+Brazilian Navy;Utility Marine
+Brazilian Navy ALE;Utility Digital
+Brazzaville Radio;Utility Aircraft
+Bremen Rescue Radio;Utility Marine
+Brisbane Radio;Utility Aircraft
+Brother Stair;Broadcast
+Brother Stair DIGITAL;Broadcast Digital
+Bucuresti Aero;Utility Aircraft
+Budapest UniversityTech;Broadcast
+Bulg.Military PROMRCh;Utility Digital
+Bulgaria Diplo;Utility Digital
+Bulgarian National R.;Broadcast
+Burma News Internal.;Broadcast
+Burma News Internat.;Broadcast
+Business Radio Service;Utility Fixed/Land
+CB Channel 01;Utility Fixed/Land
+CB Channel 02;Utility Fixed/Land
+CB Channel 03;Utility Fixed/Land
+CB Channel 04;Utility Fixed/Land
+CB Channel 04 (4x4);Utility Fixed/Land
+CB Channel 05;Utility Fixed/Land
+CB Channel 06;Utility Fixed/Land
+CB Channel 07;Utility Fixed/Land
+CB Channel 08;Utility Fixed/Land
+CB Channel 09;Utility Fixed/Land
+CB Channel 09 (Emergency);Utility Fixed/Land
+CB Channel 10;Utility Fixed/Land
+CB Channel 10 (Regional roads);Utility Fixed/Land
+CB Channel 11;Utility Fixed/Land
+CB Channel 12;Utility Fixed/Land
+CB Channel 13;Utility Fixed/Land
+CB Channel 13 (Marine, RV);Utility Fixed/Land
+CB Channel 14;Utility Fixed/Land
+CB Channel 14 (Walkie talkies);Utility Fixed/Land
+CB Channel 15;Utility Fixed/Land
+CB Channel 16;Utility Fixed/Land
+CB Channel 16 (SSB);Utility Fixed/Land
+CB Channel 17;Utility Fixed/Land
+CB Channel 17 (N/S traffic);Utility Fixed/Land
+CB Channel 18;Utility Fixed/Land
+CB Channel 19;Utility Fixed/Land
+CB Channel 19 (Truckers, E/W traffic);Utility Fixed/Land
+CB Channel 20;Utility Fixed/Land
+CB Channel 21;Utility Fixed/Land
+CB Channel 21 (Regional roads);Utility Fixed/Land
+CB Channel 22;Utility Fixed/Land
+CB Channel 23;Utility Fixed/Land
+CB Channel 24;Utility Fixed/Land
+CB Channel 25;Utility Fixed/Land
+CB Channel 26;Utility Fixed/Land
+CB Channel 27;Utility Fixed/Land
+CB Channel 28;Utility Fixed/Land
+CB Channel 29;Utility Fixed/Land
+CB Channel 30;Utility Fixed/Land
+CB Channel 31;Utility Fixed/Land
+CB Channel 32;Utility Fixed/Land
+CB Channel 33;Utility Fixed/Land
+CB Channel 34;Utility Fixed/Land
+CB Channel 35;Utility Fixed/Land
+CB Channel 36;Utility Fixed/Land
+CB Channel 36 (SSB);Utility Fixed/Land
+CB Channel 37;Utility Fixed/Land
+CB Channel 37 (SSB);Utility Fixed/Land
+CB Channel 38;Utility Fixed/Land
+CB Channel 38 (SSB, LSB);Utility Fixed/Land
+CB Channel 39;Utility Fixed/Land
+CB Channel 39 (SSB);Utility Fixed/Land
+CB Channel 40;Utility Fixed/Land
+CB Channel 40 (SSB);Utility Fixed/Land
+CBA Antofagasta Radio;Utility Marine
+CBF Juan Fernandez R.;Utility Marine
+CBM Magallanes Fax;Utility Digital
+CBM Magallanes Radio;Utility Marine
+CBN Wollaston Radio;Utility Marine
+CBP Puerto Montt Radio;Utility Marine
+CBT Talcahuano Radio;Utility Marine
+CBV Valparaiso;Utility Fixed/Land
+CBV Valparaiso Met Fax;Utility Digital
+CBV Valparaiso Radio;Utility Marine
+CBX Bahia Felix Radio;Utility Marine
+CDNK Radio;Broadcast
+CFH Halifax Meteo Fax;Utility Digital
+CFH Halifax Radio;Utility Digital
+CFH Halifax STANAG;Utility Digital
+CFH Halifax Stanag;Utility Digital
+CFRX Toronto, CFRB 1010;Broadcast
+CFVP Calgary Funny 1060;Broadcast
+CFVP Calgary Funny AM;Broadcast
+CGA984 HF Trading;Utility Digital
+CH Charleston, SC NDB;Utility Digital
+CHLO Brampton, ON;Broadcast
+CHU Ottawa;Utility Fixed/Land
+CJBC Toronto, ON;Broadcast
+CKN Aldergrove STANAG;Utility Digital
+CKZN St John's;Broadcast
+CKZU Vancouver;Broadcast
+CLT Habana Radio;Utility Fixed/Land
+CMI Voice of Wilderness;Broadcast
+CNR 2 China Business R.;Broadcast
+CNR 7 Greater Bay Area;Broadcast
+CNR1 DIGITAL;Broadcast Digital
+CNR5 Cross-Strait Radio;Broadcast
+COCESNA Cenamer Control;Utility Aircraft
+COTHEN ALE;Utility Digital
+CRI Music;Broadcast
+CRI V.o.South China Sea;Broadcast
+CRI/CGTN Radio;Broadcast
+CROSS Corsen Radio;Utility Marine
+CROSS Corsen Radio Wx;Utility Fixed/Land
+CROSS Gris-Nez Radio Wx;Utility Fixed/Land
+CROSS Jobourg Radio;Utility Marine
+CROSS La Garde Radio;Utility Marine
+CROSS La Garde Radio Wx;Utility Fixed/Land
+CROSS Martinique Wx;Utility Fixed/Land
+CROSSRU La Réunion;Utility Fixed/Land
+CTA NATO STANAG;Utility Digital
+CUC-ECDAV DIGITAL Tests;Broadcast Digital
+CWC30 La Paloma Radio;Utility Marine
+CWC34 Punta del Este;Utility Fixed/Land
+CWC36 Rio Branco Radio;Utility Fixed/Land
+CWC39 Montevideo Radio;Utility Fixed/Land
+Ca Mau Radio;Utility Fixed/Land
+Cabo de Gata Radio;Utility Marine
+Cabo la Nao Radio;Utility Marine
+Cagliari Radio IDC;Utility Marine
+Calif.Emergency Sce.ALE;Utility Digital
+Can Tho Radio;Utility Fixed/Land
+Canarias HFDL (ID17);Utility Digital
+Canterbury Mountain R.;Broadcast
+Casablanca Radio;Utility Fixed/Land
+Cayenne Radio;Utility Aircraft
+Ce.North Isl.Mountain.R;Broadcast
+Central Weather Bureau;Utility Fixed/Land
+Centro Radiof.Imbabura;Broadcast
+Ceský Rozhlas Plus;Broadcast
+Channel 292;Broadcast
+Channel Africa;Broadcast
+Channel Marker A;Utility Digital
+Channel Marker C;Utility Digital
+Channel Marker D;Utility Digital
+Channel Marker F;Utility Digital
+Channel Marker G;Utility Digital
+Channel Marker K;Utility Digital
+Channel Marker L;Utility Digital
+Channel Marker M;Utility Digital
+Channel Marker P;Utility Digital
+Channel Marker R;Utility Digital
+Channel Marker S;Utility Digital
+Channel Marker T;Utility Digital
+Channel Marker V;Utility Digital
+Channel Marker W;Utility Digital
+Charleston Radio Int.;Broadcast
+Chelyabinsk Aero;Utility Fixed/Land
+Chelyabinsk Aero Brazka;Utility Aircraft
+Chennai Radio;Utility Aircraft
+Chile Navy ALE;Utility Digital
+China Huayi BC;Broadcast
+China Military ALE;Utility Digital
+China National Radio;Broadcast
+China National Radio 1;Broadcast
+China National Radio 11;Broadcast
+China National Radio 13;Broadcast
+China National Radio 17;Broadcast
+China National Radio 5;Broadcast
+China National Radio 6;Broadcast
+China National Radio 8;Broadcast
+China Radio Int.;Broadcast
+China Radio Int./Ejani;Broadcast
+China Radio Int.DIGITAL;Broadcast Digital
+Chinese Military ALE;Utility Digital
+Chinese Navy ALE;Utility Digital
+Civil Air Patrol;Utility Aircraft
+Civitavecchia Radio IPD;Utility Marine
+Colombian Army ALE;Utility Digital
+Colombian Navy ALE;Utility Digital
+Colombo Radio;Utility Aircraft
+Columbia Coastguard;Utility Marine
+Com.RivadaviaVolmet x30;Utility Aircraft
+Constanta Radio;Utility Fixed/Land
+Contintenal AM, Bahía;Broadcast
+Cordoba Volmet x35;Utility Fixed/Land
+Corps of Engineers ALE;Utility Digital
+Coruńa Radio;Utility Marine
+Croatian NRPD ALE;Utility Digital
+Crotone Radio IPC;Utility Marine
+CruiseEmail;Utility Marine
+Cupid Radio;Broadcast
+Cyprus Radio;Utility Fixed/Land
+CÛrdoba Volmet x25, x35;Utility Fixed/Land
+CÛrdoba Volmet x35;Utility Fixed/Land
+Córdoba Volmet x25, x35;Utility Aircraft
+Córdoba Volmet x25, x45;Utility Aircraft
+D Marker Fazan-37;Utility Digital
+DCF77 Mainflingen;Utility Fixed/Land
+DDH47 DWD Pinneberg RTTY;Utility Digital
+DDH7 DWD Pinneberg RTTY;Utility Digital
+DDH8 DWD Pinneberg RTTY;Utility Digital
+DDH9 DWD Pinneberg RTTY;Utility Digital
+DDK2 DWD Pinneberg RTTY;Utility Digital
+DDK9 DWD Pinneberg RTTY;Utility Digital
+DDP San Juan PR NDB;Utility Digital
+DGzRS MRCC Bremen;Utility Digital
+DHFCS Forest Moor ALE;Utility Digital
+DHJ58 Marine;Utility Marine
+DHJ58 Marine STANAG;Utility Digital
+DHJ58 Marine Stanag;Utility Digital
+DHM91 German Air Force;Utility Aircraft
+DHO38 German Navy;Utility Marine
+DP07 Seefunk;Broadcast
+DRM Test;Broadcast Digital
+DWD 1 Pinneberg RTTY;Utility Digital
+DWD 2 Pinneberg RTTY;Utility Digital
+DWD Pinneberg;Utility Digital
+DWD Pinneberg Met Fax;Utility Digital
+DWD Polarstern Fax/RTTY;Utility Digital
+DZS4 Manila Radio;Utility Fixed/Land
+Da Nang Radio XVT;Utility Fixed/Land
+Dakar Radio;Utility Aircraft
+Dandal Kura;Broadcast
+Danish Military ALE;Utility Digital
+Danish Navy ALE;Utility Digital
+Danmarks Radio;Broadcast
+Darwin Radio;Utility Fixed/Land
+Dashoguz Aero;Utility Aircraft
+Dashoguz/Tashaus Aero;Utility Aircraft
+Delhi Radio;Utility Aircraft
+Denge Mesopotamia;Broadcast
+Dengę Gel;Broadcast
+Dengę Welat;Broadcast
+Deutsche Welle;Broadcast
+Dhaka Radio;Utility Aircraft
+Dimtse Radio Erena;Broadcast
+Dimtse Wegahta Tigray;Broadcast
+Dimtse Woyane;Broadcast
+DimtseTigray MediaHouse;Broadcast
+Doha Radio;Utility Fixed/Land
+Dover Coastguard;Utility Marine
+Dr.Gene Scott;Broadcast
+Dunamis Shortwave;Broadcast
+Dushanbe Aero;Utility Aircraft
+Dutch Military ALE;Utility Digital
+Dutch Navy ALE;Utility Digital
+E Bible Fellowship;Broadcast
+E5R Rarotonga Radio;Utility Fixed/Land
+EAC Chipiona Radio;Utility Fixed/Land
+EAO Palma Radio;Utility Marine
+EBA Navy Madrid STANAG;Utility Digital
+EBC DIGITAL Tests;Broadcast Digital
+EBC Radio;Broadcast
+EFR Teleswitch;Utility Fixed/Land
+ELWA Radio;Broadcast
+EMR Augusta-Emory, GA NDB;Utility Digital
+EQI Abbas Radio;Utility Marine
+Echo of Hope;Broadcast
+Echo of Hope VOH;Broadcast
+Echo of Hope VOH (EBS);Broadcast
+Echo of Unification;Broadcast
+Egyptian ALE;Utility Digital
+Elista Aero Triol;Utility Aircraft
+Emisora Pio XII;Broadcast
+End Times Coming Radio;Broadcast
+Estación 4940;Broadcast
+Ethiopian Broadc.Corp.;Broadcast
+Europa 24;Broadcast
+Europa24;Broadcast
+European Music Radio;Broadcast
+Evang.Missionsgemeinden;Broadcast
+Eye Radio;Broadcast
+Ezeiza Volmet x01;Utility Aircraft
+FAV22 Morse Training;Utility Digital
+FEBA India;Broadcast
+FEBA Pakistan;Broadcast
+FEBA Radio;Broadcast
+FEBA Radio Sama;Broadcast
+FEBC Manila;Broadcast
+FEBC Manila Radio Teos;Broadcast
+FEBC Radio Liangyou;Broadcast
+FEBC Radio Liangyou 1;Broadcast
+FEBC Radio Liangyou 3;Broadcast
+FEBC i-Radio Liangyou;Broadcast
+FEMA Emergency ALE;Utility Digital
+FG Radio;Broadcast
+FJY5 ARQ-E3 192bd/400Hz;Utility Digital
+FRS-Holland;Broadcast
+FT8;Utility Digital
+FUE Brest STANAG;Utility Digital
+FUE French Navy STANAG;Utility Digital
+FUE French Navy USB/FSK;Utility Digital
+FUF French Navy STANAG;Utility Digital
+FUF Martinique STANAG;Utility Digital
+FUF Martinique Stanag;Utility Digital
+FUF STANAG;Utility Digital
+FUG French Navy FSK;Utility Digital
+FUG French Navy STANAG;Utility Digital
+FUG La Regine STANAG;Utility Digital
+FUJ French Navy STANAG;Utility Digital
+FUJ Noumea STANAG;Utility Digital
+FUJ NoumÈa Stanag;Utility Digital
+FUJ Nouméa STANAG;Utility Digital
+FUJ STANAG;Utility Digital
+FUM French Navy STANAG;Utility Digital
+FUM Tahiti Stanag;Utility Digital
+FUO French Navy STANAG;Utility Digital
+FUO French Navy USB/FSK;Utility Digital
+FUO Toulon STANAG;Utility Digital
+FUV Djibouti STANAG;Utility Digital
+FUV Djibouti Stanag;Utility Digital
+FUV French Navy STANAG;Utility Digital
+FUX French Navy STANAG;Utility Digital
+FUX RÈunion Stanag;Utility Digital
+FUX Réunion Stanag;Utility Digital
+FUX STANAG;Utility Digital
+Falkland Fisheries Dept;Utility Fixed/Land
+Falmouth Coastguard;Utility Marine
+Falmouth Coastguard Wx;Utility Marine
+Family Radio;Broadcast
+Fana Broadcasting Corp.;Broadcast
+Fanny French Ny USB/FSK;Utility Digital
+Fed.Aviation Admin. ALE;Utility Digital
+FinDataTrading Stations;Utility Digital
+Finisterre Radio;Utility Marine
+Fish and Wildlife ALE;Utility Digital
+Follow the Bible Min.;Broadcast
+Forest Moor ALE;Utility Digital
+Forest Moor STANAG;Utility Digital
+Fr. Air Force CAPITOLE;Utility Aircraft
+Fr. Air Force E-3F ALE;Utility Digital
+France Inter;Broadcast
+Frecuencia al DÌa;Broadcast
+Frecuencia al Día;Broadcast
+Free North Korea Radio;Broadcast
+Free Radio Minas Gerais;Broadcast
+Free Radio Sce.Holland;Broadcast
+Free Radio da Bahía;Broadcast
+Free Radio do Maranhăo;Broadcast
+French Air Force CIRCUS;Utility Aircraft
+French Air Force E-3F;Utility Aircraft
+French Diplo ALE;Utility Digital
+French Military ALE;Utility Digital
+French Navy ALE;Utility Digital
+From the Isle of Music;Broadcast
+Fu Hsing Bc.Sta.;Broadcast
+Furusato no Kaze;Broadcast
+GBRadio Jazz AM;Broadcast
+GBZ Anthorn;Utility Digital
+GQD Anthorn;Utility Fixed/Land
+GYA Northwood Meteo Fax;Utility Digital
+Gala FM Gold Instr.;Broadcast
+Gander Radio;Utility Aircraft
+Gander Radio A;Utility Aircraft
+Gander Radio B;Utility Aircraft
+Gander Radio C;Utility Aircraft
+Gander Radio F;Utility Aircraft
+Gander Volmet x20,x50;Utility Aircraft
+Gaweylon Tibetan Radio;Broadcast
+Gendarmeria Chile ALE;Utility Digital
+Genova Radio ICB;Utility Marine
+Georgia Borderguard ALE;Utility Digital
+Georgia Coast Guard ALE;Utility Digital
+German Coast Guard ALE;Utility Digital
+German Fed.Police ALE;Utility Digital
+German Red Cross ALE;Utility Digital
+Ghana Navy ALE;Utility Digital
+Gladstone Radio;Utility Fixed/Land
+Gold 15-93;Broadcast
+Gold Instrumentals;Broadcast
+Goose Channel Marker;Utility Digital
+Greek Air Force ALE;Utility Digital
+Guangzhou Volmet x00,30;Utility Aircraft
+Guardia Civil ALE;Utility Digital
+Guardia di Finanza ALE;Utility Digital
+HCJB R.Akhbar Mufriha;Broadcast
+HCJB Voice of Andes;Broadcast
+HEB Bern Radio;Utility Marine
+HIT AM;Broadcast
+HLA Taedok;Utility Fixed/Land
+HLC Incheon Radio;Utility Fixed/Land
+HLE Jeju Radio;Utility Fixed/Land
+HLF Seoul Radio;Utility Marine
+HLG Seoul Radio;Utility Marine
+HLJ Seoul Radio;Utility Marine
+HLK Gangneung Radio;Utility Fixed/Land
+HLL Seoul Meteo;Utility Fixed/Land
+HLL Seoul Meteo Fax;Utility Digital
+HLL Seoul Meteo x00-x05;Utility Fixed/Land
+HLL Seoul Meteo x05-x12;Utility Fixed/Land
+HLL Seoul Meteo x12-x20;Utility Fixed/Land
+HLL Seoul Meteo x20-x30;Utility Fixed/Land
+HLO Seoul Radio;Utility Marine
+HLW Seoul Radio;Utility Marine
+HMA Pyongyang Meteo;Utility Aircraft
+HQT Coats-Harnett, NC;Utility Digital
+HQT Coats-Harnett, NC NDB;Utility Digital
+HSW64 Bangkok Meteo Fax;Utility Digital
+HWU French Navy;Utility Marine
+HZH Jiddah Radio;Utility Fixed/Land
+Habana Radio;Broadcast
+Hai Phong Radio XVG;Utility Marine
+Haikou Radio (x20);Utility Marine
+Hamburger Lokalradio;Broadcast
+Han Sheng V.o.Kuanghua;Broadcast
+Harmony;Broadcast
+Hat Yai HFDL (ID6);Utility Digital
+Hikari FM;Broadcast
+Ho Chi Minh City R.XVS;Utility Fixed/Land
+Hobart Radio Int.;Broadcast
+Holyhead Coastguard;Utility Marine
+Hon Gai Radio;Utility Fixed/Land
+Hong Kong Observatory;Utility Fixed/Land
+Hongkong Volmet x15,x45;Utility Aircraft
+Honolulu Volmet x25,x55;Utility Aircraft
+Hope Radio;Broadcast
+Hope Radio 4;Broadcast
+Hope Radio 5;Broadcast
+Hopen Island Meteo;Utility Fixed/Land
+Hue Radio;Utility Fixed/Land
+Humber Coastguard;Utility Marine
+Humber Coastguard Wx;Utility Marine
+Humpty Doo STANAG;Utility Digital
+Hungarian Military ALE;Utility Digital
+IAP Andenes Radar 27us;Utility Digital
+IAP Juliusruh Radar 27us;Utility Digital
+IAP SauraRadar 7,10,13u;Utility Digital
+IBRA Radio;Broadcast
+IBRA Radio Ibrahim;Broadcast
+IBRA Radio Sama;Broadcast
+IDN Ital.Navy STANAG;Utility Digital
+IDN Ny Napoli STANAG;Utility Digital
+IDR Ny Roma;Utility Marine
+IDR Ny Roma STANAG;Utility Digital
+IL Wilmington, OH NDB;Utility Digital
+IRIB Al-Quds TV;Broadcast
+IRIB Voice of I.R.Iran;Broadcast
+IRIB Voice of Palestine;Broadcast
+IRRS Milano;Broadcast
+IRRS Milano Santec;Broadcast
+IRRS Oromia Nat.Media;Broadcast
+IRiT Weather Radio;Utility Fixed/Land
+Iceland Coast Guard;Utility Marine
+Iceland Radio;Utility Aircraft
+Iceland Radio B;Utility Aircraft
+Iceland Radio C;Utility Aircraft
+Ictimai Radio;Broadcast
+Ifrikya FM;Broadcast
+Illinois Emergency ALE;Utility Digital
+Indy Radio;Broadcast
+Internal Ministry ALE;Utility Digital
+Iran International;Broadcast
+Iraqi Navy ALE;Utility Digital
+Iraqi Security Fcs. ALE;Utility Digital
+Irish Naval Service;Utility Marine
+Irkutsk Volmet x25,x55;Utility Aircraft
+Isewan Martis x00,x30;Utility Marine
+Isewan Martis x15,x45;Utility Marine
+Isla de Pascua Radio;Utility Aircraft
+Island FM 88;Broadcast
+Island Music Radio;Broadcast
+Israeli Air Force ALE;Utility Digital
+ItalCable;Utility Fixed/Land
+Italian Air Force ALE;Utility Digital
+Italian Broadc.Corp.;Broadcast
+ItalyCable;Utility Fixed/Land
+JFC Misaki Fisheries Fax;Utility Digital
+JFE Itoman Marine R.;Utility Marine
+JFG Shizuokaken Fishery;Utility Marine
+JFM Muroto Fishery;Utility Marine
+JFQ Makurazaki Fishery;Utility Marine
+JFX Kagoshima Fish.Fax;Utility Digital
+JFX Kagoshima Fishery;Utility Marine
+JG2XA Propag.Studies;Utility Fixed/Land
+JJC Kyodo News Agcy Fax;Utility Digital
+JJS76 JSD Net;Utility Fixed/Land
+JJT30 JSD Net;Utility Fixed/Land
+JJT44 JSD Net Master;Utility Fixed/Land
+JJT88 JSD Net;Utility Fixed/Land
+JJT88 JSD Net Master;Utility Fixed/Land
+JJT88 Jap.Self Defense;Utility Fixed/Land
+JJT99 JSD Net;Utility Fixed/Land
+JJU22 JSD Net Master;Utility Fixed/Land
+JJU33 JSD Net;Utility Fixed/Land
+JJU55 JSD Net;Utility Fixed/Land
+JJU66 JSD Net;Utility Fixed/Land
+JJV40 JSD Net;Utility Fixed/Land
+JJV78 JSD Net;Utility Fixed/Land
+JJV89 JSD Net;Utility Fixed/Land
+JJW35 JSD Net;Utility Fixed/Land
+JJW46 JSD Net;Utility Fixed/Land
+JJX25 JSD Net;Utility Fixed/Land
+JJX36 JSD Net;Utility Fixed/Land
+JJX47 JSD Net;Utility Fixed/Land
+JJX58 JSD Net;Utility Fixed/Land
+JJY (ID x15,x45);Utility Fixed/Land
+JJZ26 JSD Net;Utility Fixed/Land
+JJZ37 JSD Net Master;Utility Fixed/Land
+JJZ44 JSD Net;Utility Fixed/Land
+JJZ48 JSD Net;Utility Fixed/Land
+JJZ50 JSD Net;Utility Fixed/Land
+JJZ59 JSD Net;Utility Fixed/Land
+JJZ60 JSD Net;Utility Fixed/Land
+JJZ71 JSD Net;Utility Fixed/Land
+JJZ82 JSD Net;Utility Fixed/Land
+JJZ93 JSD Net;Utility Fixed/Land
+JMH Japan Meteo Fax;Utility Digital
+JWT NorwayMil STANAG;Utility Digital
+JXN Marine Norway;Utility Marine
+JXN Noviken Sub comms;Utility Marine
+JXU Ny Bodo STANAG;Utility Digital
+Jakarta Radio;Utility Aircraft
+Jamaica Coast Guard Wx;Utility Marine
+Johannesburg HFDL (ID8);Utility Digital
+Jordan Address ALE Net;Utility Digital
+KBS DIGITAL;Broadcast
+KBS Hanminjok;Broadcast
+KBS World Radio;Broadcast
+KCB53 NWS Barrow;Utility Marine
+KCBS DIGITAL;Broadcast Digital
+KCBS Pyongyang;Broadcast
+KCCI Des Moines, IA;Broadcast
+KCI94 NWS Nome;Utility Marine
+KCI95 NWS Cold Bay;Utility Marine
+KCI98 NWS King Salmon;Utility Fixed/Land
+KDG58 NWS Annette;Utility Marine
+KDKA Pittsburgh, PA;Broadcast
+KFS Point Reyes, CA;Utility Marine
+KFS Rio Vista, CA;Utility Marine
+KGON Portland, OR;Broadcast
+KLB Seattle Radio;Utility Marine
+KLB Seattle, WA x15,x45;Utility Marine
+KLDE El Dorado, TX;Broadcast
+KLN Riverhead Radio;Utility Marine
+KMOX Saint Louis, MO;Broadcast
+KNLS New Life Station;Broadcast
+KOA Denver, CO;Broadcast
+KOVR Sacramento, CA;Broadcast
+KOVR TV Feed Sacramento;Utility Fixed/Land
+KOVR-TV Sacramento, CA;Broadcast
+KPH Point Reyes, CA;Utility Marine
+KPH Rio Vista, CA;Utility Marine
+KSCS Arlington, TX;Broadcast
+KSKO Radio;Broadcast
+KSL Salt Lake City, UT;Broadcast
+KTCL Denver, CO;Broadcast
+KTWR DIGITAL;Broadcast Digital
+KTWR Trans World Radio;Broadcast
+KVM70 Fax Honolulu;Utility Digital
+KVOH Voice of Hope;Broadcast
+KWL38 NWS Kodiak;Utility Marine
+KYW Philadelphia, PA;Broadcast
+Kanmon Martis x00,x30;Utility Marine
+Kanmon Martis x15,x45;Utility Marine
+Karachi Volmet x15,x45;Utility Aircraft
+Kazan Aero;Utility Aircraft
+Kazan Aero Melodia Dwa;Utility Aircraft
+Keflavik Radio;Utility Aircraft
+Keflavik Radio B;Utility Aircraft
+Keflavik Radio C;Utility Aircraft
+Khanty-Mansiysk Volmet;Utility Aircraft
+Khantym Aero;Utility Aircraft
+Khantym Aero Berezhny;Utility Aircraft
+Khartoum Radio;Utility Aircraft
+Kien Giang Radio;Utility Fixed/Land
+Kinshasa Radio;Utility Aircraft
+Kolkata Radio;Utility Aircraft
+Kolkata Volmet x05,x35;Utility Aircraft
+Koode Radio Int.;Broadcast
+Kotlas Aero;Utility Aircraft
+Krasnodar Aero Tyurik;Utility Aircraft
+Krasnoyarsk HFDL (ID14);Utility Digital
+KurushimaMartis x00,x30;Utility Marine
+KurushimaMartis x15,x45;Utility Marine
+Kyrgyz Military ALE;Utility Digital
+Kyrgyz Radio 2;Broadcast
+Kyrgyz Radiosu;Broadcast
+L2C Buenos Aires Radio;Utility Fixed/Land
+L2T Mar del Plata Radio;Utility Fixed/Land
+L2W Comodoro Rivadavia;Utility Fixed/Land
+L3A Comodoro Rivadavia;Utility Marine
+LBA NorwayMil STANAG;Utility Digital
+LBJ Norway Navy;Utility Marine
+LLE2 Bergen Kringkaster;Broadcast
+LOL Buenos Aires;Utility Fixed/Land
+LRA36 RN Arcangel;Broadcast
+LWF Sauti Linjilia;Broadcast
+LZW Varna Radio;Utility Fixed/Land
+La Montana Colombia;Broadcast
+La Paz Volmet x15;Utility Aircraft
+La Rosa de Tokio;Broadcast
+La Voz de la Selva;Broadcast
+La Voz de tu Conciencia;Broadcast
+La Voz del Pueblo;Broadcast
+La Voz del Tigre 980;Broadcast
+Lae Aero;Utility Aircraft
+Lampedusa Radio IQN;Utility Marine
+Lao National Radio;Broadcast
+Las Palmas Radio;Utility Aircraft
+Laser Hot Hits;Broadcast
+Latvian Military ALE;Utility Digital
+Lianyungang Radio;Utility Marine
+Lima Radio;Utility Aircraft
+Lithuanian Navy ALE;Utility Digital
+Living Water Ministry;Broadcast
+Livorno Radio IPL;Utility Marine
+Lyngby Radio;Utility Marine
+MIKES Espoo;Utility Fixed/Land
+MIKES Espoo (1 W);Utility Fixed/Land
+MKG ForestMoor STANAG;Utility Digital
+MRCC Papeete;Utility Fixed/Land
+MRHS KFS Bolinas, CA;Utility Digital
+MRHS KPH Bolinas, CA;Utility Digital
+MSF Time from NPL;Utility Fixed/Land
+MSQ Culpeper, VA;Utility Digital
+MSQ Culpeper, VA NDB;Utility Digital
+MV Baltic Radio;Utility Fixed/Land
+MWV African Pathways R.;Broadcast
+MWV La Voz Alegre;Broadcast
+MWV New Life Station;Broadcast
+MWV Palavra Alegre;Broadcast
+MWV Radio Feda;Broadcast
+MWV The Light of Life;Broadcast
+MWV World Christian Bc.;Broadcast
+Macedonian Radio;Broadcast
+Machichaco Radio;Utility Marine
+Madrid Radio;Utility Marine
+Magadan Radio;Utility Fixed/Land
+Magyar Radio 4;Broadcast
+Maikop Aero Atlantida3;Utility Aircraft
+Makhachkala Aero Ridan;Utility Aircraft
+Malin Head Coastguard;Utility Marine
+Malin Head Wx;Utility Fixed/Land
+Malta Radio;Utility Fixed/Land
+Manara Radio;Broadcast
+Manara Radio Int.;Broadcast
+Manila Radio;Utility Aircraft
+Marconi Radio Int.;Broadcast
+Mashaal Radio;Broadcast
+Mauritania Military ALE;Utility Digital
+Mauritius Radio;Utility Aircraft
+Maykop Aero Atlantida3;Utility Aircraft
+Medi 1;Broadcast
+Melbourne Radio;Utility Fixed/Land
+Messina Radio IDF;Utility Marine
+Meteo.Paulista JovemPan;Utility Fixed/Land
+Mexican Military ALE;Utility Digital
+Mighty KBC;Broadcast
+Mighty KBC Radio;Broadcast
+MilfordHaven Coastguard;Utility Marine
+MinVody Aero Shpora;Utility Aircraft
+MinVody Aero Ubezhische;Utility Aircraft
+MinVody Aero Uzbezische;Utility Aircraft
+Miskai Fisheries Fax;Utility Digital
+Mission.Friedensstimme;Broadcast
+Missouri Nat.Guard ALE;Utility Digital
+Mizzima Radio;Broadcast
+Mogadishu Radio;Utility Aircraft
+Moloka'i HFDL (ID2);Utility Digital
+Mong Cai Radio XVM;Utility Fixed/Land
+Mongolian Radio 1;Broadcast
+Mongolian Radio 2;Broadcast
+Mongolian Radio 3;Broadcast
+Moroccan Military ALE;Utility Digital
+Moroccan Police ALE;Utility Digital
+Moscow Aero;Utility Aircraft
+Mosdok Aero Assistent;Utility Aircraft
+Mozdok Aero Assistent;Utility Aircraft
+Mumbai Radio;Utility Aircraft
+Mumbai Volmet x25,x55;Utility Aircraft
+Murmansk Radio;Utility Aircraft
+Music 4 Joy;Broadcast
+Music 4 Joy DIGITAL;Broadcast Digital
+Music Wave Radio;Broadcast
+Myanma Radio;Broadcast
+Myanma Radio (ABC);Broadcast
+Myanma Radio (BBC);Broadcast
+Myanma Radio (NHK);Broadcast
+Myanma Radio (VoA);Broadcast
+Mystery Radio 21;Broadcast
+N'Djamena Radio;Utility Aircraft
+NAA US Navy Cutler;Utility Marine
+NATO Lisboa STANAG;Utility Digital
+NAU Isabela RTTY;Utility Digital
+NAU US Navy;Utility Digital
+NAU US Navy STANAG;Utility Digital
+NAVTEX Maritime Safety Info;Utility Digital
+NBC Bougainville;Broadcast
+NBC East New Britain;Broadcast
+NBC Port Moresby;Broadcast
+NBC Sandaun West Sepik;Broadcast
+NBC Southern Highlands;Broadcast
+NDR Gruß an Bord;Broadcast
+NHK Radio Japan;Broadcast
+NHK Radio Japan DIGITAL;Broadcast
+NKCM Voice of Freedom;Broadcast
+NLK US Navy Jim Creek;Utility Marine
+NMC Fax Point Reyes;Utility Digital
+NMC Fax Pt Reyes CA;Utility Digital
+NMC NAVTEX Pt Reyes CA;Utility Digital
+NMC USCG Point Reyes;Utility Marine
+NMF Fax Boston;Utility Digital
+NMF Fax Boston MA;Utility Digital
+NMF NAVTEX Boston MA;Utility Digital
+NMG Fax New Orleans;Utility Digital
+NMG Fax New Orleans LA;Utility Digital
+NMG USCG New Orleans;Utility Marine
+NML US Navy;Utility Marine
+NMN USCG Chesapeake;Utility Marine
+NMN USCG Chesapeake ALE;Utility Digital
+NMO NAVTEX Honolulu;Utility Digital
+NMO USCG Honolulu;Utility Marine
+NOJ Fax Kodiak;Utility Digital
+NOJ USCG Kodiak;Utility Marine
+NOJ USCG Kodiak DIGITAL;Utility Digital
+NPG US Navy STANAG;Utility Digital
+NPM US Navy;Utility Marine
+NPM US Navy RTTY/STANAG;Utility Digital
+NPN Guam STANAG;Utility Digital
+NPN STANAG;Utility Digital
+NRV NAVTEX Guam;Utility Digital
+NRV USCG Guam;Utility Marine
+NSS US Navy;Utility Digital
+NSS US Navy RTTY;Utility Digital
+NSS US Navy RTTY/STANAG;Utility Digital
+NSY Sicily;Utility Fixed/Land
+NTA Emergency ALE Net;Utility Digital
+NVK Sakha;Utility Fixed/Land
+NWC US/Australian Navy;Utility Marine
+NY NBEMS Net;Utility Fixed/Land
+Nadi Radio;Utility Aircraft
+Nadym Aero;Utility Aircraft
+Nagoya Martis x00,x30;Utility Marine
+Nagoya Martis x15,x45;Utility Marine
+Naha Radio CWP;Utility Aircraft
+Nalchik Aero Tosno;Utility Aircraft
+Napoli Radio IQH;Utility Marine
+Naryan-Mar Aero;Utility Aircraft
+Nat.R. of Saharan ADR;Broadcast
+National Radio Cambodia;Broadcast
+National Unity Bc.Sta.;Broadcast
+Navy Athens STANAG;Utility Digital
+Nemzetiségi Rádió;Broadcast
+Netherlands Coastgd Wx;Utility Marine
+New York Radio;Utility Aircraft
+New York Radio A;Utility Aircraft
+New York Radio CAR-A;Utility Aircraft
+New York Radio CAR-B;Utility Aircraft
+New York Radio E;Utility Aircraft
+New York Radio LDOC;Utility Aircraft
+New York Radio NAT-A;Utility Aircraft
+New York Radio NAT-E;Utility Aircraft
+New York Volmet x00,x30;Utility Fixed/Land
+Nha Trang Radio XVN;Utility Fixed/Land
+Niamey Radio;Utility Aircraft
+Nigerian Police ALE;Utility Digital
+Nippon no Kaze;Broadcast
+Nizhnevartovsk Aero;Utility Aircraft
+North Korea Reform R.;Broadcast
+Norway Navy STANAG;Utility Digital
+Nouakchott Radio;Utility Aircraft
+Nova Rádio Relógio, Rio;Broadcast
+Novosib. Aero Katyusha;Utility Aircraft
+Novosibir Volmet x07,37;Utility Aircraft
+Novosibir Volmet x10,40;Utility Aircraft
+Novosibirsk Aero;Utility Aircraft
+Novy Urengoy Aero;Utility Aircraft
+Nukus Aero;Utility Aircraft
+Nursultan/Astana Aero;Utility Aircraft
+OK0EPB Pendulum;Utility Fixed/Land
+OK0EU Beacon D;Utility Digital
+OK0EU Beacon H;Utility Digital
+OK0EU Beacon M;Utility Digital
+OK0EU Beacon R;Utility Digital
+OK0EU Beacon U;Utility Digital
+OKDL IAP CAS Beacon;Utility Digital
+OKPR IAP CAS Beacon;Utility Digital
+OKPV IAP CAS Beacon;Utility Digital
+OKTR IAP CAS Beacon;Utility Digital
+OKVA IAP CAS Beacon;Utility Digital
+OSU Oostende Radio;Utility Fixed/Land
+OXJ TÛrshavn Radio;Utility Fixed/Land
+OXJ Tórshavn Radio;Utility Marine
+OXT Copenhagen Met Fax;Utility Digital
+OYR Aasiaat Radio;Utility Marine
+Oceansseglingsklubben;Utility Marine
+Odessa Radio;Utility Fixed/Land
+Offshore Music Radio;Broadcast
+Okhotsk Radio;Utility Fixed/Land
+Okinawa Fishery Radio;Utility Marine
+Olimpia Radio;Utility Marine
+Omsk Aero Kapel;Utility Aircraft
+Omsk Aero Keepl;Utility Aircraft
+Ondas del Suroriente;Broadcast
+Orenburg Aero;Utility Aircraft
+Organ.Radial El Prado;Broadcast
+Oromia National Media;Broadcast
+Oromo Voice Radio;Broadcast
+Osaka Harbor x20-x30;Utility Marine
+Osaka Harbor x30-x40;Utility Marine
+Osaka Martis x00,x30;Utility Marine
+Osaka Martis x15,x45;Utility Marine
+P5O Indonesian Navy;Utility Marine
+PA NBEMS Net;Utility Fixed/Land
+PAB Radio Africa;Broadcast
+PBB Dutch Navy Stanag;Utility Digital
+PBB Navy Den Helder;Utility Digital
+PBB Ny DenHelder;Utility Digital
+PBB Ny DenHelder STANAG;Utility Digital
+PBC Ny Goeree STANAG;Utility Digital
+PBS Fujian;Broadcast
+PBS Gannan;Broadcast
+PBS Hulun Buir;Broadcast
+PBS Hunan;Broadcast
+PBS Nei Menggu;Broadcast
+PBS Pyongyang Pansong;Broadcast
+PBS Qinghai;Broadcast
+PBS Sichuan 2;Broadcast
+PBS Xinjiang;Broadcast
+PBS Xizang;Broadcast
+PBS Yunnan;Broadcast
+PBS Yunnan FM99;Broadcast
+PBS Yunnan Minority Sce;Broadcast
+PBS Yunnan Shangri-La;Broadcast
+PCJ Media Network Plus;Broadcast
+PCJ Radio Int.;Broadcast
+PFC Navy Den Helder;Utility Marine
+PLATH Career SSTV/2FSK;Utility Digital
+PPE Observatorio Nac.;Utility Fixed/Land
+PPO Olinda Radio Fax;Utility Digital
+PWZ33 Rio d.J.Naval Wx;Utility Fixed/Land
+PWZ33 Rio dJ Meteo Fax;Utility Digital
+PZN Paramaribo Radio;Utility Fixed/Land
+Palermo Radio IPP;Utility Marine
+PanAmerican Broadc.;Broadcast
+PanAmerican Broadcasting;Broadcast
+Pechorá Aero;Utility Aircraft
+Pechorá River Nav Wx;Utility Marine
+Pechorá River Ship call;Utility Marine
+Perm Aero;Utility Aircraft
+Pescador Preacher;Broadcast
+Peterburg Aero;Utility Aircraft
+Phan Rang Radio;Utility Fixed/Land
+Phan Tiet Radio;Utility Fixed/Land
+Phu Yen Radio;Utility Fixed/Land
+Piarco Radio CAR-B;Utility Aircraft
+Pointe Noire Radio;Utility Fixed/Land
+Polish Army ALE;Utility Digital
+Polskie Radio;Broadcast
+Polskie Radio 1;Broadcast
+Porto Torres Radio IZN;Utility Marine
+Preparing for Jesus;Broadcast
+Propagation Test;Broadcast
+Protección Civil;Utility Fixed/Land
+Protection Civile ALE;Utility Digital
+Punta Carretas Radio Wx;Utility Marine
+Puntland Radio One;Broadcast
+Pyongyang Broadcasting Station;Broadcast Digital
+Qui Phong Radio;Utility Fixed/Land
+Quy Nhon Radio;Utility Fixed/Land
+R Nacional, Canal A;Broadcast
+R. Cultura do Amazonas;Broadcast
+R. Educaçăo Rural, Tefé;Broadcast
+R. Northern Europe Int.;Broadcast
+R. Publique Africaine;Broadcast
+R. Sur Andina, Sicuani;Broadcast
+R.Alvorada de Londrina;Broadcast
+R.Argentina al Exterior;Broadcast
+R.Boa Vontade, P.Alegre;Broadcast
+R.Chaski Red Integridad;Broadcast
+R.Clube 1 Riberăo Preto;Broadcast
+R.Cultura Amauta, Huanta;Broadcast
+R.Cultura, Araraquara;Broadcast
+R.Deegaanka Soomaalida;Broadcast
+R.Eastern Star, AZ;Broadcast
+R.Educacao Rural, Coari;Broadcast
+R.Educacao Rural, TefÈ;Broadcast
+R.Educacao Rural, Tefé;Broadcast
+R.Geronimo Shortwave;Broadcast
+R.Imaculada Conceicao;Broadcast
+R.Moldova Actualitati;Broadcast
+R.Municipal, Sao Gabriel;Broadcast
+R.Nac.AmazÙnia DIGITAL;Broadcast
+R.Northern Ireland;Broadcast
+R.Pitumarca, LV Pueblo;Broadcast
+R.Sedaye Zindagi;Broadcast
+R.Sedaye Zindagi (1-15);Broadcast
+R.Sedaye Zindagi,d.1-15;Broadcast
+R.Sora de Congonhas;Broadcast
+R.Triunfal Evangélica;Broadcast
+R.Verdes Florestas;Broadcast
+R.Vision-LV Salvacion;Broadcast
+R.Vostochnaya Zvezda,AZ;Broadcast
+R.Voz Evangélica, Ceará;Broadcast
+RAA Russian Navy;Utility Fixed/Land
+RAF Volmet;Utility Aircraft
+RAF Volmet Military 1;Utility Aircraft
+RAL2 Ru.Navy CaspianSea;Utility Marine
+RB2 R.Clube Paranaense;Broadcast
+RBU Time Signal;Utility Fixed/Land
+RBW Murmansk Meteo Fax;Utility Digital
+RCC Ny Petropavlovsk;Utility Marine
+RCI Radio Chile;Broadcast
+RCV Russian Navy;Utility Marine
+RCW CompaÒÌa Worldwide;Broadcast
+RCW Compańía Worldwide;Broadcast
+RDL Russian Navy;Utility Marine
+REA4 Air Force Meteo;Utility Aircraft
+REA4 AirForce Meteo x40;Utility Aircraft
+REMER Protección Civil;Utility Fixed/Land
+RIT Northern Fleet;Utility Marine
+RIT Russian Navy;Utility Marine
+RJD Russian Navy;Utility Marine
+RJD59 Russian Navy;Utility Digital
+RJH63 Krasnodar;Utility Fixed/Land
+RJH66 Bishkek;Utility Fixed/Land
+RJH69 Molodechno;Utility Fixed/Land
+RJH77 Arkhangelsk;Utility Fixed/Land
+RJH99 Nizhni Novgorod;Utility Fixed/Land
+RKWO Front Indep.Oromo;Broadcast
+RLO Russian Navy;Utility Fixed/Land
+RMP REO Russian Navy;Utility Marine
+RMP Russian Navy;Utility Marine
+RNW Chocowinity, NC NDB;Utility Digital
+RNZ Pacific;Broadcast
+RNZ Pacific DIGITAL;Broadcast Digital
+RNZI DIGITAL;Broadcast Digital
+ROCV LV del Tigre 980;Broadcast
+RRI Biak (Papua);Broadcast
+RRI Makassar (Sulawesi);Broadcast
+RRI Nabire;Broadcast
+RRI Palangkaraya;Broadcast
+RRI Ternate (Maluku);Broadcast
+RRI Wamena (Papua);Broadcast
+RTE Dublin;Broadcast
+RTM Asyik FM;Broadcast
+RTM Limbang FM;Broadcast
+RTM Sarawak FM;Broadcast
+RTM Wai FM;Broadcast
+RTV du Mali;Broadcast
+RWM Moscow;Utility Fixed/Land
+Radio 101;Broadcast
+Radio 208;Broadcast
+Radio 567;Broadcast
+Radio 60;Broadcast
+Radio 60!;Broadcast
+Radio 700 Radiomenschen;Broadcast
+Radio Afghanistan;Broadcast
+Radio Al-Mukhtar;Broadcast
+Radio Algerienne;Broadcast
+Radio Algiers Int.;Broadcast
+Radio Algérie Int.;Broadcast
+Radio Algérienne;Broadcast
+Radio Amathusia;Broadcast
+Radio Ambience;Broadcast
+Radio Andorra Tribute;Broadcast
+Radio Apintie;Broadcast
+Radio Australia;Broadcast
+Radio Australia Wantok;Broadcast
+Radio Bahrain;Broadcast
+Radio Bahrain Shabab FM;Broadcast
+Radio Bata;Broadcast
+Radio Bay Islands;Broadcast
+Radio Belarus;Broadcast
+Radio Betania, Sta.Cruz;Broadcast
+Radio Biafra;Broadcast
+Radio Blacksmith Knoll;Broadcast
+Radio Bukarest;Broadcast
+Radio Bulgaria;Broadcast
+Radio Cacique, Sorocaba;Broadcast
+Radio Cairo;Broadcast
+Radio Canada Int.;Broadcast
+Radio Candip;Broadcast
+Radio Casanova;Broadcast
+Radio Chukotka DIGITAL;Broadcast Digital
+Radio Congo;Broadcast
+Radio Constanta;Broadcast
+Radio DARC;Broadcast
+Radio Dabanga;Broadcast
+Radio Damascus;Broadcast
+Radio Delta Int.;Broadcast
+Radio Deltracks;Broadcast
+Radio Dniprovska Hvylya;Broadcast
+Radio Dáp Lňi Sông Núi;Broadcast
+Radio ERISAT;Broadcast
+Radio Eco, Reyes;Broadcast
+Radio EducaciÛn;Broadcast
+Radio Educación;Broadcast
+Radio Emisora BolÌvar;Broadcast
+Radio Emisora Bolívar;Broadcast
+Radio Ergo;Broadcast
+Radio Europa;Broadcast
+Radio Europe;Broadcast
+Radio Exterior EspaÒa;Broadcast
+Radio Exterior Espańa;Broadcast
+Radio Fana;Broadcast
+Radio Farda;Broadcast
+Radio Fides;Broadcast
+Radio France DIGITAL;Broadcast Digital
+Radio France Int.;Broadcast
+Radio France Int. DIGITAL;Broadcast Digital
+Radio Free Asia;Broadcast
+Radio Free North Korea;Broadcast
+Radio Gloria;Broadcast
+Radio Gospel Mix Int.;Broadcast
+Radio GuinÈe;Broadcast
+Radio Guinée;Broadcast
+Radio Habana Cuba;Broadcast
+Radio Hargaysa;Broadcast
+Radio Huanta 2000;Broadcast
+Radio IBC;Broadcast
+Radio ICDI, Baoli;Broadcast
+Radio Iasi;Broadcast
+Radio Integridad;Broadcast
+Radio Inyabutatu;Broadcast
+Radio Itahuka;Broadcast
+Radio Jong Europa;Broadcast
+Radio Joystick;Broadcast
+Radio Kuwait;Broadcast
+Radio Kuwait DIGITAL;Broadcast Digital
+Radio Kuwait Holy Quran;Broadcast
+Radio Libertad;Broadcast
+Radio Liberty;Broadcast
+Radio Lipez, Uyuni;Broadcast
+Radio Logos;Broadcast
+Radio MTUSI;Broadcast
+Radio Madagasikara;Broadcast
+Radio Madang;Broadcast
+Radio Maingo;Broadcast
+Radio Mali;Broadcast
+Radio Marabu;Broadcast
+Radio Maria;Broadcast
+Radio Marti;Broadcast
+Radio Marti DIGITAL;Broadcast Digital
+Radio Mashaal;Broadcast
+Radio MiAmigo;Broadcast
+Radio Mike;Broadcast
+Radio Milne Bay;Broadcast
+Radio Mosoj Chaski;Broadcast
+Radio Munansi;Broadcast
+Radio NUG;Broadcast
+Radio Nacional Paraguay;Broadcast
+Radio Ndarason Int.;Broadcast
+Radio Nepal;Broadcast
+Radio Neumarkt;Broadcast
+Radio New Zealand Int.;Broadcast
+Radio Nigeria Kaduna;Broadcast
+Radio Nikkei 1;Broadcast
+Radio Nikkei 2;Broadcast
+Radio Nord Revival;Broadcast
+Radio Northern Star;Broadcast
+Radio Northern Star/Sea;Broadcast
+Radio OZ-Viola;Broadcast
+Radio Odin Plus (PMR);Broadcast
+Radio Onda;Broadcast
+Radio Oromiya;Broadcast
+Radio PMR Pridnestrovye;Broadcast
+Radio Pakistan;Broadcast
+Radio Panamericana;Broadcast
+Radio Piepzender;Broadcast
+Radio Piko;Broadcast
+Radio Power Rumpel;Broadcast
+Radio Prague;Broadcast
+Radio Progreso;Broadcast
+Radio Purga DIGITAL;Broadcast Digital
+Radio Quillabamba;Broadcast
+Radio Ranginkaman;Broadcast
+Radio Rebelde;Broadcast
+Radio Reloj;Broadcast
+Radio Republic of Sudan;Broadcast
+Radio Republica;Broadcast
+Radio Rock Revolution;Broadcast
+Radio Romania DIGITAL;Broadcast Digital
+Radio Romania Int.;Broadcast
+Radio SE-TA 2;Broadcast
+Radio SE-TA2;Broadcast
+Radio SE-TA2 DIGITAL;Broadcast Digital
+Radio San Antonio;Broadcast
+Radio San Jose;Broadcast
+Radio Santa Ana;Broadcast
+Radio Santa Cruz;Broadcast
+Radio Sawa;Broadcast
+Radio Sawa / Alhurra TV;Broadcast
+Radio Sedaye Kashmir;Broadcast
+Radio Sedaye Zindagi;Broadcast
+Radio Senda Cristiana;Broadcast
+Radio Six Int.;Broadcast
+Radio Slovakia Int.;Broadcast
+Radio Slovenija;Broadcast
+Radio Sonder Grense;Broadcast
+Radio Sound of Africa;Broadcast
+Radio Sultanate Oman;Broadcast
+Radio Symban;Broadcast
+Radio Taiwan Int.;Broadcast
+Radio Tajikistan;Broadcast
+Radio Tamazuj;Broadcast
+Radio Tarma;Broadcast
+Radio Tawantinsuyo;Broadcast
+Radio Temeswar;Broadcast
+Radio Thailand;Broadcast
+Radio Timisoara;Broadcast
+Radio Tirana;Broadcast
+Radio Tunis Chaine Int.;Broadcast
+Radio Ukraine Int.;Broadcast
+Radio Vacation Pęche;Broadcast
+Radio Vanuatu;Broadcast
+Radio Vaticana;Broadcast
+Radio Vaticana DIGITAL;Broadcast
+Radio Verdad;Broadcast
+Radio Veritas Asia;Broadcast
+Radio Veronica;Broadcast
+Radio Voz Cristiana;Broadcast
+Radio Warra Wangeelaa;Broadcast
+Radio Water for Good;Broadcast
+Radio YHWH;Broadcast
+Radio Yura, LV Ayllus;Broadcast
+Radio ZP30 LV del Chaco;Broadcast
+Radio del Pacífico 640;Broadcast
+Radio for Peace Int.;Broadcast
+Radio Âncora, Bahia;Broadcast
+Radio.Menschen.Geschi.;Broadcast
+Radiodif.Acreana;Broadcast
+Radiodif.do Amazonas;Broadcast
+Radiodifusora Roraima;Broadcast
+Radionaval Horta;Utility Marine
+Radionaval N.Ribeiro;Utility Fixed/Land
+Radionaval Porto Santo;Utility Fixed/Land
+Radiopanorama;Broadcast
+Radyo Pilipinas;Broadcast
+Rdiff.Nat. Tchadienne;Broadcast
+Reach Beyond Australia;Broadcast
+RealMix Radio;Broadcast
+Red Crescent ALE;Utility Digital
+Red Patria Nueva;Broadcast
+Red Radio Integridad;Broadcast
+Reflections Europe;Broadcast
+Rep.Yemen Radio;Broadcast
+Rep.Yemen Radio Big Hum;Broadcast
+Rep.Yemen Radio Sana'a;Broadcast
+ResistenciaVolmetx20x50;Utility Aircraft
+Reykjavik HFDL (ID3);Utility Digital
+Reykjavik Radio;Utility Fixed/Land
+Reykjavik Radio TFA;Utility Marine
+Riverhead HFDL (ID4);Utility Digital
+Rockpower;Broadcast
+Romanian Police ALE;Utility Digital
+Romaradio IAR;Utility Marine
+Rostov Aero;Utility Aircraft
+Rostov Aero Shpora;Utility Aircraft
+Rostov Volmet x25,55;Utility Aircraft
+Russian Air Force;Utility Aircraft
+Russian Naval Air;Utility Marine
+Russian Navy;Utility Fixed/Land
+R·dio 9 de Julho;Broadcast
+R·dio Alvorada,Parintins;Broadcast
+R·dio Aparecida;Broadcast
+R·dio Bandeirantes, SP;Broadcast
+R·dio Brasil Central;Broadcast
+R·dio Caiari, Pto.Velho;Broadcast
+R·dio CanÁao Nova;Broadcast
+R·dio Clube do Par·;Broadcast
+R·dio Congonhas;Broadcast
+R·dio Daqui;Broadcast
+R·dio Difusora Londrina;Broadcast
+R·dio Educadora,Limeira;Broadcast
+R·dio Gazeta, Sao Paulo;Broadcast
+R·dio Ga˙cha, P.Alegre;Broadcast
+R·dio Guaiba;Broadcast
+R·dio Iguatemi, SP;Broadcast
+R·dio InconfidÍncia;Broadcast
+R·dio Integracao;Broadcast
+R·dio Marumby;Broadcast
+R·dio Nacional AmazÙnia;Broadcast
+R·dio Nacional BrasÌlia;Broadcast
+R·dio Novo Tempo;Broadcast
+R·dio Record;Broadcast
+R·dio RelÛgio, Rio d.J.;Broadcast
+R·dio Rio Mar;Broadcast
+R·dio Transmundial;Broadcast
+R·dio Voz Mission·ria;Broadcast
+R·dioCultura Filadelfia;Broadcast
+Rádio 9 de Julho;Broadcast
+Rádio Alpha Centauri;Broadcast
+Rádio Alpha Centaury;Broadcast
+Rádio Alvorada,Parintins;Broadcast
+Rádio Ameixinha, SP;Broadcast
+Rádio Amexinha;Broadcast
+Rádio Antares, Pará;Broadcast
+Rádio Aparecida;Broadcast
+Rádio Araucária;Broadcast
+Rádio Brasil Central;Broadcast
+Rádio Casa 8000;Broadcast
+Rádio Casa AM;Broadcast
+Rádio Cidade Oldies;Broadcast
+Rádio Cidade SW;Broadcast
+Rádio Clube do Pará;Broadcast
+Rádio Congonhas 91.3FM;Broadcast
+Rádio Continental;Broadcast
+Rádio Educadora,Limeira;Broadcast
+Rádio Evangelizar;Broadcast
+Rádio Floresta;Broadcast
+Rádio Frankenstein;Broadcast
+Rádio Frankenstein, PB;Broadcast
+Rádio Fronteira;Broadcast
+Rádio GBA;Broadcast
+Rádio Iguatemi, SP;Broadcast
+Rádio Inconfidęncia;Broadcast
+Rádio Marumby;Broadcast
+Rádio Mundial;Broadcast
+Rádio Nacional Amazônia;Broadcast
+Rádio Novo Tempo;Broadcast
+Rádio Pink;Broadcast
+Rádio Pirâmide;Broadcast
+Rádio Record;Broadcast
+Rádio Relógio, Rio d.J.;Broadcast
+Rádio Rio Mar;Broadcast
+Rádio Rural FM, Tefé;Broadcast
+Rádio Rural, Tefé;Broadcast
+Rádio Saturno;Broadcast
+Rádio Scalla;Broadcast
+Rádio Scalla FM;Broadcast
+Rádio Transglobe;Broadcast
+Rádio Tury;Broadcast
+Rádio Voz Missionária;Broadcast
+SB Sudbury, Ontario NDB;Utility Digital
+SBA Al-Azm Radio;Broadcast
+SBA Holy Quran Radio;Broadcast
+SBA Radio Riyadh;Broadcast
+SBA Saudi Radio Int.;Broadcast
+SE-TA2;Broadcast
+SECURE Emergeny Net;Utility Fixed/Land
+SHARES Emergeny Net;Utility Fixed/Land
+SIBC Wantok FM;Broadcast
+SLBC City FM;Broadcast
+SLP Shelby, NC;Utility Digital
+SLP Shelby, NC NDB;Utility Digital
+SM Radio Dessau;Broadcast
+SM Radio Int.;Broadcast
+SPL Polish Rescue R.;Utility Marine
+SRF;Broadcast
+SSCA DooDah TransAtlNet;Utility Marine
+SSCA Radio Service Net;Utility Fixed/Land
+SSTV;Utility Digital
+SVJ4 Athens Meteo Fax;Utility Digital
+SVO Olimpia Radio;Utility Marine
+SWA18 Athens Meteo Fax;Utility Digital
+SWS Golden 80s Rewind;Broadcast
+SWS Radio Menschen;Broadcast
+SWS VORW;Broadcast
+SXV Ny Spata Att.STANAG;Utility Digital
+Safi Radio;Utility Fixed/Land
+Sal Radio;Utility Aircraft
+Salekhard Aero;Utility Aircraft
+Salekhard AeroFabrikant;Utility Aircraft
+Samara Aero;Utility Aircraft
+Samara Aero Amba;Utility Aircraft
+Samara Volmet x15,45;Utility Aircraft
+Samarkand Aero;Utility Aircraft
+San Benedetto Radio IQP;Utility Marine
+San Francisco HFDL(ID1);Utility Digital
+San Francisco R. LDOC;Utility Aircraft
+San Francisco Radio;Utility Aircraft
+San Francisco Radio 1;Utility Aircraft
+San Francisco Radio 2;Utility Aircraft
+San Francisco Radio 3;Utility Aircraft
+San Francisco Radio CEP;Utility Aircraft
+San Francisco Radio CWP;Utility Aircraft
+San Francisco Radio NP;Utility Aircraft
+San Francisco Radio NP1;Utility Aircraft
+San Francisco Radio NP2;Utility Aircraft
+San Francisco Radio SP;Utility Marine
+Santa Cruz HFDL (ID13);Utility Digital
+Santa Maria Radio;Utility Aircraft
+Santa Maria Radio A;Utility Aircraft
+Santa Maria Radio E;Utility Aircraft
+Santa Maria Radio H;Utility Aircraft
+Saratov Aero;Utility Aircraft
+Scala FM 94.9 Sao Paulo;Broadcast
+Scandinavian Weekend R.;Broadcast
+Search and Rescue Coord;Utility Aircraft
+SenderKW;Broadcast
+Seoul Muan HFDL (ID10);Utility Digital
+Seoul Radio;Utility Marine
+Seychelles Marine Wx;Utility Fixed/Land
+Seychelles Radio;Utility Aircraft
+Shandong Maritime Meteo;Utility Marine
+Shannon Aeradio A;Utility Aircraft
+Shannon Aeradio B;Utility Aircraft
+Shannon Aeradio C;Utility Aircraft
+Shannon Aeradio D;Utility Aircraft
+Shannon Aeradio F;Utility Aircraft
+Shannon Aeradio H;Utility Aircraft
+Shannon Aeradio I;Utility Aircraft
+Shannon Aeradio J;Utility Aircraft
+Shannon HFDL (ID7);Utility Digital
+Shannon Radio;Utility Aircraft
+Shannon Volmet;Utility Aircraft
+Shantou Radio;Utility Marine
+Shanwick Radio;Utility Aircraft
+Shanwick Radio A;Utility Aircraft
+Shanwick Radio B;Utility Aircraft
+Shanwick Radio C;Utility Aircraft
+Shanwick Radio F;Utility Aircraft
+Shetland Coastguard;Utility Marine
+Shetland Coastguard Wx;Utility Marine
+Shiokaze;Broadcast
+Shortwave Australia;Broadcast
+Shortwave Gold;Broadcast
+Shortwave Radio;Broadcast
+Shortwave Radio Gold;Broadcast
+Shortwave Radiogram;Broadcast
+Shortwave Service Kall;Broadcast
+Shortwaveservice;Broadcast
+Sichuan Ethnic Radio;Broadcast
+Singapore Radio;Utility Aircraft
+SingaporeVolmet x20,x50;Utility Aircraft
+Singpore Volmet x20,x50;Utility Aircraft
+Slovak Military ALE;Utility Digital
+Slovenian Military ALE;Utility Digital
+Sochi Aero Shtat;Utility Aircraft
+Solent Coastguard;Utility Marine
+Solomon Islands B.C.;Broadcast
+Sound of Hope;Broadcast
+Sound of Hope-RFA;Broadcast
+Spanish Navy FSK;Utility Digital
+Spectres of Shortwave;Broadcast
+Sri Lanka BC;Broadcast
+Sri Lanka BC Thunder FM;Broadcast
+St.Peterburg Wx Fax;Utility Digital
+StPeterbg Volmet x05,35;Utility Aircraft
+Stalingrad clock;Utility Fixed/Land
+Star-Star Bc.Station;Broadcast
+Station X;Broadcast
+Station X / Radio 567;Broadcast
+Stavropol Aero Tom;Utility Aircraft
+Stockholm Radio;Utility Aircraft
+Stockholm Radio (Air);Utility Aircraft
+Stornoway Coastguard;Utility Marine
+Stornoway Coastguard Wx;Utility Marine
+Studio 52;Broadcast
+Studio Denakker;Broadcast
+Suab Xaa Moo Zoo;Broadcast
+Sunlite;Broadcast
+Super R·dio Deus È Amor;Broadcast
+Super Rádio Deus é Amor;Broadcast
+Surgut Aero Tsadik-Dva;Utility Aircraft
+Swedish Military ALE;Utility Digital
+Swedish Navy MSK 200/79;Utility Digital
+Swissinfo;Broadcast
+Switch 95.9;Broadcast
+Sydney Radio;Utility Fixed/Land
+Syktyvkar Aero;Utility Aircraft
+Syktyvkar Aero Sivkar;Utility Aircraft
+Syktyvkar Volmet x00,30;Utility Aircraft
+T Channel Marker 1050Hz;Utility Digital
+TAH Turk Radio Istanbul;Utility Marine
+TBB Ny Ankara STANAG;Utility Digital
+TBB Turk.Navy STANAG;Utility Digital
+TBO Turk.Navy STANAG;Utility Digital
+TDF DIGITAL;Broadcast Digital
+TFK Grindavik;Utility Fixed/Land
+TFK US Navy Grindavik;Utility Marine
+TV Marti;Broadcast
+Tahiti Radio;Utility Aircraft
+Taiwan Area Fisheries;Utility Fixed/Land
+Tallinn Radio;Utility Marine
+Tallinn Volmet;Utility Aircraft
+Tarifa Radio;Utility Marine
+Tarko-Sale Aero;Utility Aircraft
+Tas Maritime Radio;Utility Marine
+Tashkent Aero;Utility Aircraft
+Tashkent Volmet x10,x40;Utility Fixed/Land
+Tashkent Volmet x20,x50;Utility Aircraft
+Telediffusion de France (DRM);Broadcast Digital
+Telenor Kystradio;Utility Marine
+Telenor Kystradio North;Utility Marine
+Telenor Kystradio South;Utility Marine
+Telenor Maritim Radio;Utility Marine
+Telstar Radio;Broadcast
+Texas DoT Net;Utility Fixed/Land
+Thazin Radio;Broadcast
+The Ferry;Broadcast
+The Pip (Kaplya) Rostov;Utility Fixed/Land
+The Pip, Rostov;Utility Fixed/Land
+Tokyo Martis x00,x30;Utility Marine
+Tokyo Martis x15;Utility Marine
+Tokyo Radio;Utility Aircraft
+Tokyo Volmet x10,x40;Utility Aircraft
+Trans World Radio;Broadcast
+Trenton Military;Utility Aircraft
+Trenton Volmet;Utility Aircraft
+Trieste Radio IQX;Utility Marine
+Tripoli Radio;Utility Aircraft
+Tropical R.Program 4TRP;Broadcast
+Tunisian Police ALE;Utility Digital
+Turk.AFAD Emergency ALE;Utility Digital
+Turkmenbashi Aero;Utility Aircraft
+Tyumen Aero;Utility Aircraft
+UCE2 Arkhangelsk Radio;Utility Fixed/Land
+UGC St.Peterburg Radio;Utility Marine
+UGC St.Peterburg Wx Fax;Utility Digital
+UHF Hold/Radio Russkoe;Broadcast
+UK DHFCS STANAG;Utility Digital
+UK Mil.DHFCS STANAG;Utility Digital
+UK MoD DHFCS;Utility Digital
+UK MoD DHFCS STANAG;Utility Digital
+UN MINUSMA ALE;Utility Digital
+US Air Force ALE;Utility Digital
+US Air Force MARS Net;Utility Fixed/Land
+US Air Force Messages;Utility Aircraft
+US Army MARS;Utility Fixed/Land
+US Army MARS ALE;Utility Digital
+US Army MARS Net;Utility Fixed/Land
+US Embassies ALE;Utility Digital
+US National Guard ALE;Utility Digital
+US Navy RTTY/STANAG;Utility Digital
+USEast NBEMS Net;Utility Fixed/Land
+Ufa Aero;Utility Aircraft
+Ukrainian Military ALE;Utility Digital
+Unid STANAG;Utility Digital
+Unique Radio;Broadcast
+Unique Radio (USB);Broadcast
+Unique Radio DIGITAL;Broadcast Digital
+United Nations Radio;Broadcast
+Unknown Orthodox Station;Broadcast
+Unknown Station;Broadcast
+Ural Aero;Utility Aircraft
+V.o.Democratic Alliance;Broadcast
+V.o.Khmer M'Chas Srok;Broadcast
+V.o.Oromo Liberation;Broadcast
+V.o.Peace and Democracy;Broadcast
+V.o.Report of the Week;Broadcast
+V.o.Tigray Revolution;Broadcast
+V5W Walvis Bay Radio;Utility Fixed/Land
+VAE Tofino Radio;Utility Fixed/Land
+VAJ Prince Rupert Radio;Utility Marine
+VCF Les Escoumins QC;Utility Fixed/Land
+VCG Riv.-au-Bernard QC;Utility Fixed/Land
+VCM St Anthony NL;Utility Fixed/Land
+VCO Sydney Meteo Fax;Utility Digital
+VCO Sydney Radio NS;Utility Marine
+VCP Placentia NL;Utility Marine
+VCS Halifax Radio;Utility Marine
+VFF Iqaluit Meteo;Utility Marine
+VFF Iqaluit Meteo Fax;Utility Digital
+VFF Iqaluit Radio;Utility Marine
+VKS737 Outback RadioNet;Utility Fixed/Land
+VMC Charleville Met Fax;Utility Digital
+VMC Charleville QL;Utility Marine
+VMT Hobart Radio Wx;Utility Fixed/Land
+VMW Wiluna Met Fax;Utility Digital
+VMW Wiluna WA;Utility Marine
+VOJ Port aux Basques NL;Utility Marine
+VOK Goose Bay NL;Utility Fixed/Land
+VOK Labrador Coastguard;Utility Marine
+VORW Radio Int.;Broadcast
+VRC Marine Rescue Radio;Utility Marine
+VTG6 Indian Navy Wx;Utility Marine
+VTP4 Indian Navy Wx;Utility Marine
+VTX Indian Navy;Utility Marine
+VTX1 Indian Navy;Utility Marine
+VTX2 Indian Navy;Utility Marine
+VTX3 Indian Navy;Utility Marine
+VTX4 Indian Navy;Utility Marine
+Valencia Radio;Utility Fixed/Land
+Valentia Coastguard;Utility Marine
+Valentia Radio;Utility Fixed/Land
+Valentia Radio Wx;Utility Fixed/Land
+Vanino Radio SeaIce Fax;Utility Digital
+Vega Military Messages;Utility Fixed/Land
+Venezuela Navy;Utility Marine
+Vesti FM;Broadcast
+Veterans Health Adm.ALE;Utility Digital
+Vitebsk Aero;Utility Aircraft
+Vividh Bharati DIGITAL;Broadcast Digital
+Vladikavkaz Aero Stavok;Utility Aircraft
+VoA Ashna Radio;Broadcast
+VoA Deewa Radio;Broadcast
+VoA Radio Aap ki Dunya;Broadcast
+VoA Radio Ashna;Broadcast
+VoJammu-Kashmir Freedom;Broadcast
+VoV Spur from 6020;Broadcast
+VoV Spur from 7210;Broadcast
+Voice of Africa;Broadcast
+Voice of America;Broadcast
+Voice of Amhara Radio;Broadcast
+Voice of Broad Masses;Broadcast
+Voice of Broad Masses 1;Broadcast
+Voice of Broad Masses 2;Broadcast
+Voice of China;Broadcast
+Voice of Freedom;Broadcast
+Voice of Greece;Broadcast
+Voice of Hope;Broadcast
+Voice of Hope Africa;Broadcast
+Voice of Indonesia;Broadcast
+Voice of Jinling;Broadcast
+Voice of Justice;Broadcast
+Voice of Korea;Broadcast
+Voice of Korea DIGITAL;Broadcast Digital
+Voice of Korea KCBS;Broadcast
+Voice of Martyrs;Broadcast
+Voice of Mongolia;Broadcast
+Voice of Nigeria;Broadcast
+Voice of Nigeria DIGITAL;Broadcast Digital
+Voice of Strait;Broadcast
+Voice of Tajik;Broadcast
+Voice of Tibet;Broadcast
+Voice of Turkey;Broadcast
+Voice of Vietnam;Broadcast
+Voice of Vietnam 1;Broadcast
+Voice of Vietnam 2;Broadcast
+Voice of Vietnam 3;Broadcast
+Voice of Vietnam 4;Broadcast
+Voice of the People;Broadcast
+Voice ofNigeria DIGITAL;Broadcast Digital
+Volgograd Aero Avrora;Utility Aircraft
+Vologda Aero;Utility Aircraft
+Vorkuta Aero;Utility Aircraft
+Vung Tau Radio;Utility Fixed/Land
+WA1ZMS Fessenden Px;Utility Fixed/Land
+WABC New York, NY;Broadcast
+WACA Wheaton, MD;Broadcast
+WAMU Washington, DC;Broadcast
+WAVA Arlington, VA;Broadcast
+WBAL Baltimore, MD;Broadcast
+WBAP Fort Worth, TX;Broadcast
+WBBM Chicago, IL;Broadcast
+WBBR New York, NY;Broadcast
+WBCQ The Planet;Broadcast
+WBCQ The Planet (WLC);Broadcast
+WBCQ The Planet/Kixx FM;Broadcast
+WBCQ The Trump Planet;Broadcast
+WBCQ World's LastChance;Broadcast
+WBMD Baltimore, MD;Broadcast
+WBQH Silver Spring, MD;Broadcast
+WBT Charlotte, NC;Broadcast
+WBT Charlotte,NC;Broadcast
+WBTK Richmond, VA;Broadcast
+WBTX Broadway-Timberville, VA;Broadcast
+WCBC Cumberland, MD;Broadcast
+WCBS New York, NY;Broadcast
+WCCO Minneapolis, MN;Broadcast
+WCHS Charleston, WV;Broadcast
+WCHV Charlottesville, VA;Broadcast
+WCKY Cincinnati, OH;Broadcast
+WCLM Laurel, MD;Broadcast
+WCRW Leesburg, VA;Broadcast
+WCTN Potomac-Cabin John, MD;Broadcast
+WCVA Culpeper, VA;Broadcast
+WCY Marine Weather Ctr;Utility Marine
+WDCN-LD Fairfax, VA;Broadcast
+WDCT Fairfax, VA;Broadcast
+WDMV Walkersville, MD;Broadcast
+WDSC Dillon, SC 3x800;Broadcast
+WDZY Colonial Heights, VA;Broadcast
+WELD Fisher, WV;Broadcast
+WETA Washington, DC;Broadcast
+WEWN EWTN Catholic R.;Broadcast
+WFAN New York, NY;Broadcast
+WFAX Falls Church, VA;Broadcast
+WFED Washington, DC;Broadcast
+WFIR Roanoke, VA;Broadcast
+WFLA Tampa, FL;Broadcast
+WFMD Frederick, MD;Broadcast
+WFME New York, NY;Broadcast
+WFSI Baltimore, MD;Broadcast
+WFVA Fredericksburg, VA;Broadcast
+WGN Chicago, IL;Broadcast
+WGOP Pocomoke City, MD;Broadcast
+WGY Schenectady, NY;Broadcast
+WHAM Rochester, NY;Broadcast
+WHAS Louisville, KY;Broadcast
+WHBG Harrisonburg, VA;Broadcast
+WHGM Havre de Grace, MD;Broadcast
+WHGT Maugansville, MD;Broadcast
+WHL St Augustine, FL;Utility Marine
+WHLO Akron, OH;Broadcast
+WHP Harrisburg, PA;Broadcast
+WHRI Indy500;Broadcast
+WHVR Hanover, PA;Broadcast
+WIBC Indianapolis, IN;Broadcast
+WINA Charlottesville, VA;Broadcast
+WINB;Broadcast
+WINB DIGITAL;Broadcast Digital
+WINB DIGITAL Tests;Broadcast Digital
+WINC Winchester, VA;Broadcast
+WINS New York, NY;Broadcast
+WJFK Morningside, MD;Broadcast
+WJHR Milton, FL (USB);Broadcast
+WJLS Beckley, WV;Broadcast
+WJR Detroit, MI;Broadcast
+WKAV Charlottesville, VA;Broadcast
+WKBN Youngstown, OH;Broadcast
+WKBY Chatham, VA;Broadcast
+WKBY Chatham,VA;Broadcast
+WKCW Warrenton, VA;Broadcast
+WKTR Earlysville, VA;Broadcast
+WLAC Nashville, TN;Broadcast
+WLES Bon Air, VA;Broadcast
+WLO Mobile Radio;Utility Fixed/Land
+WLO Mobile Radio RTTY;Utility Digital
+WLS Chicago, IL;Broadcast
+WLW Cincinnati, OH;Broadcast
+WMLK Bethel, PA;Broadcast
+WMRE Charlestown, WV;Broadcast
+WMVP Chicago, IL;Broadcast
+WOR New York, NY;Broadcast
+WPHT Philadelphia, PA;Broadcast
+WPTF Raleigh, NC;Broadcast
+WPTX Lexington Park, MD;Broadcast
+WPWC Dumfries-Triangle, VA;Broadcast
+WRCW Warrenton, VA;Broadcast
+WRMI Alameda Bible;Broadcast
+WRMI Radio Miami Int.;Broadcast
+WRMI TruNews;Broadcast
+WRN Vsemirnaya Radioset;Broadcast
+WRNL Richmond, VA;Broadcast
+WRNO New Orleans;Broadcast
+WRNR Martinsburg, WV;Broadcast
+WRPD292 CODAR (CW IDs);Utility Digital
+WRPV785 CODAR (CW IDs);Utility Digital
+WRPW597 CODAR (IDs x3);Utility Digital
+WRVA Richmond, VA;Broadcast
+WSB Atlanta, GA;Broadcast
+WSBN Washington, DC;Broadcast
+WSCR Chicago, IL;Broadcast
+WSM Nashville, TN;Broadcast
+WSVA Harrisonburg, VA;Broadcast
+WSVS Crewe, VA;Broadcast
+WTAM Cleveland, OH;Broadcast
+WTEM Washington, DC;Broadcast
+WTGM Salisbury, MD;Broadcast
+WTNT Alexandria, VA;Broadcast
+WTNT Alexandria,VA;Broadcast
+WTOP Washington, DC;Broadcast
+WTOX Glen Allen, VA;Broadcast
+WTVN Columbus, OH;Broadcast
+WTWW Lebanon, TN;Broadcast
+WURA Quantico, VA;Broadcast
+WUST Washington, DC;Broadcast
+WVCV Orange, VA;Broadcast
+WWCR 1 Nashville, TN;Broadcast
+WWCR 2 Nashville, TN;Broadcast
+WWCR 3 Nashville, TN;Broadcast
+WWCR 4 Nashville, TN;Broadcast
+WWCR Nashville, TN;Broadcast
+WWGB Indian Head, MD;Broadcast
+WWKB Buffalo, NY;Broadcast
+WWL New Orleans, LA;Broadcast
+WWNL Pittsburgh, PA;Broadcast
+WWNR Beckley, WV;Broadcast
+WWRB Manchester, TN;Broadcast
+WWRC Bethesda, MD;Broadcast
+WWV Colorado (m.ann.);Utility Fixed/Land
+WWVA Wheeling, WV;Broadcast
+WWVB Colorado;Utility Fixed/Land
+WWVH Hawaii (f.ann.);Utility Fixed/Land
+WWWT Warrenton, VA;Broadcast
+WWWV Charlottesville, VA;Broadcast
+WXGI Richmond, VA;Broadcast
+WXVA Winchester, VA;Broadcast
+WZHF Arlington, VA;Broadcast
+Wantok Radio Light;Broadcast
+Warsan Radio USB;Broadcast
+Washington GasLight ALE;Utility Digital
+Welle 370;Broadcast
+Witowo Radio;Utility Fixed/Land
+Wolverine Radio;Broadcast
+Wolverine Radio/WDDR;Broadcast
+World Harvest Radio;Broadcast
+World Harvest Radio 1;Broadcast
+World Harvest Radio 2;Broadcast
+World Harvest Radio 3;Broadcast
+World Harvest Radio 4;Broadcast
+World Harvest Radio 5;Broadcast
+World Harvest Radio 6;Broadcast
+World Music Radio;Broadcast
+World of Radio;Broadcast
+World's Last Chance;Broadcast
+XFL Mazatlan Radio;Utility Marine
+XFN Progreso Radio;Utility Marine
+XSG Shanghai R.;Utility Marine
+XSG Shanghai R. Telex;Utility Digital
+XSG Shanghai Radio;Utility Marine
+XSG Shanghai Radio Fax;Utility Digital
+XSH Basuo Radio;Utility Fixed/Land
+XSI Sanya Radio;Utility Fixed/Land
+XSJ Zhanjiang Radio;Utility Marine
+XSL Fuzhou Radio;Utility Marine
+XSM Xiamen Radio;Utility Marine
+XSQ Guangzhou Meteo Fax;Utility Digital
+XSQ Guangzhou R.;Utility Marine
+XSQ Guangzhou R. Telex;Utility Fixed/Land
+XSQ Guangzhou Radio;Utility Marine
+XSQ Guangzhou Radio x30;Utility Marine
+XSV Tianjin Radio;Utility Marine
+XSV Tianjin Radio (x00);Utility Marine
+XSV Tianjin Radio Telex;Utility Marine
+XSZ Dalian Radio (x05);Utility Marine
+XSZ Dalian Radio (x40);Utility Marine
+Xiamen Radio;Utility Fixed/Land
+Xizang RTV;Broadcast
+YMW Maniwaki, Quebec NDB;Utility Digital
+Yangon Radio;Utility Aircraft
+Yekaterinb.Aero Alenki;Utility Aircraft
+Yunnan Radio Int.;Broadcast
+Yuye Taiwan Fishery;Utility Fixed/Land
+ZBC Radio;Broadcast
+ZBC Radio/Spice FM;Broadcast
+ZBM Bermuda Harbor;Utility Marine
+ZKLF Wellington Met Fax;Utility Digital
+ZLM Taupo Maritime R.;Utility Marine
+ZSC Cape Town Radio;Utility Marine
+ZSJ CapeNaval Meteo Fax;Utility Digital
+Zambia NBC Radio 1;Broadcast
+Zeppelin Radio;Broadcast
+Zhoushan Marine Met.R.;Utility Aircraft
+biteXpress;Broadcast Digital
+biteXpress DIGITAL;Utility Digital
+funklust DIGITAL;Broadcast Digital
