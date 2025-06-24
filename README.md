@@ -4,7 +4,7 @@ Smart Gnome Control is a graphical user interface to multiple communications rec
 
 The Smart Gnome Control interface is designed to automatically reconfigure according to the known capabilities of your receiver. It is also designed to provide database-driven tuning, memory and logging capabilities, based on FineWare's (discontinued) Smart Control series of receiver control packages for Windows, and as updated with the database capabilities of Frequency Browser. The Smart Gnome Control interface is written for Linux in GNU C, using Glade, Gdk/Gtk+ and curl. It also requires version 4.6 or later of Hamlib. With a little help from [Homebrew](https://brew.sh/) libraries, Smart Gnome Control should also be able to be built on macOS. 
 
-Smart Gnome Control began as an idea I had 21 years ago under Gnome v1,2. It was to be the Linux version of what was Smart R8 Control v4 at the time, which also explains the application icon. It hasn't been updated in 20 years. So if you don't get the pun, `The Return...` is an homage to David Lynch and Twin Peaks.
+Smart Gnome Control began as an idea I had 21 years ago under Gnome v1.2. It was to be the Linux version of what was Smart R8 Control v4 at the time, which also explains the application icon. It hasn't been updated in 20 years. So if you don't get the pun, `The Return...` is an homage to David Lynch and Twin Peaks.
 
 # Dependencies
 
