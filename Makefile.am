@@ -2,7 +2,7 @@
 
 SUBDIRS = src pixmaps macros
 
-pkgdata_DATA = ABOUT-NLS AUTHORS ChangeLog COPYING COPYING.LIB INSTALL LICENSE NEWS README README.md src/*.glade src/*.css
+pkgdata_DATA = ABOUT-NLS AUTHORS ChangeLog COPYING.LIB INSTALL LICENSE NEWS README README.md src/*.glade src/*.css
 
 EXTRA_DIST = \
 	autogen.sh \
