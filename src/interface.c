@@ -1092,7 +1092,7 @@ on_app1_key_press_event                (GtkWidget*       widget,
     retval = true;
     process_keys(widget,event);
   }
-  if (event->keyval == GDK_KEY_Escape) {
+  /*if (event->keyval == GDK_KEY_Escape) {
     retval = true;
     set_power();
   }
@@ -1179,7 +1179,7 @@ on_app1_key_press_event                (GtkWidget*       widget,
   if ((event->keyval == GDK_KEY_P) && (event->state == GDK_CONTROL_MASK)) {
     retval = true;
     on_options1_activate(NULL, NULL);
-  }
+  }*/
   return retval;
 }
 
@@ -1189,7 +1189,7 @@ on_app1_key_press_event_after		(GtkWidget*	widget,
                                         GdkEventKey*	event,
                                         gpointer	user_data)
 {
-  if ((event->keyval == GDK_KEY_0) ||
+  /*if ((event->keyval == GDK_KEY_0) ||
       (event->keyval == GDK_KEY_1) ||
       (event->keyval == GDK_KEY_2) ||
       (event->keyval == GDK_KEY_3) ||
@@ -1215,7 +1215,7 @@ on_app1_key_press_event_after		(GtkWidget*	widget,
       (event->keyval == GDK_KEY_KP_Enter) ||
       (event->keyval == GDK_KEY_BackSpace)) {
     process_keys(widget,event);
-  }
+  }*/
   if ((event->keyval == GDK_KEY_Left) ||
       (event->keyval == GDK_KEY_KP_Left)) {
     set_focus(app1,"LeftBtn");
@@ -1797,7 +1797,7 @@ on_widget_key_press_event		(GtkWidget*	widget,
     retval = true;
     set_power();
   }
-  if (widget == mem1) {
+  /*if (widget == mem1) {
     if ((event->keyval == GDK_KEY_W) && (event->state == GDK_CONTROL_MASK)) {
       retval = true;
       on_capture1_activate(NULL, NULL);
@@ -1824,7 +1824,7 @@ on_widget_key_press_event		(GtkWidget*	widget,
       retval = true;
       on_log_delete_activate(NULL, NULL);
     }
-  }
+  }*/
   return retval;
 }
 

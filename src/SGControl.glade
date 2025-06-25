@@ -376,7 +376,6 @@ Author: Mark J. Fine
     <property name="can-focus">False</property>
     <property name="pixbuf">../pixmaps/sgcontrol/log.svg</property>
   </object>
-  <object class="GtkAccelGroup" id="main_accel_group"/>
   <object class="GtkImage" id="memoryimg">
     <property name="name">memoryimg</property>
     <property name="visible">True</property>
