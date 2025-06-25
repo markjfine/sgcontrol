@@ -30,7 +30,7 @@ make
 sudo make install
 sudo ldconfig [Note: only needed under Linux, not macOS]
 ```
-3. Installing Smart Gnome Control. Next, move to the top Smart Gnome Control directory (e.g., `~/Development/sgcontrol`). The very first time you build from the repository, you may have to change the permissions of the autogen script. If so, type `chmod 755 autogen.sh` to fix it. Then type the following in order to build it:
+3. Installing Smart Gnome Control. Next, move to the top Smart Gnome Control directory (e.g., `~/Development/sgcontrol`). The very first time you build from the repository, you may have to change the permissions of the two autogen scripts. If so, type `chmod 755 ./autogen.sh ./macros/autogen.sh` to fix it. Then type the following in order to build it:
 ```
 ./autogen.sh
 ./configure
