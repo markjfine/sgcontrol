@@ -2133,12 +2133,17 @@ get_freq()
     if (ispower) {
       retcode = rig_get_freq(hrig, RIG_VFO_CURR, &freq1);
       if (retcode != RIG_OK) {
-        freq1 = 100000;
+        //freq1 = 100000;
+        frequency = 0.0;
         g_warning("Hamlib error: Could not get frequency.");
       } else
         frequency = freq1/1000.0;
     } else
       frequency = 0.0;
+  }
+  if (ispower && !has_get_power && (frequency == 0.0)) {
+    ispower = false;
+    set_power_display();
   }
   set_freq_display();
 }
