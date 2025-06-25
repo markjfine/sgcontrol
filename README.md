@@ -62,6 +62,7 @@ Other known issues: Know that there are some other known quirks that are specifi
 1. The first thing is that the faceplate window doesn't want to resize properly. When opening and closing the faceplate sidebars such as the Control Panel, the faceplate should shrink back to size. It doesn't under macOS.
 2. Many of the dialogs have resizing and closing buttons (aka `window decorations`) that they are not supposed to have.
 3. Every one of the lists and tables sort in a descending order, rather than ascending, as specified (and works) under Linux. This is most annoying with the Station sidebar in the database display, since there's no heading to click on to re-sort it. All of the other tabular displays have clickable headers that allow you to sort on that particular column.
+4. The clocks don't always update to the current time. This is kind of critical because it's what drives the database's time filters, potentially providing old information. Restarting may get the clocks back as a workaround.
 
 # Usage
 Some receivers like to be turned on before Smart Gnome Control is run. Thast is because although they can receive power commands, they may not provide power status. Therefore, the application always assumes it's on from startup and goes from there. You can toggle the radio's power at any time by hitting the `Esc` key, or by choosing Radio->Power from the menu. 
