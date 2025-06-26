@@ -62,12 +62,12 @@ PKG_CHECK_MODULES(HAMLIB, [$hamlib_modules], [
 ])
 
 dnl Check curl
-libcurl_modules="libcurl >= 8.7"
+libcurl_modules="libcurl >= 7.60"
 PKG_CHECK_MODULES(LIBCURL, [$libcurl_modules], [
   CFLAGS="$CFLAGS $LIBCURL_CFLAGS";
   LIBS="$LIBS $LIBCURL_LIBS";
 ], [
-  AC_MSG_ERROR([CURL libraries 8.11 or later not found...])
+  AC_MSG_ERROR([CURL libraries 7.60 or later not found...])
 ])
 
 GLIB_GSETTINGS
