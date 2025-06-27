@@ -40,6 +40,7 @@
 #include <ctype.h>
 #include <curl/curl.h>
 #include <stdbool.h>
+#include <errno.h>
 
 #include "extra.h"
 #include "database.h"
