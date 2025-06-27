@@ -2402,8 +2402,8 @@ getRegionList					(GtkListStore*	store)
 
 gint
 compare_strings					(GtkTreeModel*	model,
-                                                 GtkTreeIter	iter1,
-                                                 GtkTreeIter	iter2,
+                                                 GtkTreeIter*	iter1,
+                                                 GtkTreeIter*	iter2,
                                                  gpointer	user_data)
 {
   gchar*	string1;
@@ -2412,16 +2412,16 @@ compare_strings					(GtkTreeModel*	model,
   gint		col_id;
   
   if ((GTK_IS_TREE_STORE(model)) && 
-     (gtk_tree_model_iter_has_child(model, &iter1) || gtk_tree_model_iter_has_child(model, &iter1)))
-      result = 0; //don't sort root nodes
+     (gtk_tree_model_iter_has_child(model, iter1) || gtk_tree_model_iter_has_child(model, iter2)))
+      result = 0; //don't sort level 1 nodes
   else {  
     if (GTK_IS_TREE_STORE(model))
       col_id = 1;
     else
       col_id = 0;  
-    gtk_tree_model_get(model, &iter1, col_id, &string1, -1);
-    gtk_tree_model_get(model, &iter2, col_id, &string2, -1);
-    result = g_strcmp0(string2,string1);
+    gtk_tree_model_get(model, iter1, col_id, &string1, -1);
+    gtk_tree_model_get(model, iter2, col_id, &string2, -1);
+    result = g_strcmp0(string1,string2);
     g_free(string1);
     g_free(string2);
   }  
@@ -2492,10 +2492,10 @@ set_filter_data_box				(GtkWidget*	filterBox,
   }
   db_filt = currentFilter;
   g_settings_set_int(sgc_settings,"last-filter", db_filt);
-  gtk_tree_sortable_set_sort_func((GtkTreeSortable*)store,
-                                   0, (GtkTreeIterCompareFunc)compare_strings, NULL, NULL);
   gtk_tree_sortable_set_sort_column_id((GtkTreeSortable*)store,
                                    0, GTK_SORT_ASCENDING);
+  gtk_tree_sortable_set_sort_func((GtkTreeSortable*)store,
+                                   0, (GtkTreeIterCompareFunc)compare_strings, NULL, NULL);
   gtk_combo_box_set_model((GtkComboBox*)filterBox, (GtkTreeModel*)store);
   g_object_unref(store); 
 }
@@ -2684,10 +2684,10 @@ get_stats_records				(GtkWidget*	cList,
     }*/
     
     g_slist_free(g_steal_pointer(&regionList));
-    gtk_tree_sortable_set_sort_func((GtkTreeSortable*)statsQueryData,
-                                    STAT, (GtkTreeIterCompareFunc)compare_strings, NULL, NULL);
     gtk_tree_sortable_set_sort_column_id((GtkTreeSortable*)statsQueryData,
                                     STAT, GTK_SORT_ASCENDING);
+    gtk_tree_sortable_set_sort_func((GtkTreeSortable*)statsQueryData,
+                                    STAT, (GtkTreeIterCompareFunc)compare_strings, NULL, NULL);
     gtk_tree_view_set_model((GtkTreeView*)cList, (GtkTreeModel*)statsQueryData);
     g_object_unref(statsQueryData);
     
