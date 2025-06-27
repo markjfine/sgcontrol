@@ -181,6 +181,7 @@ static GSList*		rig_list = NULL;
 gchar*			mem_comment;
 gchar*			cur_mem_file;
 gboolean		cur_mem_default;
+static double		lastTime;
 
 typedef struct {
 	gchar*	label;
@@ -1393,6 +1394,8 @@ update_clocks()
 {
   updateLocal(app1);
   updateUTC(app1);
+  if ((lastTime != curTime) && get_visible(tun1,"TuningDlg"))
+    doRefresh();
 }
 
 
@@ -1423,6 +1426,7 @@ updateUTC                              (GtkWidget* inWidget)
   if (currentDow == -1)
     currentDow = 6;
   currentDow = (gint)pow(2.0,(double)currentDow);
+  lastTime = curTime;
   curTime = (double)g_time.tm_hour + (double)(g_time.tm_min / 60.0);   
   set_text(app1,"UTC2Lbl",gmt_time);
   g_free(gmt_time);
