@@ -300,21 +300,51 @@ lookup_widget                          (GtkWidget*	widget,
 }
 
 
+gboolean
+check_schema_and_key			(const gchar*	schema_id,
+                                         const gchar*	key_name)
+{
+    gboolean	schema_exists = FALSE;
+    gboolean	key_exists = FALSE;
+
+    // Get the default GSettings schema source
+    GSettingsSchemaSource *source = g_settings_schema_source_get_default();
+
+    if (source != NULL) {
+        // Look up the schema
+        GSettingsSchema *schema = g_settings_schema_source_lookup(source, schema_id, FALSE);
+
+        if (schema != NULL) {
+            schema_exists = TRUE;
+            // Check if the key exists within the schema
+            key_exists = g_settings_schema_has_key(schema, key_name);
+            g_settings_schema_unref(schema); // Unreference the schema
+        }
+        // No need to unref the source as it's a global singleton
+    }
+
+    return (schema_exists && key_exists);
+}
+
+
 gint
 get_theme_style()
 {
   gchar*	theme;
-  gint		result = -1;
+  gint		result = 0;
+
+  if (check_schema_and_key("org.gnome.desktop.interface", "color-scheme")) {
+    GSettings* settings = g_settings_new("org.gnome.desktop.interface");
   
-  GSettings* settings = g_settings_new("org.gnome.desktop.interface");
-  theme = g_settings_get_string(settings, "color-scheme");
- if (strcmp(theme,"prefer-dark") == 0)
-    result = 1;
-  else
-    result = 0;
-  g_free(theme);
+    theme = g_settings_get_string(settings, "color-scheme");
+    if (strcmp(theme,"prefer-dark") == 0)
+      result = 1;
+    else
+      result = 0;
+    g_free(theme);
+  }
   
- return result;
+  return result;
 }
 
 
