@@ -1389,13 +1389,14 @@ get_notebook_page                      (GtkWidget* inWidget,
 }
 
 
-void
+gboolean
 update_clocks()
 {
   updateLocal(app1);
   updateUTC(app1);
   if ((lastTime != curTime) && get_visible(tun1,"TuningDlg"))
     doRefresh();
+  return true;
 }
 
 

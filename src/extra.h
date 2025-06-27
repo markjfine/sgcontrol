@@ -230,7 +230,7 @@ gint
 get_notebook_page                      (GtkWidget*	inWidget,
                                         gchar*		notebook);
 
-void
+gboolean
 update_clocks(void);
 
 void

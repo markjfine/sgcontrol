@@ -3076,6 +3076,8 @@ doRefresh()
 {
   GtkWidget*	clist;
   
+  update_freq_db_display();
+  
   if (get_list_num_rows(tun1,"StationsList") > 0) {
     clist = lookup_widget(tun1,"StationsList");
     switch (currentFilter) {
