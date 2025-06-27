@@ -685,13 +685,13 @@ open_logfile()
     g_object_unref(store);
 
     j--;
-    if (j > -1) {
+    if (j > -1) //{
       set_list_selected_row(log1,"LogList",j);
-    } else {
-      temp = g_strdup_printf("%s has no records!", log_name);
-      show_message("Open Log File", GTK_MESSAGE_INFO, temp);
-      g_free(temp);
-    }
+    //} else {
+    //  temp = g_strdup_printf("%s has no records!", log_name);
+    //  show_message("Open Log File", GTK_MESSAGE_INFO, temp);
+    //  g_free(temp);
+    //}
     g_settings_set_string(sgc_settings,"last-log", log_name);
   }
 }
