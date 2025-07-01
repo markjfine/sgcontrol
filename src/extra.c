@@ -2359,8 +2359,11 @@ get_meter()
   } else
     meter_level = 0;
   set_meter_display();
-  
-  return TRUE;
+    
+  if (has_meter)
+    return TRUE;
+  else
+    return FALSE; //kill the timer
 }
 
 
