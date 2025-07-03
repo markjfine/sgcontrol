@@ -2225,8 +2225,12 @@ GtkWidget*
 create_AboutDlg (void)
 {
   const gchar *authors[] = {
+    "Authors:",
     "Mark J. Fine",
-    "with code provided by Alexandru Csete",
+    "",
+    "Contributors:",
+    "Alexandru Csete - Provided code from Gnome-rig",
+    "Michael Marcus, KG7M - Provided invaluable Drake R8 testing",
     NULL
   };
   GtkWidget*	AboutDlg;
