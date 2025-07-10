@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.71])
 
-AC_INIT([sgcontrol], [0.52], [mark.fine@fineware-swl.com],[sgcontrol],[https://github.com/markjfine/sgcontrol])
+AC_INIT([sgcontrol], [0.53], [mark.fine@fineware-swl.com],[sgcontrol],[https://github.com/markjfine/sgcontrol])
 
 AC_CONFIG_SRCDIR([configure.ac])
 
@@ -67,7 +67,7 @@ PKG_CHECK_MODULES(LIBCURL, [$libcurl_modules], [
   CFLAGS="$CFLAGS $LIBCURL_CFLAGS";
   LIBS="$LIBS $LIBCURL_LIBS";
 ], [
-  AC_MSG_ERROR([CURL libraries 7.60 or later not found...])
+  AC_MSG_ERROR([libcurl 7.60 or later not found...])
 ])
 
 GLIB_GSETTINGS
@@ -198,7 +198,7 @@ echo
 echo SUMMARY:
 echo
 echo SGControl version.. : $VERSION
-echo curl version....... : $CURL_V
+echo libcurl version.... : $CURL_V
 echo Hamlib version..... : $HAMLIB_V
 echo Glib version....... : $GLIB_V
 echo Gdk version........ : $GDK_V
