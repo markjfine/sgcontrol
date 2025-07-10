@@ -2698,6 +2698,7 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
+                                    <accelerator key="period" signal="clicked"/>
                                     <accelerator key="KP_Decimal" signal="clicked"/>
                                   </object>
                                   <packing>
