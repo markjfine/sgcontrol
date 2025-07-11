@@ -1689,9 +1689,12 @@ tune_from_history                      (gint		in_row,
 
   r_freq = get_history_freq(in_row);
   if ((r_freq >= minf/1000)&&(r_freq <= maxf/1000)) {
-    if (set_row)
-      set_list_selected_row(app1,"HistList",in_row);
-    else
+    set_list_selected_row(app1,"HistList",in_row);
+    //if (set_row)
+      //set_list_selected_row(app1,"HistList",in_row);
+    //else
+      //hist_index = in_row;
+    if (!set_row)
       hist_index = in_row;
     set_history_buttons();
     frequency = r_freq;
