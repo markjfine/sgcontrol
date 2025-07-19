@@ -100,7 +100,7 @@ guint       	vfo;
 guint       	ant;
 guint       	agc;
 guint       	bw;
-guint       	mode;
+rmode_t       	mode;
 int		memch;
 RIG*		hrig;
 int		atten_val[5];

@@ -98,7 +98,7 @@ extern guint       	vfo;
 extern guint       	ant;
 extern guint       	agc;
 extern guint       	bw;
-extern guint       	mode;
+extern rmode_t       	mode;
 extern int		memch; 
 extern RIG*		hrig;
 extern int		atten_val[5];
@@ -2781,8 +2781,8 @@ bwlist_compare_func                    (gconstpointer s1,
   gchar *d2;
   gint result;
 
-  d1 = g_strdup_printf("%4.1f",num1);
-  d2 = g_strdup_printf("%4.1f",num2);
+  d1 = g_strdup_printf("%5.1f",num1);
+  d2 = g_strdup_printf("%5.1f",num2);
   result = strcmp(d2, d1);
   g_free(d1);
   g_free(d2);
@@ -2851,7 +2851,7 @@ set_bw                                 (gint	item_index)
   if (has_set_mode) {
     bw = item_index;
 
-    mode1 = GPOINTER_TO_INT(g_list_nth_data(mode_list,mode-1));
+    mode1 = GPOINTER_TO_SIZE(g_list_nth_data(mode_list,mode-1));
     width1 = GPOINTER_TO_INT(g_list_nth_data(bw_list,bw-1));
 
     rig_set_mode(hrig, RIG_VFO_CURR, mode1, width1);
@@ -2875,14 +2875,14 @@ gint
 modelist_compare_func                  (gconstpointer s1,
                                         gconstpointer s2)
 {
-  double num1 = GPOINTER_TO_INT(s1);
-  double num2 = GPOINTER_TO_INT(s2);
+  rmode_t num1 = GPOINTER_TO_SIZE(s1);
+  rmode_t num2 = GPOINTER_TO_SIZE(s2);
   gchar *d1;
   gchar *d2;
   gint result;
 
-  d1 = g_strdup_printf("%16.0f",num1);
-  d2 = g_strdup_printf("%16.0f",num2);
+  d1 = g_strdup_printf("%64ld",num1);
+  d2 = g_strdup_printf("%64ld",num2);
   result = strcmp(d1, d2);
   g_free(d1);
   g_free(d2);
@@ -2897,7 +2897,7 @@ get_mode_str                           (gint	in_mode)
     rmode_t	mode1;
     gchar*	m_item;
 	
-  mode1 = GPOINTER_TO_INT(g_list_nth_data(mode_list,in_mode-1));
+  mode1 = GPOINTER_TO_SIZE(g_list_nth_data(mode_list,in_mode-1));
   switch(mode1){
     case RIG_MODE_AM :
       m_item = strdup("AM");
@@ -2919,6 +2919,9 @@ get_mode_str                           (gint	in_mode)
       break;
     case RIG_MODE_WFM :
       m_item = strdup("FM-Wide");
+      break;
+    case RIG_MODE_WFMS :
+      m_item = strdup("FM-Stereo");
       break;
     case RIG_MODE_CWR :
       m_item = strdup("CW-R");
@@ -2970,12 +2973,12 @@ check_mode()
     mode_list = NULL;
   }
   while (hrig->state.filters[i].modes != 0) {
-    gint mw = hrig->state.filters[i].modes;
-    for (j = 0; j < 16; j++) {
-      gint mode_num = mw;
+    rmode_t mw = hrig->state.filters[i].modes;
+    for (j = 0; j < 48; j++) {
+      rmode_t mode_num = mw;
       mode_num &= (1<<j);
-      if ((mode_num > 0) && (g_list_find(mode_list,GINT_TO_POINTER(mode_num))==NULL))
-        mode_list = g_list_insert_sorted(mode_list,GINT_TO_POINTER(mode_num),
+      if ((mode_num > 0) && (g_list_find(mode_list,GSIZE_TO_POINTER(mode_num))==NULL))
+        mode_list = g_list_insert_sorted(mode_list,GSIZE_TO_POINTER(mode_num),
                                         (GCompareFunc)modelist_compare_func);
     }
     i++;
@@ -2986,13 +2989,19 @@ check_mode()
     gtk_list_store_append(opt_menu_menu, &iter);
     gtk_list_store_set(opt_menu_menu, &iter, 0, " ", -1);
     for ( i = 0; i < g_list_length(mode_list); i++) {
-      int mwd = GPOINTER_TO_INT(g_list_nth_data(mode_list,i));
+      rmode_t mwd = GPOINTER_TO_SIZE(g_list_nth_data(mode_list,i));
       switch(mwd){
         case RIG_MODE_AM :
           m_item = strdup("AM");
           break;
+        case RIG_MODE_AMS :
+          m_item = strdup("AMS");
+          break;
         case RIG_MODE_CW :
           m_item = strdup("CW");
+          break;
+        case RIG_MODE_CWR :
+          m_item = strdup("CW-R");
           break;
         case RIG_MODE_USB :
           m_item = strdup("USB");
@@ -3003,20 +3012,17 @@ check_mode()
         case RIG_MODE_RTTY :
           m_item = strdup("RTTY");
           break;
+        case RIG_MODE_RTTYR :
+          m_item = strdup("RTTY-R");
+          break;
         case RIG_MODE_FM :
           m_item = strdup("FM");
           break;
         case RIG_MODE_WFM :
           m_item = strdup("FM-Wide");
           break;
-        case RIG_MODE_CWR :
-          m_item = strdup("CW-R");
-          break;
-        case RIG_MODE_RTTYR :
-          m_item = strdup("RTTY-R");
-          break;
-        case RIG_MODE_AMS :
-          m_item = strdup("AMS");
+        case RIG_MODE_WFMS :
+          m_item = strdup("FM-Stereo");
           break;
         case RIG_MODE_PKTLSB :
           m_item = strdup("Packet-LSB");
@@ -3097,7 +3103,7 @@ get_mode_bw()
     } else {
       mode = 0;
       for (i = 0; i < g_list_length(mode_list); i++) {
-        if (mode1 == GPOINTER_TO_INT(g_list_nth_data(mode_list,i)))
+        if (mode1 == GPOINTER_TO_SIZE(g_list_nth_data(mode_list,i)))
           mode = i+1;
       }
       bw = 0;
@@ -4679,6 +4685,9 @@ get_memory_list()
               case RIG_MODE_WFM :
                 mode_str = strdup("FM-Wide");
                 break;
+              case RIG_MODE_WFMS :
+                mode_str = strdup("FM-Stereo");
+                break;
               case RIG_MODE_CWR :
                 mode_str = strdup("CW-R");
                 break;
@@ -4778,6 +4787,9 @@ get_memory_list()
                   break;
                 case RIG_MODE_WFM :
                   mode_str = strdup("FM-Wide");
+                  break;
+                case RIG_MODE_WFMS :
+                  mode_str = strdup("FM-Stereo");
                   break;
                 case RIG_MODE_CWR :
                   mode_str = strdup("CW-R");
@@ -4968,34 +4980,37 @@ fill_memory_channel_from_list_item	(gint	in_row)
                       if (strcmp(valStr,"FM-Wide") == 0)
                         nMode = RIG_MODE_WFM;
                       else
-                        if (strcmp(valStr,"CW-R") == 0)
-                          nMode = RIG_MODE_CWR;
+                        if (strcmp(valStr,"FM-Stereo") == 0)
+                          nMode = RIG_MODE_WFMS;
                         else
-                          if (strcmp(valStr,"RTTY-R") == 0)
-                            nMode = RIG_MODE_RTTYR;
+                          if (strcmp(valStr,"CW-R") == 0)
+                            nMode = RIG_MODE_CWR;
                           else
-                            if (strcmp(valStr,"AMS") == 0)
-                              nMode = RIG_MODE_AMS;
+                            if (strcmp(valStr,"RTTY-R") == 0)
+                              nMode = RIG_MODE_RTTYR;
                             else
-                              if (strcmp(valStr,"Packet-LSB") == 0)
-                                nMode = RIG_MODE_PKTLSB;
+                              if (strcmp(valStr,"AMS") == 0)
+                                nMode = RIG_MODE_AMS;
                               else
-                                if (strcmp(valStr,"Packet-USB") == 0)
-                                  nMode = RIG_MODE_PKTUSB;
+                                if (strcmp(valStr,"Packet-LSB") == 0)
+                                  nMode = RIG_MODE_PKTLSB;
                                 else
-                                  if (strcmp(valStr,"PKT-FM") == 0)
-                                    nMode = RIG_MODE_PKTFM;
+                                  if (strcmp(valStr,"Packet-USB") == 0)
+                                    nMode = RIG_MODE_PKTUSB;
                                   else
-                                    if (strcmp(valStr,"FAX") == 0)
-                                      nMode = RIG_MODE_FAX;
+                                    if (strcmp(valStr,"PKT-FM") == 0)
+                                      nMode = RIG_MODE_PKTFM;
                                     else
-                                      if (strcmp(valStr,"ECSS-LSB") == 0)
-                                        nMode = RIG_MODE_ECSSLSB;
+                                      if (strcmp(valStr,"FAX") == 0)
+                                        nMode = RIG_MODE_FAX;
                                       else
-                                        if (strcmp(valStr,"ECSS-USB") == 0)
-                                          nMode = RIG_MODE_ECSSUSB;
+                                        if (strcmp(valStr,"ECSS-LSB") == 0)
+                                          nMode = RIG_MODE_ECSSLSB;
                                         else
-                                          nMode = RIG_MODE_AM;
+                                          if (strcmp(valStr,"ECSS-USB") == 0)
+                                            nMode = RIG_MODE_ECSSUSB;
+                                          else
+                                            nMode = RIG_MODE_AM;
           g_value_unset(&value);
           chan_data.mode = nMode;
 
