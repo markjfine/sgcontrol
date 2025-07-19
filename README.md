@@ -73,7 +73,9 @@ If you have a receiver that is capable of working at multiple serial rates, ensu
 ## Settings
 The first thing the application may do is to download a fresh version of the [Eibi](http://eibispace.de/) shortwave database. It will check this and automatically install a new version of the database (if available) each time you start Smart Gnome Control.
 You may select the radio you will be using by selecting Tools->Options or by clicking on the gear button towards the right of the RadioCtrl toolbar.
-The first tab of Options shows the different radios Smart Gnome Control will operate (via Hamlib). Select a radio, and the appropriate port below. We've included most of the standard serial ports. If it's not there, choose `Other...` and type the device path on the right. Clicking `Ok` or `Apply` will reconfigure your display and immediately attempt to connect to your radio.
+
+The first tab of Options shows the different radios Smart Gnome Control will operate (via Hamlib). Select a radio, and the appropriate port below. We've included most of the standard serial ports that you can choose from. If it's not there, choose `Other...` and type the device path on the right. Alternatively, if the radio uses a TCP network connection, choose `Other...` and type the IP address and port using the format `<IP address>:<port>` (e.g. `127.0.0.1:7356` for connecting to GQRX). Clicking `Ok` or `Apply` will reconfigure your display and immediately attempt to connect to your radio.
+
 The second tab of Options shows various application settings, which will expand over time. Currently, there are two options:
 1. An option to filter out AM broadcast stations from the database sidebar.
 2. An option to toggle automatic database updates.
