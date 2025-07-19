@@ -4529,6 +4529,8 @@ check_mem()
     g_object_unref(model);
     set_list_selected_row (mem1,"MemList",0);
   }
+  
+  set_mem_display();
 }
 
 
@@ -4592,10 +4594,21 @@ get_mem()
 void
 set_mem_display()
 {
+  gboolean	hide_memory;
+  
+  hide_memory = ((max_mem_ch == -1) && (min_mem_ch == max_mem_ch));
+  
+  set_visible(app1,"show_list1",!hide_memory);
+  set_visible(app1,"memory1", !hide_memory);
+  set_visible(app1,"tuning1", !hide_memory);
+  set_visible(app1,"MemBtn", !hide_memory);
+  set_visible(app1,"ShowMemBtn", !hide_memory);
+  set_enabled(app1,"eventbox2",!hide_memory);
+  
   set_enabled(app1,"MemBtn",ispower);
   set_down(app1,"MemBtn",ispower && ismem);
-  set_visible(app1,"MemLbl",ispower && ismem);
-  set_visible(app1,"Mem2Lbl",ispower);
+  set_visible(app1,"MemLbl",!hide_memory && ispower && ismem);
+  set_visible(app1,"Mem2Lbl",!hide_memory && ispower);
   gchar* chstr = g_strdup_printf("%03d",memch);
   set_text(app1,"Mem2Lbl",chstr);
   g_free(chstr);
