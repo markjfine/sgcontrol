@@ -2881,8 +2881,8 @@ modelist_compare_func                  (gconstpointer s1,
   gchar *d2;
   gint result;
 
-  d1 = g_strdup_printf("%64ld",num1);
-  d2 = g_strdup_printf("%64ld",num2);
+  d1 = g_strdup_printf("%64llu",(long long unsigned int)num1);
+  d2 = g_strdup_printf("%64llu",(long long unsigned int)num2);
   result = strcmp(d1, d2);
   g_free(d1);
   g_free(d2);
