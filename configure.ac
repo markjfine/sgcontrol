@@ -2,7 +2,7 @@ dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.71])
 
-AC_INIT([sgcontrol], [0.53], [mark.fine@fineware-swl.com],[sgcontrol],[https://github.com/markjfine/sgcontrol])
+AC_INIT([sgcontrol], [0.54], [mark.fine@fineware-swl.com],[sgcontrol],[https://github.com/markjfine/sgcontrol])
 
 AC_CONFIG_SRCDIR([configure.ac])
 

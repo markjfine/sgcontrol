@@ -1406,6 +1406,87 @@ struct regionLookup_t	regionLookup[373] = {
   {"ZMB","Africa"},
   {"ZWE","Africa"}};
 
+#ifdef __MINGW64__
+char*
+strptime(const char* restrict inStr, const char* restrict inFmt, struct tm* tm)
+{
+   gchar*	timebit;
+   gchar*	timebits[3] = {"","",""};
+   gchar*	timefmt;
+   gchar*	timefmts[3] = {"","",""};
+   char		smonths[12][3] = {"JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"};
+   gint		month = -1;
+   char		moStr[3];
+   gint		day = 0;
+   gint		year = 1900;
+   gint		i;
+   gint		j;
+   gchar*	inStr2;
+   gchar*	inFmt2;
+   
+   inStr2 = strdup(inStr);
+   inFmt2 = strdup(inFmt);
+   
+   i = 0;
+   timebit = strtok(inStr2, " ");
+   while (timebit != NULL) {
+     timebits[i] = strdup(timebit);
+     i = i + 1;
+     timebit = strtok(NULL, " ");
+   }
+   
+   i = 0;
+   timefmt = strtok(inFmt2, " ");
+   while (timefmt != NULL) {
+     timefmts[i] = strdup(timefmt);
+     i = i + 1;
+     timefmt = strtok(NULL, " ");
+   }
+   
+   for (j = 0; j < 3; j++) {
+     switch (timefmts[j][1]) {
+     
+       case 'b' : //3-letter month
+         sscanf(timebits[j],"%3c",moStr);
+         for (i=0; i<3; i++)
+           moStr[i] = toupper(moStr[i]);
+         for (i = 0; i < 12; i++)
+           if ((moStr[0] == smonths[i][0]) && (moStr[1] == smonths[i][1]) && (moStr[2] == smonths[i][2]))
+             month = i;
+         break;
+         
+       case 'd' : //2-digit day
+         sscanf(timebits[j],"%d",&day);
+         break;
+       
+       case 'Y' : //4-digit year
+         sscanf(timebits[j],"%d",&year);
+         break;
+         
+       default :
+         break;
+     }
+   }
+   
+   g_free(inStr2);
+   g_free(inFmt2);
+   for (i = 0; i < 3; i++) {
+     g_free(timebits[i]);
+     g_free(timefmts[i]);
+   }
+
+   if (month == -1) {
+     return NULL;
+   }
+
+   tm->tm_mon = month;
+   tm->tm_mday = day;
+   tm->tm_year = year - 1900;
+   
+   return inStr+strlen(inStr)-1;
+}
+#endif
+
 void
 get_database_file()
 {
@@ -1433,6 +1514,9 @@ get_database_file()
   if (result == GTK_RESPONSE_ACCEPT) {
     temp = gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(file_selector));
     db_name = g_strdup(temp);
+#ifdef __MINGW64__
+      replace_backslashes(db_name);
+#endif          
     open_database();
     g_free(temp);
   }
@@ -1850,8 +1934,10 @@ checkWebPage				(gboolean	isBackground)
     time_tm.tm_hour = 0;
     time_tm.tm_min = 0;
     time_tm.tm_sec = 0;
+#ifndef __MINGW64__
     time_tm.tm_gmtoff = 0;
     time_tm.tm_zone = "Z";
+#endif
     time_tm.tm_isdst = 0;
     if (test != NULL) {
       newDate = mktime(&time_tm);
@@ -1976,9 +2062,11 @@ getTextFileVerDate()
             test = strptime(sDate, "%b %d, %Y", &time_tm);
             time_tm.tm_hour = 0;
             time_tm.tm_min = 0;
-            time_tm.tm_sec = 0;            
+            time_tm.tm_sec = 0;   
+#ifndef __MINGW64__         
             time_tm.tm_gmtoff = 0;
             time_tm.tm_zone = "Z";
+#endif
             time_tm.tm_isdst = 0;
             if (test != NULL) {
               newDate = mktime(&time_tm);

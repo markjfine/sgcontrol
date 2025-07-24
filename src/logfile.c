@@ -51,6 +51,24 @@ extern gchar*		log_name;
 
 const gchar* basestr = ".sgcontrol";
 
+#ifdef __MINGW64__
+/* routine to replace all backslashes with forward ones */
+void
+replace_backslashes(gchar* inStr)
+{
+  gint	i;
+  
+  if (inStr != NULL) {
+    for (i = 0; i < strlen(inStr); i++) {
+      if (inStr[i] == '\\') {
+        inStr[i] = '/';
+      }
+    }
+  }
+}
+#endif
+
+
 /* routine to create user data directory string */
 gchar*
 get_user_base()
@@ -60,6 +78,11 @@ get_user_base()
 	
   homestr = g_get_home_dir();
   pathstr = g_strdup_printf("%s/%s",homestr,basestr);
+
+#ifdef __MINGW64__
+  replace_backslashes(pathstr);
+#endif
+
   return pathstr;
 }
 
@@ -433,6 +456,9 @@ get_log_file				(gint	file_mode)
       if (log_name)
         g_free(log_name);
       log_name = g_strdup(new_file);
+#ifdef __MINGW64__
+      replace_backslashes(log_name);
+#endif      
       open_logfile();
       g_free(new_file);
     }

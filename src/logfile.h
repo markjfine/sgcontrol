@@ -32,6 +32,11 @@
 #  include <config.h>
 #endif
 
+#ifdef __MINGW64__
+void
+replace_backslashes(gchar* inStr);
+#endif
+
 gchar*
 get_user_base(void);
 

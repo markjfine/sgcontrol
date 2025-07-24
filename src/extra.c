@@ -43,6 +43,11 @@
 #include "database.h"
 #include "logfile.h"
 
+#ifdef __MINGW64__
+#include <windows.h>
+#endif
+
+
 extern GtkWidget*	app1;
 extern GtkWidget*	l_popup;
 extern GtkWidget*	b_popup;
@@ -1407,7 +1412,11 @@ updateLocal                            (GtkWidget* inWidget)
   struct tm l_time;
 
   time(&s_time);
+#ifdef __MINGW64__
+  localtime_s(&l_time,&s_time);
+#else
   localtime_r(&s_time,&l_time);
+#endif
   gchar* local_time = g_strdup_printf("%02d%02d",l_time.tm_hour,l_time.tm_min);
   set_text(app1,"Local2Lbl",local_time);
   g_free(local_time);
@@ -1421,7 +1430,11 @@ updateUTC                              (GtkWidget* inWidget)
   struct tm g_time;
 
   time(&s_time);
+#ifdef __MINGW64__
+  gmtime_s(&g_time,&s_time);
+#else
   gmtime_r(&s_time,&g_time);
+#endif
   gchar* gmt_time = g_strdup_printf("%02d%02d",g_time.tm_hour,g_time.tm_min);
   currentDow = g_time.tm_wday - 1;
   if (currentDow == -1)
@@ -1445,7 +1458,11 @@ get_current_date()
   gchar*    gmt_date;
 
   time(&s_time);
+#ifdef __MINGW64__
+  gmtime_s(&g_time,&s_time);
+#else
   gmtime_r(&s_time,&g_time);
+#endif
   gmt_date = g_strdup_printf("%02d %s %02d",g_time.tm_mday, months[g_time.tm_mon], g_time.tm_year % 100);
   
   return gmt_date;
@@ -1460,7 +1477,11 @@ get_current_dow_letter()
   struct tm g_time;
 
   time(&s_time);
+#ifdef __MINGW64__
+  gmtime_s(&g_time,&s_time);
+#else
   gmtime_r(&s_time,&g_time);
+#endif
   return days[g_time.tm_wday];
 }
 
@@ -1722,7 +1743,11 @@ add_to_history()
     if (hist_list) {
       hist_store = (GtkListStore*)gtk_tree_view_get_model(hist_list);
       time(&s_time);
+#ifdef __MINGW64__
+      gmtime_s(&g_time,&s_time);
+#else
       gmtime_r(&s_time,&g_time);
+#endif
       buf = g_strdup_printf("%02d:%02d:%02d;%11.3f",g_time.tm_hour,
                                                     g_time.tm_min,
                                                     g_time.tm_sec,
@@ -1895,7 +1920,11 @@ get_power()
 
   if (has_get_power) {
     retcode = rig_get_powerstat(hrig, &pwr1);
+#ifdef __MINGW64__
+    Sleep(1);
+#else
     usleep(1000);
+#endif
     retcode = rig_get_powerstat(hrig, &pwr1);
     if (retcode == RIG_OK) {
       switch (pwr1) {
@@ -5456,6 +5485,9 @@ get_mem_file		                (gint	mem_file_mode)
     if (result == GTK_RESPONSE_ACCEPT) {
       new_file = gtk_file_chooser_get_filename(GTK_FILE_CHOOSER(file_selector));
       file_name = get_filename_from_full_path(new_file);
+#ifdef __MINGW64__
+      replace_backslashes(file_name);
+#endif      
       load_memories_from_file(file_name);
       g_free(new_file);
       g_free(file_name);
