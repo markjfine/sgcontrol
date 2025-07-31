@@ -405,6 +405,13 @@ on_update_display1_activate            (GtkMenuItem*     menuitem,
 }
 
 void
+on_RefreshBtn2_clicked                 (GtkButton*       button,
+                                        gpointer         user_data)
+{
+  get_all(FALSE);
+}
+
+void
 on_kp7_clicked                         (GtkButton*       button,
                                         gpointer         user_data)
 {
@@ -1894,6 +1901,8 @@ create_app1 (void)
                       G_CALLBACK (on_band_plan1_activate), NULL);
   g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"tuning_database1")), "activate",
                       G_CALLBACK (on_tuning_database1_activate), NULL);
+  g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"update_display1")), "activate",
+                      G_CALLBACK (on_update_display1_activate), NULL);
                                            
   /*Radio Menu*/                    
   g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"power1")), "activate",
@@ -1940,8 +1949,6 @@ create_app1 (void)
                       G_CALLBACK (on_show_log1_activate), NULL);
 
   /*Tools Menu*/                                          
-  g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"update_display1")), "activate",
-                      G_CALLBACK (on_update_display1_activate), NULL);
   g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"options1")), "activate",
                       G_CALLBACK (on_options1_activate), NULL);                      
   g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"about1")), "activate",
@@ -1974,6 +1981,8 @@ create_app1 (void)
                       G_CALLBACK (on_ShowMemBtn_clicked), NULL);
   g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"ShowLogBtn")), "clicked",
                       G_CALLBACK (on_ShowLogBtn_clicked), NULL);
+  g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"RefreshBtn2")), "clicked",
+                      G_CALLBACK (on_RefreshBtn2_clicked), NULL);
   g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"OptionsBtn")), "clicked",
                       G_CALLBACK (on_OptionsBtn_clicked), NULL);
   g_signal_connect (G_OBJECT (lookup_widget(mainapp1,"ExitBtn")), "clicked",

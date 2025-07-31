@@ -270,6 +270,12 @@ Author: Mark J. Fine
     <property name="can-focus">False</property>
     <property name="pixbuf">../pixmaps/sgcontrol/forward.svg</property>
   </object>
+  <object class="GtkImage" id="RefreshImg2">
+    <property name="name">RefreshImg2</property>
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">../pixmaps/sgcontrol/refresh.svg</property>
+  </object>
   <object class="GtkImage" id="anfimg">
     <property name="name">anfimg</property>
     <property name="visible">True</property>
@@ -1715,6 +1721,21 @@ Author: Mark J. Fine
                       </packing>
                     </child>
                     <child>
+                      <object class="GtkToolButton" id="RefreshBtn2">
+                        <property name="name">RefreshBtn2</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">Update display</property>
+                        <property name="label" translatable="yes">Refresh</property>
+                        <property name="use-underline">True</property>
+                        <property name="icon-widget">RefreshImg2</property>
+                      </object>
+                      <packing>
+                        <property name="expand">False</property>
+                        <property name="homogeneous">True</property>
+                      </packing>
+                    </child>
+                    <child>
                       <object class="GtkToolButton" id="OptionsBtn">
                         <property name="name">OptionsBtn</property>
                         <property name="visible">True</property>
@@ -2492,8 +2513,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="7" signal="clicked"/>
                                     <accelerator key="KP_7" signal="clicked"/>
+                                    <accelerator key="7" signal="clicked"/>
                                   </object>
                                 </child>
                                 <child>
@@ -2506,8 +2527,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="8" signal="clicked"/>
                                     <accelerator key="KP_8" signal="clicked"/>
+                                    <accelerator key="8" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">50</property>
@@ -2523,8 +2544,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="9" signal="clicked"/>
                                     <accelerator key="KP_9" signal="clicked"/>
+                                    <accelerator key="9" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">100</property>
@@ -2557,8 +2578,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="4" signal="clicked"/>
                                     <accelerator key="KP_4" signal="clicked"/>
+                                    <accelerator key="4" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="y">34</property>
@@ -2574,8 +2595,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="5" signal="clicked"/>
                                     <accelerator key="KP_5" signal="clicked"/>
+                                    <accelerator key="5" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">50</property>
@@ -2592,8 +2613,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="6" signal="clicked"/>
                                     <accelerator key="KP_6" signal="clicked"/>
+                                    <accelerator key="6" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">100</property>
@@ -2610,8 +2631,8 @@ Author: Mark J. Fine
                                     <property name="receives-default">False</property>
                                     <property name="image">EnterImg</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="Return" signal="clicked"/>
                                     <accelerator key="KP_Enter" signal="clicked"/>
+                                    <accelerator key="Return" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">150</property>
@@ -2628,8 +2649,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="1" signal="clicked"/>
                                     <accelerator key="KP_1" signal="clicked"/>
+                                    <accelerator key="1" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="y">68</property>
@@ -2645,8 +2666,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="2" signal="clicked"/>
                                     <accelerator key="KP_2" signal="clicked"/>
+                                    <accelerator key="2" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">50</property>
@@ -2663,8 +2684,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="3" signal="clicked"/>
                                     <accelerator key="KP_3" signal="clicked"/>
+                                    <accelerator key="3" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">100</property>
@@ -2681,8 +2702,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="0" signal="clicked"/>
                                     <accelerator key="KP_0" signal="clicked"/>
+                                    <accelerator key="0" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="y">102</property>
@@ -2698,8 +2719,8 @@ Author: Mark J. Fine
                                     <property name="can-focus">True</property>
                                     <property name="receives-default">False</property>
                                     <property name="use-underline">True</property>
-                                    <accelerator key="period" signal="clicked"/>
                                     <accelerator key="KP_Decimal" signal="clicked"/>
+                                    <accelerator key="period" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">100</property>
@@ -2791,8 +2812,8 @@ Author: Mark J. Fine
                                     <property name="image">LLeftImg</property>
                                     <property name="use-underline">True</property>
                                     <property name="always-show-image">True</property>
-                                    <accelerator key="KP_Left" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                                     <accelerator key="Left" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+                                    <accelerator key="KP_Left" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                                   </object>
                                 </child>
                                 <child>
@@ -2806,8 +2827,8 @@ Author: Mark J. Fine
                                     <property name="image">LeftImg</property>
                                     <property name="use-underline">True</property>
                                     <property name="always-show-image">True</property>
-                                    <accelerator key="Left" signal="clicked"/>
                                     <accelerator key="KP_Left" signal="clicked"/>
+                                    <accelerator key="Left" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">50</property>
@@ -2824,8 +2845,8 @@ Author: Mark J. Fine
                                     <property name="image">RightImg</property>
                                     <property name="use-underline">True</property>
                                     <property name="always-show-image">True</property>
-                                    <accelerator key="Right" signal="clicked"/>
                                     <accelerator key="KP_Right" signal="clicked"/>
+                                    <accelerator key="Right" signal="clicked"/>
                                   </object>
                                   <packing>
                                     <property name="x">125</property>
@@ -2842,8 +2863,8 @@ Author: Mark J. Fine
                                     <property name="image">RRightImg</property>
                                     <property name="use-underline">True</property>
                                     <property name="always-show-image">True</property>
-                                    <accelerator key="Right" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                                     <accelerator key="KP_Right" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
+                                    <accelerator key="Right" signal="clicked" modifiers="GDK_CONTROL_MASK"/>
                                   </object>
                                   <packing>
                                     <property name="x">200</property>

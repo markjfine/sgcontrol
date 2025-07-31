@@ -396,6 +396,7 @@ set_glyphs_to_theme			(gint	theme_type)
     set_svg_color(app1, "memoryimg", PACKAGE_PIXMAPS_DIR"/memory.svg", imgColor);
     set_svg_color(app1, "showmemoryimg", PACKAGE_PIXMAPS_DIR"/showmemory.svg", imgColor);
     set_svg_color(app1, "logimg", PACKAGE_PIXMAPS_DIR"/log.svg", imgColor);
+    set_svg_color(app1, "RefreshImg2", PACKAGE_PIXMAPS_DIR"/refresh.svg", imgColor);
     set_svg_color(app1, "optimg", PACKAGE_PIXMAPS_DIR"/opt.svg", imgColor);
     set_svg_color(app1, "exitimg", PACKAGE_PIXMAPS_DIR"/exit.svg", imgColor);
     set_svg_color(app1, "AboutImg", PACKAGE_PIXMAPS_DIR"/about.svg", imgColor);
