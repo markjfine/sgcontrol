@@ -2813,6 +2813,7 @@ get_freq_records				(GtkWidget*	cList,
   gchar*	counStr;
   gchar*	langStr;
   gchar*	targStr;
+  gchar*	xmtrStr;
   
   enum {
     FREQ = 0,
@@ -2823,6 +2824,7 @@ get_freq_records				(GtkWidget*	cList,
     TARG,
     COUN,
     STAT,
+    XMTR,
     NUM_COLS
   };
   
@@ -2833,7 +2835,7 @@ get_freq_records				(GtkWidget*	cList,
     freqFilter = true;
   if (g_slist_length(readLines) > 0) {
     freqQueryData = gtk_list_store_new( NUM_COLS, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING,
-                                        G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, -1);
+                                        G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, -1);
     for (i = 0; i < g_slist_length(readLines); i++) {
       line = (gchar*)g_slist_nth_data(readLines,i);
       if (strlen(line) < 18)
@@ -2861,6 +2863,10 @@ get_freq_records				(GtkWidget*	cList,
             langStr = getLanguageLookup(language, language);
             targStr = getTargetLookup(target, target);
             counStr = getCountryLookup(country, country);
+            if (strlen(line) < 75)
+              xmtrStr = strdup(" ");
+            else
+              xmtrStr = trim(substr(line, 75, strlen(line)-75));
             gtk_list_store_append(freqQueryData, &iter);
             gtk_list_store_set(freqQueryData, &iter,
                                FREQ, freqStr,
@@ -2871,6 +2877,7 @@ get_freq_records				(GtkWidget*	cList,
                                TARG, targStr,
                                COUN, counStr,              
                                STAT, station,
+                               XMTR, xmtrStr,
                                -1);
           } //time match
         } //frequency match
@@ -2967,6 +2974,7 @@ get_stat_records				(GtkWidget*	cList,
   gchar*	counStr;
   gchar*	langStr;
   gchar*	targStr;
+  gchar*	xmtrStr;
 
   enum {
     FREQ = 0,
@@ -2977,6 +2985,7 @@ get_stat_records				(GtkWidget*	cList,
     TARG,
     COUN,
     STAT,
+    XMTR,
     NUM_COLS
   };
 
@@ -2987,7 +2996,7 @@ get_stat_records				(GtkWidget*	cList,
   testTargetText = trim(inTarget);
   if (g_slist_length(readLines) > 0) {
     statQueryData = gtk_list_store_new( NUM_COLS, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING,
-                                        G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, -1);
+                                        G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, -1);
     for (i = 0; i < g_slist_length(readLines); i++) {
       line = (gchar*)g_slist_nth_data(readLines,i);
       if (strlen(line) < 18)
@@ -3019,6 +3028,10 @@ get_stat_records				(GtkWidget*	cList,
               langStr = getLanguageLookup(language, language);
               targStr = getTargetLookup(target, target);
               counStr = getCountryLookup(country, country);
+              if (strlen(line) < 75)
+                xmtrStr = strdup(" ");
+              else
+                xmtrStr = trim(substr(line, 75, strlen(line)-75));
               gtk_list_store_append(statQueryData, &iter);
               gtk_list_store_set(statQueryData, &iter,
                                  FREQ, freqStr,
@@ -3029,6 +3042,7 @@ get_stat_records				(GtkWidget*	cList,
                                  TARG, targStr,
                                  COUN, counStr,              
                                  STAT, station,
+                                 XMTR, xmtrStr,
                                  -1);
             } //time match
           } //optional language match

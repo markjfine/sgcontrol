@@ -126,6 +126,8 @@ Author: Mark J. Fine
       <column type="GtkCellRendererMode"/>
       <!-- column-name Station -->
       <column type="GtkCellRendererMode"/>
+      <!-- column-name Transmitter -->
+      <column type="GtkCellRendererMode"/>
     </columns>
   </object>
   <object class="GtkListStore" id="liststore7">
@@ -161,6 +163,8 @@ Author: Mark J. Fine
       <!-- column-name Country -->
       <column type="GtkCellRendererMode"/>
       <!-- column-name Station -->
+      <column type="GtkCellRendererMode"/>
+      <!-- column-name Transmitter -->
       <column type="GtkCellRendererMode"/>
     </columns>
   </object>
@@ -888,7 +892,7 @@ Author: Mark J. Fine
                                       <object class="GtkTreeViewColumn" id="station_col">
                                         <property name="resizable">True</property>
                                         <property name="sizing">fixed</property>
-                                        <property name="fixed-width">164</property>
+                                        <property name="fixed-width">150</property>
                                         <property name="title" translatable="yes">Station</property>
                                         <property name="clickable">True</property>
                                         <property name="sort-column-id">7</property>
@@ -896,6 +900,22 @@ Author: Mark J. Fine
                                           <object class="GtkCellRendererText" id="stationRenderer"/>
                                           <attributes>
                                             <attribute name="text">7</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="transmitter_col">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">20</property>
+                                        <property name="title" translatable="yes">Xmtr</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">8</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="transmitterRenderer"/>
+                                          <attributes>
+                                            <attribute name="text">8</attribute>
                                           </attributes>
                                         </child>
                                       </object>
@@ -1098,7 +1118,7 @@ Author: Mark J. Fine
                                       <object class="GtkTreeViewColumn" id="station_col1">
                                         <property name="resizable">True</property>
                                         <property name="sizing">fixed</property>
-                                        <property name="fixed-width">164</property>
+                                        <property name="fixed-width">150</property>
                                         <property name="title" translatable="yes">Station</property>
                                         <property name="clickable">True</property>
                                         <property name="sort-column-id">7</property>
@@ -1106,6 +1126,22 @@ Author: Mark J. Fine
                                           <object class="GtkCellRendererText" id="stationRenderer1"/>
                                           <attributes>
                                             <attribute name="text">7</attribute>
+                                          </attributes>
+                                        </child>
+                                      </object>
+                                    </child>
+                                    <child>
+                                      <object class="GtkTreeViewColumn" id="transmitter_col1">
+                                        <property name="resizable">True</property>
+                                        <property name="sizing">fixed</property>
+                                        <property name="fixed-width">20</property>
+                                        <property name="title" translatable="yes">Xmtr</property>
+                                        <property name="clickable">True</property>
+                                        <property name="sort-column-id">8</property>
+                                        <child>
+                                          <object class="GtkCellRendererText" id="transmitterRenderer1"/>
+                                          <attributes>
+                                            <attribute name="text">8</attribute>
                                           </attributes>
                                         </child>
                                       </object>

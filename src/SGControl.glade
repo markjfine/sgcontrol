@@ -342,6 +342,8 @@ Author: Mark J. Fine
       <column type="GtkCellRendererMode"/>
       <!-- column-name Station -->
       <column type="GtkCellRendererMode"/>
+      <!-- column-name Transmitter -->
+      <column type="GtkCellRendererMode"/>
     </columns>
   </object>
   <object class="GtkListStore" id="liststore2">
@@ -3045,7 +3047,7 @@ Author: Mark J. Fine
                           <object class="GtkTreeViewColumn" id="station_col">
                             <property name="resizable">True</property>
                             <property name="sizing">fixed</property>
-                            <property name="fixed-width">136</property>
+                            <property name="fixed-width">150</property>
                             <property name="title" translatable="yes">Station</property>
                             <property name="expand">True</property>
                             <property name="clickable">True</property>
@@ -3054,6 +3056,23 @@ Author: Mark J. Fine
                               <object class="GtkCellRendererText" id="StationdbRenderer"/>
                               <attributes>
                                 <attribute name="text">7</attribute>
+                              </attributes>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkTreeViewColumn" id="transmitter_col">
+                            <property name="resizable">True</property>
+                            <property name="sizing">fixed</property>
+                            <property name="fixed-width">20</property>
+                            <property name="title" translatable="yes">Xmtr</property>
+                            <property name="expand">True</property>
+                            <property name="clickable">True</property>
+                            <property name="sort-column-id">8</property>
+                            <child>
+                              <object class="GtkCellRendererText" id="TransmitterdbRenderer"/>
+                              <attributes>
+                                <attribute name="text">8</attribute>
                               </attributes>
                             </child>
                           </object>
