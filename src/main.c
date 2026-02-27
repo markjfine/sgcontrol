@@ -162,6 +162,7 @@ double		sml_step;
 double		lrg_step;
 
 gchar*		db_name;
+gchar*		db_name2;
 time_t		db_date;
 gchar*      	db_ext_name;
 gint		db_filt;
@@ -172,6 +173,7 @@ gchar*		db_target_filt;
 gint		currentDow;
 double		curTime;
 int		num_freqs;
+int		num_xmtrs;
 gint		cur_row;
 
 gchar*		basepath;
@@ -211,6 +213,7 @@ main (int argc, char *argv[])
   //guint lock_freq = false;
 
   db_name = "";
+  db_name2 = "";
   db_date = 0;
   db_filt = 0;
   db_language_filt = "";

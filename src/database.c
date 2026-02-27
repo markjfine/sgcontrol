@@ -47,6 +47,10 @@
 #include "logfile.h"
 
 GSList*			readLines;
+GSList*			readLines2;
+GSList*			XMTRCountries;
+GSList*			XMTRCodes;
+GSList*			XMTRSites;
 GSList*			regionList = NULL;
 GSList*			statsList = NULL;
 GSList*			typesList = NULL;
@@ -65,6 +69,7 @@ extern GSettings*	sgc_settings;
 extern gchar*		basepath;
 extern gchar*		basedbpath;
 extern gchar*		db_name;
+extern gchar*		db_name2;
 extern gint		db_filt;
 extern gchar*		db_language_filt;
 extern gchar*		db_country_filt;
@@ -75,6 +80,7 @@ extern time_t		db_date;
 extern gint		currentDow;
 extern double		curTime;
 extern int		num_freqs;
+extern int		num_xmtrs;
 extern gboolean		doIncludeBCB;
 
 // FIXME - Load these lookup tables from README.TXT instead of hard-coding
@@ -2089,15 +2095,43 @@ open_database()
 {
   gchar*		buf;
   gchar*		line;
-  gchar*                eol; 
+  gchar*                eol;
+  gchar*		file_path;
+  gchar*		test;
+  gchar*		test2;
+  gchar*		lastCountry;
+  gchar*		curCountry;
+  gchar*		curCode;
+  gchar*		curSite;
+  gboolean		start;
+  gint			i;
 
   if (g_slist_length(readLines) > 0) {
     g_slist_free(readLines);
     readLines = NULL;
   }
+  if (g_slist_length(readLines2) > 0) {
+    g_slist_free(readLines2);
+    readLines2 = NULL;
+  }
+  if (g_slist_length(XMTRCountries) > 0) {
+    g_slist_free(XMTRCountries);
+    XMTRCountries = NULL;
+  }
+  if (g_slist_length(XMTRCodes) > 0) {
+    g_slist_free(XMTRCodes);
+    XMTRCodes = NULL;
+  }
+  if (g_slist_length(XMTRSites) > 0) {
+    g_slist_free(XMTRSites);
+    XMTRSites = NULL;
+  }
 
   num_freqs = 0;
+  num_xmtrs = 0;
+  start = false;
   
+  //Open main file
   if (g_file_test(db_name, G_FILE_TEST_EXISTS)) {
     open_eibi_file (db_name, &buf);
     
@@ -2110,6 +2144,93 @@ open_database()
     }
     num_freqs = g_slist_length(readLines);
     g_free(buf);
+
+    //Open readme file
+    file_path = get_pathname_from_full_path(db_name);
+    db_name2 = g_strdup_printf("%s%s", file_path,"eibi-readme.txt");
+    g_free(file_path);
+    if (g_file_test(db_name2, G_FILE_TEST_EXISTS)) {
+      open_eibi_file (db_name2, &buf);
+
+      line = buf;
+      while (line[0] != '\0') {
+        eol = strchr(line, '\n');
+        eol[0] = '\0';
+    
+        //Begin saving from first transmitter record
+        if (!start) {
+          if (strlen(line) > 8) {
+            test = trim(substr(line, 3, 4));
+            if (strcmp(test, "AFG:") == 0)
+              start = true;
+            g_free(test);
+          }
+        }
+
+        if (start) {
+          readLines2 = g_slist_append(readLines2, strdup(line));
+
+          //End saving after last transmitter record
+          if (strlen(line) > 8) {
+            test = trim(substr(line, 3, 4));
+            if (strcmp(test, "ZWE:") == 0)
+              start = false;
+            g_free(test);
+          }
+        }
+        line = eol+1;        
+      }
+      num_xmtrs = g_slist_length(readLines2);
+      g_free(buf);
+
+      //Now parse into lookup table
+      line = (gchar*)g_slist_nth_data(readLines2, 0);
+      lastCountry = trim(substr(line, 3, 3));
+      for (i=0; i < num_xmtrs; i++) {
+        line = (gchar*)g_slist_nth_data(readLines2, i);
+        test = trim(substr(line, 3, 3));
+        test2 = trim(substr(line, 8, strlen(line)-8));
+
+        if (strcmp(test, "") == 0)
+          curCountry = strdup(lastCountry);
+        else {
+          if (test[strlen(test)-1] == ':')
+            test[strlen(test)-1] = '\0';
+          curCountry = strdup(test);
+          g_free(lastCountry);
+          lastCountry = strdup(curCountry);
+        }
+        g_free(test);
+
+        if (test2[1] == '-') {
+          curCode = substr(test2,0,1);
+          curSite = substr(test2,2,strlen(test2)-2);
+        } else {
+          if (test2[2] == '-') {
+            curCode = substr(test2,0,2);
+            curSite = substr(test2,3,strlen(test2)-3);
+          } else {
+            curCode = strdup("");
+            curSite = strdup(test2);
+          }
+        }
+        g_free(test2);
+
+        XMTRCountries = g_slist_append(XMTRCountries, strdup(curCountry));
+        XMTRCodes = g_slist_append(XMTRCodes, strdup(curCode));
+        XMTRSites = g_slist_append(XMTRSites, strdup(curSite));
+        g_free(curCountry);
+        g_free(curCode);
+        g_free(curSite);
+
+      }
+      //for (i=0; i < num_xmtrs; i++) {
+      //  g_print("%3s: %2s-%s\n", (gchar*)g_slist_nth_data(XMTRCountries, i), (gchar*)g_slist_nth_data(XMTRCodes, i), (gchar*)g_slist_nth_data(XMTRSites, i));
+      //}
+      g_free(lastCountry);
+      g_slist_free(readLines2);
+      readLines2 = NULL;
+    }
       
     g_settings_set_string(sgc_settings,"last-db",db_name);
 
