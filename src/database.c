@@ -2126,12 +2126,14 @@ open_database()
   gchar*		file_path;
   gchar*		test;
   gchar*		test2;
+  gchar*		exPtr;
   gchar*		lastCountry;
   gchar*		curCountry;
   gchar*		curCode;
   gchar*		curSite;
   gboolean		start;
   gint			i;
+  gint			exPos;
 
   if (g_slist_length(readLines) > 0) {
     g_slist_free(readLines);
@@ -2228,6 +2230,13 @@ open_database()
           lastCountry = strdup(curCountry);
         }
         g_free(test);
+
+        //remove the ' except:' from some listings
+        exPtr = strstr(test2," except:");
+        if (exPtr != NULL) {
+          exPos = exPtr - test2;
+          test2[exPos] = '\0';
+        }
 
         if (test2[1] == '-') {
           curCode = substr(test2,0,1);
@@ -2479,6 +2488,11 @@ getTransmitterLookup				(gchar*	c_value,
           break;
         }
       }
+    }
+  }
+  if (result != t_value) {
+    if (strcmp(c_value, temp_country) != 0) {
+      result = g_strdup_printf("[%s] %s",getCountryLookup(temp_country,temp_country),result);
     }
   }
   g_free(temp_country);
