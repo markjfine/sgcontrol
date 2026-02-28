@@ -1889,14 +1889,19 @@ checkWebPage				(gboolean	isBackground)
   gchar*	dateStr = "";
   gchar*	fileStr = "";
   gchar*	fileURL;
+  gchar*	fileURL2;
   gchar*	filePath;
+  gchar*	filePath2;
   gchar*	fileExt;
   gchar*	test;
   time_t	newDate;
   gchar		msgStr[100];
   FILE*		fp;
+  FILE*		fp2;
   CURL*		curl_handle;
+  CURL*		curl_handle2;
   CURLcode	res;
+  CURLcode	res2;
   gint		i;
   char		curDateStr[15];
   char		newDateStr[15];
@@ -1953,10 +1958,12 @@ checkWebPage				(gboolean	isBackground)
         sprintf(msgStr, "You have: %s\nNew file: %s\n\nWould you like to download and use it now?", curDateStr, newDateStr);
         if (show_yes_no_message("An updated Eibi file is available", GTK_MESSAGE_QUESTION, msgStr) == GTK_RESPONSE_YES) {
           fileURL = g_strconcat(inPage, fileStr, NULL);
+          fileURL2 = g_strconcat(inPage, "dx/README.TXT", NULL);
           fileExt = strrchr(fileStr,'.');
           fileExt[0] = '\0';
           newDateStr[2] = '-'; 
           filePath = g_strconcat(basepath, "/eibi-", strrchr(fileStr,'/')+1, "-", substr(newDateStr, 0, 6), ".txt", NULL);        
+          filePath2 = g_strconcat(basepath, "/eibi-readme.txt", NULL);        
           curl_global_init(CURL_GLOBAL_DEFAULT);
           curl_handle = curl_easy_init();
           if (curl_handle) {
@@ -1973,6 +1980,26 @@ checkWebPage				(gboolean	isBackground)
                 g_print("Update database: Download failed: %s\n", curl_easy_strerror(res));
               } else {
                 if (g_file_test(filePath, G_FILE_TEST_EXISTS)) {
+                  //now update eibi-readme.txt
+                  curl_handle2 = curl_easy_init();
+                  if (curl_handle2) {
+                    fp2 = fopen(filePath2, "wb");
+                    if (fp2) {            
+                      curl_easy_setopt(curl_handle2, CURLOPT_URL, fileURL2);
+                      curl_easy_setopt(curl_handle2, CURLOPT_WRITEFUNCTION, NULL);
+                      curl_easy_setopt(curl_handle2, CURLOPT_WRITEDATA, fp2);
+                      res2 = curl_easy_perform(curl_handle2);
+                      fclose(fp2);
+                      if (res2 != CURLE_OK) {
+                        if (!isBackground)
+                          show_message("Update Database",GTK_MESSAGE_ERROR,"Database (README.TXT) not updated. Download failed.");
+                        g_print("Update database: Download README.TXT failed: %s\n", curl_easy_strerror(res2));
+                      } 
+                    }
+                    curl_easy_cleanup(curl_handle2);
+                    g_free(filePath2);
+                    g_free(fileURL2);
+                  } 
                   db_name = filePath;
                   open_database();
                   if (!isBackground)
