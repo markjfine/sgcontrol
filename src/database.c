@@ -2418,6 +2418,47 @@ getTargetCode					(gchar*	value,
 }
 
 
+gchar*
+getTransmitterLookup				(gchar*	c_value,
+                                                 gchar*	t_value)
+{
+  gchar*	result = t_value;
+  gchar*	temp_country;
+  gchar*	temp_code;
+  gint		dashPos = -1;
+  gint		i;
+
+  if (t_value[0] == '/') {
+    if (strchr(t_value, '-') != NULL) {
+      dashPos = strchr(t_value, '-') - t_value;
+      temp_country = substr(t_value, 1, dashPos-1);
+      temp_code = substr(t_value, dashPos+1, strlen(t_value)-dashPos-1);
+    } else {
+      temp_country = substr(t_value, 1, strlen(t_value)-1);
+      temp_code = strdup("");
+    }
+  } else {
+    temp_country = strdup(c_value);
+    temp_code = strdup(t_value);
+  }
+  for (i=0; i < num_xmtrs; i++) {
+    if (strcmp(temp_country, (gchar*)g_slist_nth_data(XMTRCountries, i)) == 0) {
+      if (strcmp(temp_code, "") == 0) {
+        result = (gchar*)g_slist_nth_data(XMTRSites, i);
+        break;
+      } else {
+        if (strcmp(temp_code, (gchar*)g_slist_nth_data(XMTRCodes, i)) == 0) {
+          result = (gchar*)g_slist_nth_data(XMTRSites, i);
+          break;
+        }
+      }
+    }
+  }
+  g_free(temp_country);
+  g_free(temp_code);
+  return result;
+}
+
 gint
 getStatsType					(gchar*	value)
 {
@@ -2986,8 +3027,9 @@ get_freq_records				(GtkWidget*	cList,
             counStr = getCountryLookup(country, country);
             if (strlen(line) < 75)
               xmtrStr = strdup(" ");
-            else
-              xmtrStr = trim(substr(line, 75, strlen(line)-75));
+            else {
+              xmtrStr = getTransmitterLookup(country, trim(substr(line, 75, strlen(line)-75)));
+            }
             gtk_list_store_append(freqQueryData, &iter);
             gtk_list_store_set(freqQueryData, &iter,
                                FREQ, freqStr,
@@ -3151,8 +3193,9 @@ get_stat_records				(GtkWidget*	cList,
               counStr = getCountryLookup(country, country);
               if (strlen(line) < 75)
                 xmtrStr = strdup(" ");
-              else
-                xmtrStr = trim(substr(line, 75, strlen(line)-75));
+              else {
+                xmtrStr = getTransmitterLookup(country, trim(substr(line, 75, strlen(line)-75)));
+              }
               gtk_list_store_append(statQueryData, &iter);
               gtk_list_store_set(statQueryData, &iter,
                                  FREQ, freqStr,

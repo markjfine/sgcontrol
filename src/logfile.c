@@ -751,6 +751,7 @@ fill_log_display_from_faceplate				(GtkWidget*	selection)
   GValue	targval = G_VALUE_INIT;
   GValue	counval = G_VALUE_INIT;
   GValue	statval = G_VALUE_INIT;
+  GValue	xmtrval = G_VALUE_INIT;
   gchar*	dateStr;
   gchar*	timeTemp;
   gchar*	timeStr;
@@ -787,8 +788,9 @@ fill_log_display_from_faceplate				(GtkWidget*	selection)
       gtk_tree_model_get_value(model, &iter, 6, &counval);
       counStr = strdup(g_value_get_string(&counval));
       gtk_tree_model_get_value(model, &iter, 7, &statval);
+      gtk_tree_model_get_value(model, &iter, 8, &xmtrval);
       statStr = strdup(g_value_get_string(&statval));
-      textStr = g_strdup_printf("In %s to %s.", g_value_get_string(&langval), g_value_get_string(&targval));
+      textStr = g_strdup_printf("In %s to %s from %s.", g_value_get_string(&langval), g_value_get_string(&targval), g_value_get_string(&xmtrval));
       
       set_text(log1, "LogDateEntry", dateStr);
       set_text(log1, "LogTimeEntry", timeStr);
@@ -805,6 +807,7 @@ fill_log_display_from_faceplate				(GtkWidget*	selection)
       g_value_unset(&targval);
       g_value_unset(&counval);
       g_value_unset(&statval);
+      g_value_unset(&xmtrval);
       g_free(dateStr);
       g_free(timeStr);
       g_free(freqStr);
