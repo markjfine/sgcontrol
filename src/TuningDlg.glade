@@ -908,7 +908,7 @@ Author: Mark J. Fine
                                       <object class="GtkTreeViewColumn" id="transmitter_col">
                                         <property name="resizable">True</property>
                                         <property name="sizing">fixed</property>
-                                        <property name="fixed-width">20</property>
+                                        <property name="fixed-width">150</property>
                                         <property name="title" translatable="yes">Xmtr</property>
                                         <property name="clickable">True</property>
                                         <property name="sort-column-id">8</property>
@@ -1134,7 +1134,7 @@ Author: Mark J. Fine
                                       <object class="GtkTreeViewColumn" id="transmitter_col1">
                                         <property name="resizable">True</property>
                                         <property name="sizing">fixed</property>
-                                        <property name="fixed-width">20</property>
+                                        <property name="fixed-width">150</property>
                                         <property name="title" translatable="yes">Xmtr</property>
                                         <property name="clickable">True</property>
                                         <property name="sort-column-id">8</property>
