@@ -617,7 +617,7 @@ Ifrikya FM;Broadcast
 Illinois Emergency ALE;Utility Digital
 Indy Radio;Broadcast
 Internal Ministry ALE;Utility Digital
-Iran International;Broadcast
+Iran International TV;Broadcast
 Iraqi Navy ALE;Utility Digital
 Iraqi Security Fcs. ALE;Utility Digital
 Irish Naval Service;Utility Marine
@@ -910,6 +910,7 @@ National Unity Bc.Sta.;Broadcast
 Navy Athens STANAG;Utility Digital
 Nemzetiségi Rádió;Broadcast
 Netherlands Coastgd Wx;Utility Marine
+New Korea Hope Bcing;Broadcast
 New York Radio;Utility Aircraft
 New York Radio A;Utility Aircraft
 New York Radio CAR-A;Utility Aircraft
@@ -1098,11 +1099,14 @@ RRI Biak (Papua);Broadcast
 RRI Makassar (Sulawesi);Broadcast
 RRI Nabire;Broadcast
 RRI Palangkaraya;Broadcast
+RRI Programa Tiga (3);Broadcast
 RRI Ternate (Maluku);Broadcast
 RRI Wamena (Papua);Broadcast
 RTE Dublin;Broadcast
 RTM Asyik FM;Broadcast
 RTM Limbang FM;Broadcast
+RTM Nasional FM;Broadcast
+RTM Sabah V FM;Broadcast
 RTM Sarawak FM;Broadcast
 RTM Wai FM;Broadcast
 RTV du Mali;Broadcast
@@ -1159,6 +1163,7 @@ Radio Emisora Bolívar;Broadcast
 Radio Ergo;Broadcast
 Radio Europa;Broadcast
 Radio Europe;Broadcast
+Radio Europe 2;Broadcast
 Radio Exterior EspaÒa;Broadcast
 Radio Exterior Espańa;Broadcast
 Radio Fana;Broadcast
@@ -1175,6 +1180,7 @@ Radio GuinÈe;Broadcast
 Radio Guinée;Broadcast
 Radio Habana Cuba;Broadcast
 Radio Hargaysa;Broadcast
+Radio Horizon;Broadcast
 Radio Huanta 2000;Broadcast
 Radio IBC;Broadcast
 Radio ICDI, Baoli;Broadcast
@@ -1202,6 +1208,7 @@ Radio Marti;Broadcast
 Radio Marti DIGITAL;Broadcast Digital
 Radio Mashaal;Broadcast
 Radio MiAmigo;Broadcast
+Radio Mi Amigo;Broadcast
 Radio Mike;Broadcast
 Radio Milne Bay;Broadcast
 Radio Mosoj Chaski;Broadcast
@@ -1377,6 +1384,7 @@ Rádio Marumby;Broadcast
 Rádio Mundial;Broadcast
 Rádio Nacional Amazônia;Broadcast
 Rádio Novo Tempo;Broadcast
+Rádio Onda Sul, Paraná;Broadcast
 Rádio Pink;Broadcast
 Rádio Pirâmide;Broadcast
 Rádio Record;Broadcast
@@ -1508,9 +1516,11 @@ Stornoway Coastguard Wx;Utility Marine
 Studio 52;Broadcast
 Studio Denakker;Broadcast
 Suab Xaa Moo Zoo;Broadcast
+SunDance Radio;Broadcast
 Sunlite;Broadcast
 Super R·dio Deus È Amor;Broadcast
 Super Rádio Deus é Amor;Broadcast
+SuperClan Radio;Broadcast
 Surgut Aero Tsadik-Dva;Utility Aircraft
 Swedish Military ALE;Utility Digital
 Swedish Navy MSK 200/79;Utility Digital
@@ -1586,6 +1596,7 @@ USEast NBEMS Net;Utility Fixed/Land
 Ufa Aero;Utility Aircraft
 Ukrainian Military ALE;Utility Digital
 Unid STANAG;Utility Digital
+Unification Media Group;Broadcast
 Unique Radio;Broadcast
 Unique Radio (USB);Broadcast
 Unique Radio DIGITAL;Broadcast Digital

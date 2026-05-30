@@ -47,7 +47,6 @@
 #include <windows.h>
 #endif
 
-
 extern GtkWidget*	app1;
 extern GtkWidget*	l_popup;
 extern GtkWidget*	b_popup;
