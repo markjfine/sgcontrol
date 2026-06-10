@@ -9,14 +9,14 @@ your receiver. It is also designed to provide database-driven tuning, memory
 and logging capabilities, based on FineWare's (discontinued) Smart Control
 series of receiver control packages for Windows. The Smart Gnome Control
 interface is written for Linux and Cygwin in GNU C/C++, using Glade, Gdk/Gtk+
-and curl. It also requires version 4.6 or later of Hamlib.
+and curl. It also requires version 4.7.1 or later of Hamlib.
 
 
 2. Compiling Smart Gnome Control
 
 To compile Smart Gnome Control you will need:
 
-* Hamlib 4.6
+* Hamlib 4.7.1
 * curl 8.11
 * Gtk+ 3.24
 * Gdk 3.24

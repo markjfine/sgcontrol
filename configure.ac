@@ -53,12 +53,12 @@ dnl AM_XGETTEXT_OPTION([--from-code=UTF-8])
 AC_CHECK_LIB([m], [sincos])
 
 dnl Check hamlib
-hamlib_modules="hamlib >= 4.6"
+hamlib_modules="hamlib >= 4.7.1"
 PKG_CHECK_MODULES(HAMLIB, [$hamlib_modules], [
   CFLAGS="$CFLAGS $HAMLIB_CFLAGS";
   LIBS="$LIBS $HAMLIB_LIBS";
 ], [
-  AC_MSG_ERROR([Hamradio control libraries 4.6 or later not found...])
+  AC_MSG_ERROR([Hamradio control libraries 4.7.1 or later not found...])
 ])
 
 dnl Check curl
