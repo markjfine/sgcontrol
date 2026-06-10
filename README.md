@@ -10,7 +10,7 @@ Smart Gnome Control began as an idea I had 21 years ago under Gnome v1.2. It was
 
 The following are required for Smart Gnome Control:
 
-* [Hamlib 4.6](https://github.com/Hamlib/Hamlib)
+* [Hamlib 4.7.1](https://github.com/Hamlib/Hamlib)
 * libcurl 7.60
 * Gtk+ 3.24
 * Gdk 3.24
