@@ -1,6 +1,6 @@
 /*
  * Smart Gnome Control - log functions file
- * Copyright (C) 2004, 2005, 2025 by Mark J. Fine <mark.fine@fineware-swl.com>
+ * Copyright (C) 2004, 2005, 2025-26 by Mark J. Fine <mark.fine@fineware-swl.com>
  *
  * This program provides a graphical user interface to multiple
  * communications receivers using the Hamlib library.

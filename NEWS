@@ -1,3 +1,16 @@
+Smart Gnome Control 0.6 (28 Aug 2026) :
+- Added broadcaster transmitter site info via Eibi.
+- Added a refresh button to the toolbar to re-sync the app to the receiver.
+- Added a cross-compiled Windows version.
+- Revised rig interface to allow TCP networked devices.
+- Revised faceplate to allow use of FM Stereo for SDRs.
+- Revised faceplate to allow use over wider frequency range.
+- Fixed issue with using the period/decimal key on the keypad.
+- Fixed meter display when radio has no meter.
+- Fixed clock timer due to improper handling of the callback.
+- Added auto refresh of the database window when the clock changes.
+- Fixed several display irregularities and annoyances.
+
 Smart Gnome Control 0.5 (24 Jun 2025) :
 - Completely updated and rewritten for Gtk3+.
 - Completely revised iconology to conform to Adwaita.

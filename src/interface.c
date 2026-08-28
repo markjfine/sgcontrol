@@ -1,6 +1,6 @@
 /*
  * Smart Gnome Control - GUI interface file
- * Copyright (C) 2004, 2005, 2025 by Mark J. Fine <mark.fine@fineware-swl.com>
+ * Copyright (C) 2004, 2005, 2025-26 by Mark J. Fine <mark.fine@fineware-swl.com>
  *
  * This program provides a graphical user interface to multiple
  * communications receivers using the Hamlib library.
@@ -2247,7 +2247,7 @@ create_AboutDlg (void)
   AboutDlg = gtk_about_dialog_new ();
   gtk_about_dialog_set_authors(GTK_ABOUT_DIALOG(AboutDlg), authors);
   gtk_about_dialog_set_comments(GTK_ABOUT_DIALOG(AboutDlg),"This program provides a graphical user interface to multiple communications receivers using the Hamlib library, and is based on Smart Control and Frequency Browser.");
-  gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(AboutDlg), "Copyright (c) 2004, 2005, 2025  Mark J. Fine");
+  gtk_about_dialog_set_copyright(GTK_ABOUT_DIALOG(AboutDlg), "Copyright (c) 2004, 2005, 2025-26  Mark J. Fine");
   gtk_about_dialog_set_license(GTK_ABOUT_DIALOG(AboutDlg),
 "Smart Gnome Control is free software: you can redistribute it and/or modify\n\
 it under the terms of the GNU General Public License as published by\n\

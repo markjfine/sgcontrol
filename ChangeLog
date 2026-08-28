@@ -1,4 +1,19 @@
 
+Release v0.6 - 28 Aug 2026
+2026/02/30 00:00:00 Added broadcaster transmitter site info via Eibi.
+2025/07/31 00:00:00 Added a refresh button to the toolbar to re-sync the app to the receiver.
+2025/07/24 00:00:00 Added a cross-compiled Windows version.
+2025/07/19 00:00:00 Revised rig interface to allow TCP networked devices.
+2025/07/19 00:00:00 Revised faceplate to allow use of FM Stereo for SDRs.
+2025/07/19 00:00:00 Revised faceplate to allow use over wider frequency range.
+2025/07/09 00:00:00 Fixed issue with using the period/decimal key on the keypad.
+2025/06/30 00:00:00 Fixed meter display when radio has no meter.
+2025/06/27 00:00:00 Fixed clock timer due to improper handling of the callback.
+2025/06/27 00:00:00 Added auto refresh of the database window when the clock changes.
+2025/06/27 00:00:00 Fixed several display irregularities and annoyances.
+
+=============================================================================
+
 Release v0.5 - 24 Jun 2025 - Follow-up Release (yeah, long time coming)
 
 2025/06/24 00:00:00 Completely updated and rewritten for Gtk3+.
